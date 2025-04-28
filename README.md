@@ -15,7 +15,6 @@ The empirical results are organized into three main parts:
 
 This artifact is structured to mirror these three core analysis stages.
 
----
 
 ## Artifact Structure
 
@@ -27,7 +26,6 @@ This artifact is structured to mirror these three core analysis stages.
   - Unified schema for normalization.
 - **Related Paper Sections**: Methodology (§ III-B, III-C) and Data Collection overview.
 
----
 
 ### `step1_general_statistics/`
 - **Purpose**: Supports **Section IV-A: General Statistics**.
@@ -38,7 +36,6 @@ This artifact is structured to mirror these three core analysis stages.
   - Deployment centralization among cloud providers;
   - Prevalence of insecure communication setups (e.g., lack of TLS).
 
----
 
 ### `step2_api_responsiveness/`
 - **Purpose**: Supports **Section IV-B: API Responsiveness Analysis**.
@@ -50,7 +47,6 @@ This artifact is structured to mirror these three core analysis stages.
   - High exposure rates in frameworks like Ollama and Llamafile;
   - Inconsistent protection across frameworks and endpoints.
 
----
 
 ### `step3_risk_analysis/`
 - **Purpose**: Supports **Section IV-C: Security and Risk Analysis**.
@@ -62,7 +58,6 @@ This artifact is structured to mirror these three core analysis stages.
   - Systemic access control weaknesses;
   - Threats including misuse, model theft, and inference abuse.
 
----
 
 ## Usage Notes
 - All data was collected through non-intrusive, read-only HTTP(S) requests to publicly accessible services.
