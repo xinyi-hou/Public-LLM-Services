@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d317c082-c3f0-49d8-9ebc-db18a4040c64)![image](https://github.com/user-attachments/assets/b7da4d8b-c33e-4829-9513-b54fa16fe122)## Paper Overview
+## Paper Overview
 
 Our study conducts the **first large-scale empirical analysis** of public-facing large language model (LLM) deployments in real-world environments.
 
