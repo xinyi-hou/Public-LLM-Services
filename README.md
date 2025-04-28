@@ -35,6 +35,12 @@ This artifact is structured to mirror these three core analysis stages.
 - **Key Findings Supported**:
   - Deployment centralization among cloud providers;
   - Prevalence of insecure communication setups (e.g., lack of TLS).
+ 
+- **Notable Artifact**:  
+  - The **deployment heatmap** referenced in the paper is available at:  
+    [`step1_general_statistics/step1_2_domain/domain_heatmap.pdf`](https://github.com/xinyi-hou/Public-LLM-Services/blob/main/step1_general_statistics/step1_2_domain/domain_heatmap.pdf)  
+  - This figure visualizes the number of LLM service instances across different domains and frameworks.
+
 
 
 ### `step2_api_responsiveness/`
