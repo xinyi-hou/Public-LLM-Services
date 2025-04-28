@@ -1,0 +1,13 @@
+﻿端点,方法,主要用途,返回 JSON 示例
+/api/predict,POST,调用模型预测,"json {""data"": [""输出结果1"", ""输出结果2""], ""is_generating"": false}"
+/api/queue/push,POST,提交任务到队列,"json {""hash"": ""任务ID"", ""queue_position"": 1}"
+/api/queue/status,GET,获取队列状态,"json {""queue_size"": 3, ""pending"": [""任务ID1"", ""任务ID2""], ""running"": [""任务ID3""]}"
+/api/info,GET,获取应用配置信息,"json {""inputs"": [{""type"": ""text""}], ""outputs"": [{""type"": ""image""}]}"
+/config,GET,获取全局配置,"json {""allow_flagging"": true, ""theme"": ""default""}"
+/file/<file_path>,GET,获取生成的文件（如图像/音频）,返回文件二进制流（无JSON）
+/api/predict,POST,调用模型预测,"json {""data"": [""输出结果1"", ""输出结果2""], ""is_generating"": false}"
+/api/queue/push,POST,提交任务到队列,"json {""hash"": ""任务ID"", ""queue_position"": 1}"
+/api/queue/status,GET,获取队列状态,"json {""queue_size"": 3, ""pending"": [""任务ID1"", ""任务ID2""], ""running"": [""任务ID3""]}"
+/api/info,GET,获取应用配置信息,"json {""inputs"": [{""type"": ""text""}], ""outputs"": [{""type"": ""image""}]}"
+/config,GET,获取全局配置,"json {""allow_flagging"": true, ""theme"": ""default""}"
+/file/<file_path>,GET,获取生成的文件（如图像/音频）,返回文件二进制流（无JSON）

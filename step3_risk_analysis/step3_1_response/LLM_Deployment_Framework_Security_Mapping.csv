@@ -1,0 +1,8 @@
+Framework,Authorization and Authentication Vulnerabilities,Unauthorized Access and Resource Abuse,Vulnerabilities and Reverse Engineering,Information and Configuration Disclosure,Sensitive Content Generation
+ComfyUI,,"prompt, queue","extensions, object_info","embeddings, history, system_stats",
+GPT4All,,,,v1_models,
+Jupyter Notebook,api,,,,
+Llamacpp,,,,"health, v1_models",
+Llamafile,,,,v1_models,
+Ollama,"api_ps, api_version","api_chat, api_copy, api_create, api_delete, api_generate, api_pull, api_push","api_show, api_tags",,api_chat
+Text Generation Web UI,,,,"v1_files_file_id, v1_models",v1_chat_completions

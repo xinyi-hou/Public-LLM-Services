@@ -1,0 +1,11 @@
+{
+  "data": [
+    {
+      "created": 1745728358,
+      "id": "models/mistral/mixtral-8x7b-v0.1.Q3_K_M.gguf",
+      "object": "model",
+      "owned_by": "llamacpp"
+    }
+  ],
+  "object": "list"
+}

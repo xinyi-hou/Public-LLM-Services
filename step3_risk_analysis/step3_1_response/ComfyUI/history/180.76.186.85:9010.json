@@ -1,0 +1,1478 @@
+{
+  "7926cd9f-b02f-47d7-b0f2-83ac476d6e68": {
+    "prompt": [
+      0,
+      "7926cd9f-b02f-47d7-b0f2-83ac476d6e68",
+      {
+        "13": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "14",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "14": {
+          "inputs": {
+            "image": "README.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        }
+      },
+      {},
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "images": [
+          {
+            "filename": "ComfyUI_00004_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "7926cd9f-b02f-47d7-b0f2-83ac476d6e68",
+            "timestamp": 1745552533325
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "7926cd9f-b02f-47d7-b0f2-83ac476d6e68",
+            "timestamp": 1745552533328
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "7926cd9f-b02f-47d7-b0f2-83ac476d6e68",
+            "timestamp": 1745552533433
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "5441816c-f4dc-44bc-b86b-1414b41d82a8": {
+    "prompt": [
+      1,
+      "5441816c-f4dc-44bc-b86b-1414b41d82a8",
+      {
+        "13": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "14",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "14": {
+          "inputs": {
+            "image": "README.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        }
+      },
+      {},
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "images": [
+          {
+            "filename": "ComfyUI_00004_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "5441816c-f4dc-44bc-b86b-1414b41d82a8",
+            "timestamp": 1745552589510
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "13",
+              "14"
+            ],
+            "prompt_id": "5441816c-f4dc-44bc-b86b-1414b41d82a8",
+            "timestamp": 1745552589511
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "5441816c-f4dc-44bc-b86b-1414b41d82a8",
+            "timestamp": 1745552589511
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "d6b8852e-b517-4c26-8e5b-01497b924026": {
+    "prompt": [
+      2,
+      "d6b8852e-b517-4c26-8e5b-01497b924026",
+      {
+        "13": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "14",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "14": {
+          "inputs": {
+            "image": "README.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        }
+      },
+      {},
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "images": [
+          {
+            "filename": "ComfyUI_00004_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "d6b8852e-b517-4c26-8e5b-01497b924026",
+            "timestamp": 1745552661149
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "13",
+              "14"
+            ],
+            "prompt_id": "d6b8852e-b517-4c26-8e5b-01497b924026",
+            "timestamp": 1745552661150
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "d6b8852e-b517-4c26-8e5b-01497b924026",
+            "timestamp": 1745552661150
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "b9f35197-35c6-4370-9f24-a1b43b979281": {
+    "prompt": [
+      3,
+      "b9f35197-35c6-4370-9f24-a1b43b979281",
+      {
+        "13": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "14",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "14": {
+          "inputs": {
+            "image": "README.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        }
+      },
+      {},
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "images": [
+          {
+            "filename": "ComfyUI_00004_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "b9f35197-35c6-4370-9f24-a1b43b979281",
+            "timestamp": 1745553827089
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "13",
+              "14"
+            ],
+            "prompt_id": "b9f35197-35c6-4370-9f24-a1b43b979281",
+            "timestamp": 1745553827089
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "b9f35197-35c6-4370-9f24-a1b43b979281",
+            "timestamp": 1745553827089
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "e4807567-23ba-4562-82af-4d8401677637": {
+    "prompt": [
+      4,
+      "e4807567-23ba-4562-82af-4d8401677637",
+      {
+        "3": {
+          "inputs": {
+            "seed": 156680208700286,
+            "steps": 20,
+            "cfg": 8.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "latent_image": [
+              "5",
+              0
+            ]
+          },
+          "class_type": "KSampler"
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "SDXL/dreamshaper_xl_v2.1.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple"
+        },
+        "5": {
+          "inputs": {
+            "width": 512,
+            "height": 512,
+            "batch_size": 1
+          },
+          "class_type": "EmptyLatentImage"
+        },
+        "6": {
+          "inputs": {
+            "text": "a woman",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode"
+        },
+        "7": {
+          "inputs": {
+            "text": "text, watermark",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode"
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode"
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage"
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "last_node_id": 9,
+            "last_link_id": 9,
+            "nodes": [
+              {
+                "id": 7,
+                "type": "CLIPTextEncode",
+                "pos": {
+                  "0": 413,
+                  "1": 389
+                },
+                "size": {
+                  "0": 425.27801513671875,
+                  "1": 180.6060791015625
+                },
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 5,
+                    "label": "clip"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                      6
+                    ],
+                    "slot_index": 0,
+                    "label": "CONDITIONING"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CLIPTextEncode"
+                },
+                "widgets_values": [
+                  "text, watermark"
+                ]
+              },
+              {
+                "id": 5,
+                "type": "EmptyLatentImage",
+                "pos": {
+                  "0": 473,
+                  "1": 609
+                },
+                "size": {
+                  "0": 315,
+                  "1": 106
+                },
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                      2
+                    ],
+                    "slot_index": 0,
+                    "label": "LATENT"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "EmptyLatentImage"
+                },
+                "widgets_values": [
+                  512,
+                  512,
+                  1
+                ]
+              },
+              {
+                "id": 3,
+                "type": "KSampler",
+                "pos": {
+                  "0": 863,
+                  "1": 186
+                },
+                "size": {
+                  "0": 315,
+                  "1": 262
+                },
+                "flags": {},
+                "order": 4,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 1,
+                    "label": "model"
+                  },
+                  {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 4,
+                    "label": "positive"
+                  },
+                  {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 6,
+                    "label": "negative"
+                  },
+                  {
+                    "name": "latent_image",
+                    "type": "LATENT",
+                    "link": 2,
+                    "label": "latent_image"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                      7
+                    ],
+                    "slot_index": 0,
+                    "label": "LATENT"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "KSampler"
+                },
+                "widgets_values": [
+                  156680208700286,
+                  "randomize",
+                  20,
+                  8,
+                  "euler",
+                  "normal",
+                  1
+                ]
+              },
+              {
+                "id": 8,
+                "type": "VAEDecode",
+                "pos": {
+                  "0": 1209,
+                  "1": 188
+                },
+                "size": {
+                  "0": 210,
+                  "1": 46
+                },
+                "flags": {},
+                "order": 5,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": 7,
+                    "label": "samples"
+                  },
+                  {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 8,
+                    "label": "vae"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                      9
+                    ],
+                    "slot_index": 0,
+                    "label": "IMAGE"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "VAEDecode"
+                },
+                "widgets_values": []
+              },
+              {
+                "id": 9,
+                "type": "SaveImage",
+                "pos": {
+                  "0": 1451,
+                  "1": 189
+                },
+                "size": {
+                  "0": 210,
+                  "1": 58
+                },
+                "flags": {},
+                "order": 6,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 9,
+                    "label": "images"
+                  }
+                ],
+                "outputs": [],
+                "properties": {},
+                "widgets_values": [
+                  "ComfyUI"
+                ]
+              },
+              {
+                "id": 4,
+                "type": "CheckpointLoaderSimple",
+                "pos": {
+                  "0": 26,
+                  "1": 474
+                },
+                "size": {
+                  "0": 315,
+                  "1": 98
+                },
+                "flags": {},
+                "order": 1,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                      1
+                    ],
+                    "slot_index": 0,
+                    "label": "MODEL"
+                  },
+                  {
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                      3,
+                      5
+                    ],
+                    "slot_index": 1,
+                    "label": "CLIP"
+                  },
+                  {
+                    "name": "VAE",
+                    "type": "VAE",
+                    "links": [
+                      8
+                    ],
+                    "slot_index": 2,
+                    "label": "VAE"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CheckpointLoaderSimple"
+                },
+                "widgets_values": [
+                  "SDXL/dreamshaper_xl_v2.1.safetensors"
+                ]
+              },
+              {
+                "id": 6,
+                "type": "CLIPTextEncode",
+                "pos": {
+                  "0": 415,
+                  "1": 186
+                },
+                "size": {
+                  "0": 422.84503173828125,
+                  "1": 164.31304931640625
+                },
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 3,
+                    "label": "clip"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                      4
+                    ],
+                    "slot_index": 0,
+                    "label": "CONDITIONING"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CLIPTextEncode"
+                },
+                "widgets_values": [
+                  "a woman"
+                ]
+              }
+            ],
+            "links": [
+              [
+                1,
+                4,
+                0,
+                3,
+                0,
+                "MODEL"
+              ],
+              [
+                2,
+                5,
+                0,
+                3,
+                3,
+                "LATENT"
+              ],
+              [
+                3,
+                4,
+                1,
+                6,
+                0,
+                "CLIP"
+              ],
+              [
+                4,
+                6,
+                0,
+                3,
+                1,
+                "CONDITIONING"
+              ],
+              [
+                5,
+                4,
+                1,
+                7,
+                0,
+                "CLIP"
+              ],
+              [
+                6,
+                7,
+                0,
+                3,
+                2,
+                "CONDITIONING"
+              ],
+              [
+                7,
+                3,
+                0,
+                8,
+                0,
+                "LATENT"
+              ],
+              [
+                8,
+                4,
+                2,
+                8,
+                1,
+                "VAE"
+              ],
+              [
+                9,
+                8,
+                0,
+                9,
+                0,
+                "IMAGE"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 1,
+                "offset": {
+                  "0": 8,
+                  "1": 2
+                }
+              },
+              "node_versions": {
+                "comfy-core": "v0.2.7"
+              }
+            },
+            "version": 0.4
+          }
+        },
+        "client_id": "944367a175fc465795fa09f9b7f9598e"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {},
+    "status": {
+      "status_str": "error",
+      "completed": false,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "e4807567-23ba-4562-82af-4d8401677637",
+            "timestamp": 1745573341032
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "e4807567-23ba-4562-82af-4d8401677637",
+            "timestamp": 1745573341034
+          }
+        ],
+        [
+          "execution_error",
+          {
+            "prompt_id": "e4807567-23ba-4562-82af-4d8401677637",
+            "node_id": "7",
+            "node_type": "CLIPTextEncode",
+            "executed": [
+              "5",
+              "4"
+            ],
+            "exception_message": "CUDA error: operation not permitted\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1.\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "exception_type": "RuntimeError",
+            "traceback": [
+              "  File \"/workspace/execution.py\", line 323, in execute\n    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)\n",
+              "  File \"/workspace/execution.py\", line 198, in get_output_data\n    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)\n",
+              "  File \"/workspace/execution.py\", line 169, in _map_node_over_list\n    process_inputs(input_dict, i)\n",
+              "  File \"/workspace/execution.py\", line 158, in process_inputs\n    results.append(getattr(obj, func)(**inputs))\n",
+              "  File \"/workspace/nodes.py\", line 65, in encode\n    output = clip.encode_from_tokens(tokens, return_pooled=True, return_dict=True)\n",
+              "  File \"/workspace/comfy/sd.py\", line 126, in encode_from_tokens\n    self.load_model()\n",
+              "  File \"/workspace/comfy/sd.py\", line 158, in load_model\n    model_management.load_model_gpu(self.patcher)\n",
+              "  File \"/workspace/comfy/model_management.py\", line 559, in load_model_gpu\n    return load_models_gpu([model])\n",
+              "  File \"/workspace/comfy/model_management.py\", line 545, in load_models_gpu\n    cur_loaded_model = loaded_model.model_load(lowvram_model_memory, force_patch_weights=force_patch_weights)\n",
+              "  File \"/workspace/comfy/model_management.py\", line 327, in model_load\n    raise e\n",
+              "  File \"/workspace/comfy/model_management.py\", line 323, in model_load\n    self.real_model = self.model.patch_model(device_to=patch_model_to, lowvram_model_memory=lowvram_model_memory, load_weights=load_weights, force_patch_weights=force_patch_weights)\n",
+              "  File \"/workspace/comfy/model_patcher.py\", line 467, in patch_model\n    self.load(device_to, lowvram_model_memory=lowvram_model_memory, force_patch_weights=force_patch_weights, full_load=full_load)\n",
+              "  File \"/workspace/comfy/model_patcher.py\", line 439, in load\n    x[2].to(device_to)\n",
+              "  File \"/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1152, in to\n    return self._apply(convert)\n",
+              "  File \"/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 825, in _apply\n    param_applied = fn(param)\n",
+              "  File \"/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1150, in convert\n    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)\n"
+            ],
+            "current_inputs": {
+              "text": [
+                "text, watermark"
+              ],
+              "clip": [
+                "<comfy.sd.CLIP object at 0x7fa7c2ed2d70>"
+              ]
+            },
+            "current_outputs": [
+              "4",
+              "9",
+              "3",
+              "6",
+              "7",
+              "8",
+              "5"
+            ],
+            "timestamp": 1745573355434
+          }
+        ]
+      ]
+    },
+    "meta": {}
+  },
+  "2f450dad-81fa-4747-b322-46076fb25b83": {
+    "prompt": [
+      5,
+      "2f450dad-81fa-4747-b322-46076fb25b83",
+      {
+        "3": {
+          "inputs": {
+            "seed": 156680208700286,
+            "steps": 20,
+            "cfg": 8.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "latent_image": [
+              "5",
+              0
+            ]
+          },
+          "class_type": "KSampler"
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "1.5/aziibpixelmix_v10.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple"
+        },
+        "5": {
+          "inputs": {
+            "width": 512,
+            "height": 512,
+            "batch_size": 1
+          },
+          "class_type": "EmptyLatentImage"
+        },
+        "6": {
+          "inputs": {
+            "text": "Ass Trump",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode"
+        },
+        "7": {
+          "inputs": {
+            "text": "text, watermark",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode"
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode"
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage"
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "last_node_id": 9,
+            "last_link_id": 9,
+            "nodes": [
+              {
+                "id": 7,
+                "type": "CLIPTextEncode",
+                "pos": {
+                  "0": 413,
+                  "1": 389
+                },
+                "size": {
+                  "0": 425.27801513671875,
+                  "1": 180.6060791015625
+                },
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 5,
+                    "label": "clip"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                      6
+                    ],
+                    "slot_index": 0,
+                    "label": "CONDITIONING"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CLIPTextEncode"
+                },
+                "widgets_values": [
+                  "text, watermark"
+                ]
+              },
+              {
+                "id": 8,
+                "type": "VAEDecode",
+                "pos": {
+                  "0": 1209,
+                  "1": 188
+                },
+                "size": {
+                  "0": 210,
+                  "1": 46
+                },
+                "flags": {},
+                "order": 5,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": 7,
+                    "label": "samples"
+                  },
+                  {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 8,
+                    "label": "vae"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                      9
+                    ],
+                    "slot_index": 0,
+                    "label": "IMAGE"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "VAEDecode"
+                },
+                "widgets_values": []
+              },
+              {
+                "id": 9,
+                "type": "SaveImage",
+                "pos": {
+                  "0": 1451,
+                  "1": 189
+                },
+                "size": {
+                  "0": 210,
+                  "1": 58
+                },
+                "flags": {},
+                "order": 6,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 9,
+                    "label": "images"
+                  }
+                ],
+                "outputs": [],
+                "properties": {},
+                "widgets_values": [
+                  "ComfyUI"
+                ]
+              },
+              {
+                "id": 4,
+                "type": "CheckpointLoaderSimple",
+                "pos": {
+                  "0": 26,
+                  "1": 474
+                },
+                "size": {
+                  "0": 315,
+                  "1": 98
+                },
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                      1
+                    ],
+                    "slot_index": 0,
+                    "label": "MODEL"
+                  },
+                  {
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                      3,
+                      5
+                    ],
+                    "slot_index": 1,
+                    "label": "CLIP"
+                  },
+                  {
+                    "name": "VAE",
+                    "type": "VAE",
+                    "links": [
+                      8
+                    ],
+                    "slot_index": 2,
+                    "label": "VAE"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CheckpointLoaderSimple"
+                },
+                "widgets_values": [
+                  "1.5/aziibpixelmix_v10.safetensors"
+                ]
+              },
+              {
+                "id": 6,
+                "type": "CLIPTextEncode",
+                "pos": {
+                  "0": 415,
+                  "1": 186
+                },
+                "size": {
+                  "0": 422.84503173828125,
+                  "1": 164.31304931640625
+                },
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 3,
+                    "label": "clip"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                      4
+                    ],
+                    "slot_index": 0,
+                    "label": "CONDITIONING"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CLIPTextEncode"
+                },
+                "widgets_values": [
+                  "Ass Trump"
+                ]
+              },
+              {
+                "id": 5,
+                "type": "EmptyLatentImage",
+                "pos": {
+                  "0": 35,
+                  "1": 617
+                },
+                "size": {
+                  "0": 315,
+                  "1": 106
+                },
+                "flags": {},
+                "order": 1,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                      2
+                    ],
+                    "slot_index": 0,
+                    "label": "LATENT"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "EmptyLatentImage"
+                },
+                "widgets_values": [
+                  512,
+                  512,
+                  1
+                ]
+              },
+              {
+                "id": 3,
+                "type": "KSampler",
+                "pos": {
+                  "0": 863,
+                  "1": 186
+                },
+                "size": {
+                  "0": 315,
+                  "1": 262
+                },
+                "flags": {},
+                "order": 4,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 1,
+                    "label": "model"
+                  },
+                  {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 4,
+                    "label": "positive"
+                  },
+                  {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 6,
+                    "label": "negative"
+                  },
+                  {
+                    "name": "latent_image",
+                    "type": "LATENT",
+                    "link": 2,
+                    "label": "latent_image"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                      7
+                    ],
+                    "slot_index": 0,
+                    "label": "LATENT"
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "KSampler"
+                },
+                "widgets_values": [
+                  156680208700286,
+                  "randomize",
+                  20,
+                  8,
+                  "euler",
+                  "normal",
+                  1
+                ]
+              }
+            ],
+            "links": [
+              [
+                1,
+                4,
+                0,
+                3,
+                0,
+                "MODEL"
+              ],
+              [
+                2,
+                5,
+                0,
+                3,
+                3,
+                "LATENT"
+              ],
+              [
+                3,
+                4,
+                1,
+                6,
+                0,
+                "CLIP"
+              ],
+              [
+                4,
+                6,
+                0,
+                3,
+                1,
+                "CONDITIONING"
+              ],
+              [
+                5,
+                4,
+                1,
+                7,
+                0,
+                "CLIP"
+              ],
+              [
+                6,
+                7,
+                0,
+                3,
+                2,
+                "CONDITIONING"
+              ],
+              [
+                7,
+                3,
+                0,
+                8,
+                0,
+                "LATENT"
+              ],
+              [
+                8,
+                4,
+                2,
+                8,
+                1,
+                "VAE"
+              ],
+              [
+                9,
+                8,
+                0,
+                9,
+                0,
+                "IMAGE"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 0.6227497418845912,
+                "offset": [
+                  -292.0150616683459,
+                  284.5152502172959
+                ]
+              },
+              "node_versions": {
+                "comfy-core": "v0.2.7"
+              }
+            },
+            "version": 0.4
+          }
+        },
+        "client_id": "6170fd9c308f41cdb37916a1338fc97b"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {},
+    "status": {
+      "status_str": "error",
+      "completed": false,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "2f450dad-81fa-4747-b322-46076fb25b83",
+            "timestamp": 1745581165593
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "5"
+            ],
+            "prompt_id": "2f450dad-81fa-4747-b322-46076fb25b83",
+            "timestamp": 1745581165652
+          }
+        ],
+        [
+          "execution_error",
+          {
+            "prompt_id": "2f450dad-81fa-4747-b322-46076fb25b83",
+            "node_id": "7",
+            "node_type": "CLIPTextEncode",
+            "executed": [
+              "4"
+            ],
+            "exception_message": "CUDA error: operation not permitted\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1.\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "exception_type": "RuntimeError",
+            "traceback": [
+              "  File \"/workspace/execution.py\", line 323, in execute\n    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)\n",
+              "  File \"/workspace/execution.py\", line 198, in get_output_data\n    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)\n",
+              "  File \"/workspace/execution.py\", line 169, in _map_node_over_list\n    process_inputs(input_dict, i)\n",
+              "  File \"/workspace/execution.py\", line 158, in process_inputs\n    results.append(getattr(obj, func)(**inputs))\n",
+              "  File \"/workspace/nodes.py\", line 65, in encode\n    output = clip.encode_from_tokens(tokens, return_pooled=True, return_dict=True)\n",
+              "  File \"/workspace/comfy/sd.py\", line 126, in encode_from_tokens\n    self.load_model()\n",
+              "  File \"/workspace/comfy/sd.py\", line 158, in load_model\n    model_management.load_model_gpu(self.patcher)\n",
+              "  File \"/workspace/comfy/model_management.py\", line 559, in load_model_gpu\n    return load_models_gpu([model])\n",
+              "  File \"/workspace/comfy/model_management.py\", line 545, in load_models_gpu\n    cur_loaded_model = loaded_model.model_load(lowvram_model_memory, force_patch_weights=force_patch_weights)\n",
+              "  File \"/workspace/comfy/model_management.py\", line 327, in model_load\n    raise e\n",
+              "  File \"/workspace/comfy/model_management.py\", line 323, in model_load\n    self.real_model = self.model.patch_model(device_to=patch_model_to, lowvram_model_memory=lowvram_model_memory, load_weights=load_weights, force_patch_weights=force_patch_weights)\n",
+              "  File \"/workspace/comfy/model_patcher.py\", line 467, in patch_model\n    self.load(device_to, lowvram_model_memory=lowvram_model_memory, force_patch_weights=force_patch_weights, full_load=full_load)\n",
+              "  File \"/workspace/comfy/model_patcher.py\", line 439, in load\n    x[2].to(device_to)\n",
+              "  File \"/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1152, in to\n    return self._apply(convert)\n",
+              "  File \"/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 825, in _apply\n    param_applied = fn(param)\n",
+              "  File \"/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1150, in convert\n    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)\n"
+            ],
+            "current_inputs": {
+              "text": [
+                "text, watermark"
+              ],
+              "clip": [
+                "<comfy.sd.CLIP object at 0x7fa7c2707d90>"
+              ]
+            },
+            "current_outputs": [
+              "4",
+              "9",
+              "3",
+              "6",
+              "7",
+              "8",
+              "5"
+            ],
+            "timestamp": 1745581169387
+          }
+        ]
+      ]
+    },
+    "meta": {}
+  }
+}

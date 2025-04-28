@@ -1,0 +1,13 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "koboldcpp/antimanner_v5",
+      "object": "model",
+      "created": 1745727927,
+      "owned_by": "koboldcpp",
+      "permission": [],
+      "root": "koboldcpp"
+    }
+  ]
+}

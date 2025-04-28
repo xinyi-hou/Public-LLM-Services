@@ -1,0 +1,21 @@
+{
+  "models": [
+    {
+      "name": "hermes3:8b",
+      "model": "hermes3:8b",
+      "modified_at": "2025-03-03T09:35:26.801204836Z",
+      "size": 4661227243,
+      "digest": "4f6b83f30b62bc3d0cf9be09266db222805ee815c8fd7d8b38f863f655be78b7",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_0"
+      }
+    }
+  ]
+}

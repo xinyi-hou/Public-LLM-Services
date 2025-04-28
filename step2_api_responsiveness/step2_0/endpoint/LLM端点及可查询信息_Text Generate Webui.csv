@@ -1,0 +1,8 @@
+﻿功能,方法,端点路径,返回信息
+生成补全（Completions）,POST,/v1/completions,OpenAI 风格的文本生成。使用 prompt 输入。
+聊天补全（Chat）,POST,/v1/chat/completions,聊天接口，传入 messages 数组，支持多轮对话。
+聊天补全 + 角色扮演,POST,/v1/chat/completions,"除基本聊天外，加入 ""character"": ""Name"" 字段启用角色。"
+聊天补全（流式 SSE）,POST,/v1/chat/completions,"设置 ""stream"": true 开启 Server-Sent Events 输出。"
+获取 logits（内部接口）,POST,/v1/internal/logits,返回原始 logits 值（模型未采样前的原始输出概率）。
+加载模型,POST,/v1/internal/model/load,加载模型
+列出模型,GET,/v1/internal/model/list,列出当前模型

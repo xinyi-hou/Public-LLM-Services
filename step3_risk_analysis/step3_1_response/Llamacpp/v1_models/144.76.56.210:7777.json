@@ -1,0 +1,19 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "Phi-3-mini-4k-instruct-q4.gguf",
+      "object": "model",
+      "created": 1745728356,
+      "owned_by": "llamacpp",
+      "meta": {
+        "vocab_type": 1,
+        "n_vocab": 32064,
+        "n_ctx_train": 4096,
+        "n_embd": 3072,
+        "n_params": 3821079552,
+        "size": 2392493568
+      }
+    }
+  ]
+}

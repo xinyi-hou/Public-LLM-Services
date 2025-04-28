@@ -1,0 +1,29 @@
+{
+  "system": {
+    "os": "posix",
+    "ram_total": 1079932104704,
+    "ram_free": 1012761165824,
+    "comfyui_version": "v0.2.7",
+    "python_version": "3.10.14 (main, Mar 21 2024, 16:24:04) [GCC 11.2.0]",
+    "pytorch_version": "2.2.2",
+    "embedded_python": false,
+    "argv": [
+      "main.py",
+      "--listen",
+      "0.0.0.0",
+      "--port",
+      "27149"
+    ]
+  },
+  "devices": [
+    {
+      "name": "cuda:0 NVIDIA GeForce RTX 4090 : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 25386352640,
+      "vram_free": 17291018240,
+      "torch_vram_total": 0,
+      "torch_vram_free": 0
+    }
+  ]
+}

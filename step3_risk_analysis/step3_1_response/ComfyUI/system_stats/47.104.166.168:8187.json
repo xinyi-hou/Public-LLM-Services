@@ -1,0 +1,32 @@
+{
+  "system": {
+    "os": "nt",
+    "ram_total": 549132550144,
+    "ram_free": 376745627648,
+    "comfyui_version": "0.3.26",
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "pytorch_version": "2.5.1+cu124",
+    "embedded_python": true,
+    "argv": [
+      "C:\\ComfyUI_POC2\\ComfyUI_2\\ComfyUI\\main.py",
+      "--listen",
+      "--port",
+      "8187",
+      "--preview-method",
+      "auto",
+      "--disable-smart-memory",
+      "--disable-cuda-malloc"
+    ]
+  },
+  "devices": [
+    {
+      "name": "cuda:0 NVIDIA RTX 5880 Ada Generation : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 51526500352,
+      "vram_free": 49049354832,
+      "torch_vram_total": 1207959552,
+      "torch_vram_free": 737264208
+    }
+  ]
+}

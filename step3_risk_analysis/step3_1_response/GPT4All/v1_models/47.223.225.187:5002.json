@@ -1,0 +1,13 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "koboldcpp/NemoMix-Unleashed-12B-Q4_K_M",
+      "object": "model",
+      "created": 1745727929,
+      "owned_by": "koboldcpp",
+      "permission": [],
+      "root": "koboldcpp"
+    }
+  ]
+}

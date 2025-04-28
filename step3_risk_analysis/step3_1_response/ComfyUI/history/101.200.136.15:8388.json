@@ -1,0 +1,4053 @@
+{
+  "7f3b86c5-b624-4561-a286-abfe9a6bfbba": {
+    "prompt": [
+      0,
+      "7f3b86c5-b624-4561-a286-abfe9a6bfbba",
+      {
+        "11": {
+          "inputs": {
+            "audio": "4月14日(2).MP3"
+          },
+          "class_type": "LoadAudio",
+          "_meta": {
+            "title": "这里上传音频"
+          }
+        },
+        "13": {
+          "inputs": {
+            "audio": [
+              "16",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "16": {
+          "inputs": {
+            "text": "哥哥，聚宝盆等级越高,赚钱速度越快哦,快试试吧",
+            "reference_text": "",
+            "pitch": "moderate",
+            "speed": "high",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "reference_audio": [
+              "11",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_AdvVoiceClone",
+          "_meta": {
+            "title": "SparkTTS 高级语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 16,
+            "last_link_id": 15,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  560.680908203125,
+                  168.3988800048828
+                ],
+                "size": [
+                  400,
+                  340
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 14
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      15
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "哥哥，聚宝盆等级越高,赚钱速度越快哦,快试试吧",
+                  "",
+                  "moderate",
+                  "high",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1021.2911376953125,
+                  175.8105010986328
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 15
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 11,
+                "type": "LoadAudio",
+                "pos": [
+                  198.7295379638672,
+                  179.18992614746094
+                ],
+                "size": [
+                  315,
+                  136
+                ],
+                "flags": {
+                  "collapsed": false
+                },
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "AUDIO",
+                    "type": "AUDIO",
+                    "links": [
+                      14
+                    ]
+                  }
+                ],
+                "title": "这里上传音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "LoadAudio"
+                },
+                "widgets_values": [
+                  "4月14日(2).MP3",
+                  "",
+                  {
+                    "hidden": false,
+                    "paused": false,
+                    "params": {}
+                  }
+                ]
+              }
+            ],
+            "links": [
+              [
+                14,
+                11,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                15,
+                16,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 1,
+                "offset": [
+                  192.20805708872922,
+                  -21.287620731683802
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "e30782219b85405ab63d558841f2e5af"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00001_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "7f3b86c5-b624-4561-a286-abfe9a6bfbba",
+            "timestamp": 1745304954377
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "7f3b86c5-b624-4561-a286-abfe9a6bfbba",
+            "timestamp": 1745304954382
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "7f3b86c5-b624-4561-a286-abfe9a6bfbba",
+            "timestamp": 1745305006769
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "fcf32cea-068b-4362-8a6b-7753ea854e28": {
+    "prompt": [
+      1,
+      "fcf32cea-068b-4362-8a6b-7753ea854e28",
+      {
+        "10": {
+          "inputs": {
+            "text": "这就给我安排偶遇啦",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "16",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "这里写需要克隆的文案"
+          }
+        },
+        "13": {
+          "inputs": {
+            "audio": [
+              "10",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "16": {
+          "inputs": {
+            "audio": "777777777777777777777.wav",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "17": {
+          "inputs": {
+            "image": "pasted/image.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "加载图像"
+          }
+        },
+        "18": {
+          "inputs": {
+            "image": "pasted/image.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "加载图像"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 18,
+            "last_link_id": 14,
+            "nodes": [
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1051.513427734375,
+                  194.4771728515625
+                ],
+                "size": [
+                  347.3065490722656,
+                  131.57626342773438
+                ],
+                "flags": {},
+                "order": 4,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 12
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 16,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  211.38833618164062,
+                  260.74365234375
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      14
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "777777777777777777777.wav",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 17,
+                "type": "LoadImage",
+                "pos": [
+                  604.2424926757812,
+                  316.5079040527344
+                ],
+                "size": [
+                  315,
+                  314
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": null
+                  },
+                  {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "LoadImage"
+                },
+                "widgets_values": [
+                  "pasted/image.png",
+                  "image",
+                  ""
+                ]
+              },
+              {
+                "id": 18,
+                "type": "LoadImage",
+                "pos": [
+                  604.2424926757812,
+                  316.5079040527344
+                ],
+                "size": [
+                  315,
+                  314
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": null
+                  },
+                  {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "LoadImage"
+                },
+                "widgets_values": [
+                  "pasted/image.png",
+                  "image",
+                  ""
+                ]
+              },
+              {
+                "id": 10,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  607.1085205078125,
+                  196.56866455078125
+                ],
+                "size": [
+                  420.49041748046875,
+                  473.1930847167969
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 14
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      12
+                    ]
+                  }
+                ],
+                "title": "这里写需要克隆的文案",
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "这就给我安排偶遇啦",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                12,
+                10,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ],
+              [
+                14,
+                16,
+                0,
+                10,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 1.3310000000000013,
+                "offset": [
+                  41.55429345739114,
+                  -37.68661701748154
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "e30782219b85405ab63d558841f2e5af"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00002_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "fcf32cea-068b-4362-8a6b-7753ea854e28",
+            "timestamp": 1745305236224
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "fcf32cea-068b-4362-8a6b-7753ea854e28",
+            "timestamp": 1745305236230
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "fcf32cea-068b-4362-8a6b-7753ea854e28",
+            "timestamp": 1745305243246
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "d42d5972-40fc-4881-80ac-c4e72d025f2c": {
+    "prompt": [
+      2,
+      "d42d5972-40fc-4881-80ac-c4e72d025f2c",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥哥，人家想你了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥哥，人家想你了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 1.771561000000001,
+                "offset": [
+                  -195.31901199916013,
+                  -20.632394659914997
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00003_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "d42d5972-40fc-4881-80ac-c4e72d025f2c",
+            "timestamp": 1745472055889
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "d42d5972-40fc-4881-80ac-c4e72d025f2c",
+            "timestamp": 1745472055890
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "d42d5972-40fc-4881-80ac-c4e72d025f2c",
+            "timestamp": 1745472064313
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "cb60c275-cf9d-4386-b72e-a69532af5be5": {
+    "prompt": [
+      3,
+      "cb60c275-cf9d-4386-b72e-a69532af5be5",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥。哥。。。人家想你了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥。哥。。。人家想你了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 2.3579476910000023,
+                "offset": [
+                  -392.5903093122608,
+                  -59.98551532250569
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00004_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "cb60c275-cf9d-4386-b72e-a69532af5be5",
+            "timestamp": 1745472088689
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "22"
+            ],
+            "prompt_id": "cb60c275-cf9d-4386-b72e-a69532af5be5",
+            "timestamp": 1745472088690
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "cb60c275-cf9d-4386-b72e-a69532af5be5",
+            "timestamp": 1745472098685
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "0dc61123-b8ca-4549-b8a1-9519875b81d7": {
+    "prompt": [
+      4,
+      "0dc61123-b8ca-4549-b8a1-9519875b81d7",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥~哥。。。人家想你了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥~哥。。。人家想你了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 2.3579476910000023,
+                "offset": [
+                  -447.72299970068354,
+                  -57.01683199389829
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00005_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "0dc61123-b8ca-4549-b8a1-9519875b81d7",
+            "timestamp": 1745472115315
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "22"
+            ],
+            "prompt_id": "0dc61123-b8ca-4549-b8a1-9519875b81d7",
+            "timestamp": 1745472115315
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "0dc61123-b8ca-4549-b8a1-9519875b81d7",
+            "timestamp": 1745472123544
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "88d748af-aebb-43c4-8f25-66ad52fbc134": {
+    "prompt": [
+      5,
+      "88d748af-aebb-43c4-8f25-66ad52fbc134",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥~哥~。。。人家想~你了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥~哥~。。。人家想~你了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 2.3579476910000023,
+                "offset": [
+                  -495.53036758994546,
+                  -36.77580929884792
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00006_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "88d748af-aebb-43c4-8f25-66ad52fbc134",
+            "timestamp": 1745472147361
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "22"
+            ],
+            "prompt_id": "88d748af-aebb-43c4-8f25-66ad52fbc134",
+            "timestamp": 1745472147362
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "88d748af-aebb-43c4-8f25-66ad52fbc134",
+            "timestamp": 1745472156462
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "ffbb3398-671f-4425-a7d7-c05c66bc6258": {
+    "prompt": [
+      6,
+      "ffbb3398-671f-4425-a7d7-c05c66bc6258",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥~哥~。。。人家想~你~~了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥~哥~。。。人家想~你~~了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 2.5937424601000028,
+                "offset": [
+                  -505.6316017729992,
+                  -62.106003414368075
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00007_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "ffbb3398-671f-4425-a7d7-c05c66bc6258",
+            "timestamp": 1745472169503
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "22"
+            ],
+            "prompt_id": "ffbb3398-671f-4425-a7d7-c05c66bc6258",
+            "timestamp": 1745472169503
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "ffbb3398-671f-4425-a7d7-c05c66bc6258",
+            "timestamp": 1745472179680
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "ba7cdda0-b183-4969-a16e-b974721a684d": {
+    "prompt": [
+      7,
+      "ba7cdda0-b183-4969-a16e-b974721a684d",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥~哥~。。。人家想~你~了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥~哥~。。。人家想~你~了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 2.3579476910000023,
+                "offset": [
+                  -492.75445590605284,
+                  -31.956518180978634
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00008_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "ba7cdda0-b183-4969-a16e-b974721a684d",
+            "timestamp": 1745472189360
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "22"
+            ],
+            "prompt_id": "ba7cdda0-b183-4969-a16e-b974721a684d",
+            "timestamp": 1745472189361
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "ba7cdda0-b183-4969-a16e-b974721a684d",
+            "timestamp": 1745472197690
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "1d8467e4-7f51-4b12-aa9e-d50fd0563044": {
+    "prompt": [
+      8,
+      "1d8467e4-7f51-4b12-aa9e-d50fd0563044",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥哥~。。。人家想~你~了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了。.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥哥~。。。人家想~你~了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 2.8531167061100033,
+                "offset": [
+                  -520.5766616468857,
+                  -66.99188837313861
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00009_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "1d8467e4-7f51-4b12-aa9e-d50fd0563044",
+            "timestamp": 1745472210487
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "22"
+            ],
+            "prompt_id": "1d8467e4-7f51-4b12-aa9e-d50fd0563044",
+            "timestamp": 1745472210488
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "1d8467e4-7f51-4b12-aa9e-d50fd0563044",
+            "timestamp": 1745472218411
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "b6ab29dc-188a-4fac-b841-70c0d7738d38": {
+    "prompt": [
+      9,
+      "b6ab29dc-188a-4fac-b841-70c0d7738d38",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了，然后我就觉得很对不住大家，所以我们这边的话又重新补录了大概一百四十多句，你们要喜欢的话呢，就可以去百度地图，搜索小镜子，就可以啦.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥哥~。。。人家想~你~了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥哥~。。。人家想~你~了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了，然后我就觉得很对不住大家，所以我们这边的话又重新补录了大概一百四十多句，你们要喜欢的话呢，就可以去百度地图，搜索小镜子，就可以啦.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 2.3579476910000023,
+                "offset": [
+                  -266.75598952045124,
+                  -42.47133516542037
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00010_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "b6ab29dc-188a-4fac-b841-70c0d7738d38",
+            "timestamp": 1745472578156
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "b6ab29dc-188a-4fac-b841-70c0d7738d38",
+            "timestamp": 1745472578157
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "b6ab29dc-188a-4fac-b841-70c0d7738d38",
+            "timestamp": 1745472585609
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "efcd14f9-6f6f-408f-ba52-f832b3268910": {
+    "prompt": [
+      10,
+      "efcd14f9-6f6f-408f-ba52-f832b3268910",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了，然后我就觉得很对不住大家，所以我们这边的话又重新补录了大概一百四十多句，你们要喜欢的话呢，就可以去百度地图，搜索小镜子，就可以啦.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "哥哥~。。。人家想~你~了。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  637.1766357421875
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "哥哥~。。。人家想~你~了。",
+                  "",
+                  3000,
+                  ""
+                ]
+              },
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了，然后我就觉得很对不住大家，所以我们这边的话又重新补录了大概一百四十多句，你们要喜欢的话呢，就可以去百度地图，搜索小镜子，就可以啦.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 2.3579476910000023,
+                "offset": [
+                  -266.75598952045124,
+                  -42.47133516542037
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00010_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "efcd14f9-6f6f-408f-ba52-f832b3268910",
+            "timestamp": 1745472593997
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "13",
+              "22",
+              "23"
+            ],
+            "prompt_id": "efcd14f9-6f6f-408f-ba52-f832b3268910",
+            "timestamp": 1745472593998
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "efcd14f9-6f6f-408f-ba52-f832b3268910",
+            "timestamp": 1745472593998
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "10b9ff14-6dbe-4bc3-92b1-c113a476fc4c": {
+    "prompt": [
+      11,
+      "10b9ff14-6dbe-4bc3-92b1-c113a476fc4c",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了，然后我就觉得很对不住大家，所以我们这边的话又重新补录了大概一百四十多句，你们要喜欢的话呢，就可以去百度地图，搜索小镜子，就可以啦.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "欢迎大哥来我直播间",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了，然后我就觉得很对不住大家，所以我们这边的话又重新补录了大概一百四十多句，你们要喜欢的话呢，就可以去百度地图，搜索小镜子，就可以啦.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  618.0524291992188
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "欢迎大哥来我直播间",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 1.1000000000000008,
+                "offset": [
+                  107.76967819080889,
+                  44.951528041768626
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00011_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "10b9ff14-6dbe-4bc3-92b1-c113a476fc4c",
+            "timestamp": 1745472672406
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "22"
+            ],
+            "prompt_id": "10b9ff14-6dbe-4bc3-92b1-c113a476fc4c",
+            "timestamp": 1745472672407
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "10b9ff14-6dbe-4bc3-92b1-c113a476fc4c",
+            "timestamp": 1745472681619
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  },
+  "e17132b6-3ba5-4830-a308-d02e626f78af": {
+    "prompt": [
+      12,
+      "e17132b6-3ba5-4830-a308-d02e626f78af",
+      {
+        "13": {
+          "inputs": {
+            "audio": [
+              "23",
+              0
+            ]
+          },
+          "class_type": "PreviewAudio",
+          "_meta": {
+            "title": "生成音频"
+          }
+        },
+        "22": {
+          "inputs": {
+            "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了，然后我就觉得很对不住大家，所以我们这边的话又重新补录了大概一百四十多句，你们要喜欢的话呢，就可以去百度地图，搜索小镜子，就可以啦.MP3",
+            "start_time": 0.0,
+            "duration": 0.0
+          },
+          "class_type": "VHS_LoadAudioUpload",
+          "_meta": {
+            "title": "Load Audio (Upload)🎥🅥🅗🅢"
+          }
+        },
+        "23": {
+          "inputs": {
+            "text": "大哥来我直播间，让我感觉蓬荜生辉，大哥请上座。",
+            "reference_text": "",
+            "max_tokens": 3000,
+            "batch_texts": "",
+            "reference_audio": [
+              "22",
+              0
+            ]
+          },
+          "class_type": "SparkTTS_VoiceClone",
+          "_meta": {
+            "title": "SparkTTS 语音克隆 🔊"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "5cfbc6bf-9e7d-46e7-bff7-ebdcfa83f1bb",
+            "revision": 0,
+            "last_node_id": 23,
+            "last_link_id": 21,
+            "nodes": [
+              {
+                "id": 22,
+                "type": "VHS_LoadAudioUpload",
+                "pos": [
+                  290.2373352050781,
+                  261.7970275878906
+                ],
+                "size": [
+                  249.642578125,
+                  130
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      19,
+                      20
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui-videohelpersuite",
+                  "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+                  "Node name for S&R": "VHS_LoadAudioUpload"
+                },
+                "widgets_values": {
+                  "audio": "最近我看到很多评论区的人都在说，小镜子的语音包太少了，然后我就觉得很对不住大家，所以我们这边的话又重新补录了大概一百四十多句，你们要喜欢的话呢，就可以去百度地图，搜索小镜子，就可以啦.MP3",
+                  "start_time": 0,
+                  "duration": 0,
+                  "choose audio to upload": "image"
+                }
+              },
+              {
+                "id": 16,
+                "type": "SparkTTS_AdvVoiceClone",
+                "pos": [
+                  168.4586181640625,
+                  618.0524291992188
+                ],
+                "size": [
+                  473,
+                  548
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 4,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 19
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": []
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_AdvVoiceClone",
+                  "aux_id": "1038lab/ComfyUI-SparkTTS"
+                },
+                "widgets_values": [
+                  "\"来！所有家人们看这里！三太子火鸡面今天就是来给你们撒钱的！平时超市买一包的钱，今天在我这儿能抱走12包！数学好的算算——19块9除以12，一包才1块6毛钱！）新号开播就要交朋友！\n这个酱！云南辣椒配18种香料熬了3小时的秘制酱，往这劲道宽面上一浇，芝麻海苔碎这么一撒——香得隔壁小孩能把碗舔穿！开水泡5分钟，比煮泡面还省事，半夜饿得前胸贴后背？两分钟给你整出满屋子香味！\n知道你们怕啥，一怕贵？超市价五六块的面我砍到脚底板！二怕不好吃？12包里塞两包试吃装，不好吃你留着当零嘴，剩下的我跪着求你来退！三怕不健康？配料表！小麦粉、辣椒、芝麻...你数得出添加剂算我输！\n最后8单！8单之后马上跳回39块9十包！那些犹豫的家人，明天原价买可别来我直播间哭！还有20秒！能付款的赶紧冲1号链接！付款失败的赶紧换WiFi！\n已经抢到的家人打波'薅到了'——哎看到没？这波手快的都笑开花了！3、2、1...链接变灰！没抢到的扣波'意难平'，我给你们记着，但说好了啊，明天再来可没这冤大头价了！\"\n",
+                  "",
+                  "moderate",
+                  "moderate",
+                  3000,
+                  "",
+                  0.8,
+                  50,
+                  0.95
+                ]
+              },
+              {
+                "id": 13,
+                "type": "PreviewAudio",
+                "pos": [
+                  1348.513427734375,
+                  191.4771728515625
+                ],
+                "size": [
+                  315,
+                  88
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 21
+                  }
+                ],
+                "outputs": [],
+                "title": "生成音频",
+                "properties": {
+                  "cnr_id": "comfy-core",
+                  "ver": "0.3.28",
+                  "Node name for S&R": "PreviewAudio"
+                },
+                "widgets_values": [
+                  ""
+                ]
+              },
+              {
+                "id": 23,
+                "type": "SparkTTS_VoiceClone",
+                "pos": [
+                  690.748046875,
+                  118.67926025390625
+                ],
+                "size": [
+                  526,
+                  572
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "reference_audio",
+                    "type": "AUDIO",
+                    "link": 20
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                      21
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "Comfyui-Spark-TTS",
+                  "ver": "4a2df5228afb64a876a2a1469bc0889754851351",
+                  "Node name for S&R": "SparkTTS_VoiceClone"
+                },
+                "widgets_values": [
+                  "大哥来我直播间，让我感觉蓬荜生辉，大哥请上座。",
+                  "",
+                  3000,
+                  ""
+                ]
+              }
+            ],
+            "links": [
+              [
+                19,
+                22,
+                0,
+                16,
+                0,
+                "AUDIO"
+              ],
+              [
+                20,
+                22,
+                0,
+                23,
+                0,
+                "AUDIO"
+              ],
+              [
+                21,
+                23,
+                0,
+                13,
+                0,
+                "AUDIO"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 1.1000000000000008,
+                "offset": [
+                  -118.5939581728273,
+                  45.86061895085954
+                ]
+              },
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "71f2cc12452c42039e79f56cbdc69b78"
+      },
+      [
+        "13"
+      ]
+    ],
+    "outputs": {
+      "13": {
+        "audio": [
+          {
+            "filename": "ComfyUI_temp_piynt_00012_.flac",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "e17132b6-3ba5-4830-a308-d02e626f78af",
+            "timestamp": 1745472989110
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "22"
+            ],
+            "prompt_id": "e17132b6-3ba5-4830-a308-d02e626f78af",
+            "timestamp": 1745472989111
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "e17132b6-3ba5-4830-a308-d02e626f78af",
+            "timestamp": 1745473007638
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "13": {
+        "node_id": "13",
+        "display_node": "13",
+        "parent_node": null,
+        "real_node_id": "13"
+      }
+    }
+  }
+}

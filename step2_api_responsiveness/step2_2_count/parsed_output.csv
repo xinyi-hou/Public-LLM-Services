@@ -1,0 +1,692 @@
+framework,api_endpoint,status,count
+Ollama,/api/chat,403,4
+Ollama,/api/tags,403,4
+Ollama,/api/push,403,3
+Ollama,/api/copy,403,1
+Ollama,/api/create,403,1
+Ollama,/api/pull,403,3
+Ollama,/api/show,403,1
+Ollama,/api/ps,403,1
+Ollama,/api/embed,403,1
+Ollama,/api/generate,403,4
+Ollama,/api/delete,403,2
+Ollama,/api/running,403,1
+Ollama,/api/version,403,1
+Ollama,/api/generate,404,92
+Ollama,/api/ps,200,8
+Ollama,/api/embed,401,2
+Ollama,/api/delete,200,109
+Ollama,/api/generate,200,220
+Ollama,/api/running,200,9
+Ollama,/api/version,200,9
+Ollama,/api/tags,200,289
+Ollama,/api/pull,200,256
+Ollama,/api/create,200,33
+Ollama,/api/copy,200,80
+Ollama,/api/push,200,208
+Ollama,/api/chat,200,220
+Ollama,/api/show,200,36
+Ollama,/api/generate,401,4
+Ollama,/api/chat,404,86
+Ollama,/api/generate,400,14
+Ollama,/api/generate,500,2
+Ollama,/api/chat,500,2
+Ollama,/api/chat,400,17
+Ollama,/api/delete,404,53
+Ollama,/api/copy,404,22
+Ollama,/api/show,404,20
+Ollama,/api/tags,500,3
+Ollama,/api/tags,400,13
+Ollama,/api/embed,200,10
+Ollama,/api/pull,400,14
+Ollama,/api/push,400,11
+Ollama,/api/tags,401,1
+Ollama,/api/delete,400,9
+Ollama,/api/embed,404,9
+Ollama,/api/tags,404,3
+Ollama,/api/copy,500,5
+Ollama,/api/running,404,6
+Ollama,/api/copy,400,11
+Ollama,/api/show,400,7
+Text Generate WebUI,/v1/chat/completions,403,72
+Text Generate WebUI,/v1/internal/logits,403,23
+Text Generate WebUI,/v1/completions,403,24
+Text Generate WebUI,/v1/internal/model/list,404,37
+Text Generate WebUI,/v1/chat/completions,404,48
+Text Generate WebUI,/v1/completions,404,16
+Text Generate WebUI,/v1/internal/logits,404,16
+Text Generate WebUI,/v1/completions,400,2
+Text Generate WebUI,/v1/chat/completions,400,6
+Text Generate WebUI,/v1/completions,502,1
+Text Generate WebUI,/v1/chat/completions,502,3
+Text Generate WebUI,/v1/internal/logits,400,2
+Text Generate WebUI,/v1/completions,405,2
+Text Generate WebUI,/v1/chat/completions,405,6
+Text Generate WebUI,/v1/internal/model/list,400,2
+Text Generate WebUI,/v1/internal/logits,502,1
+Text Generate WebUI,/v1/internal/model/list,502,1
+Text Generate WebUI,/v1/internal/logits,405,2
+Text Generate WebUI,/v1/internal/model/list,200,2
+Ollama,/api/version,400,2
+Ollama,/api/create,400,6
+Ollama,/api/embed,400,3
+Ollama,/api/running,400,3
+Ollama,/api/ps,400,2
+Ollama,/api/generate,Error,541
+Ollama,/api/pull,Error,577
+Ollama,/api/show,Error,721
+Ollama,/api/push,Error,609
+Ollama,/api/version,Error,760
+Ollama,/api/chat,Error,546
+Ollama,/api/create,Error,739
+Ollama,/api/delete,Error,643
+Ollama,/api/ps,Error,760
+Ollama,/api/embed,Error,751
+Ollama,/api/tags,Error,559
+Ollama,/api/copy,Error,684
+Ollama,/api/running,Error,755
+Ollama,/api/generate,502,1
+Ollama,/api/chat,502,1
+Ollama,/api/pull,404,2
+Ollama,/api/show,401,1
+Ollama,/api/push,404,3
+Ollama,/api/tags,502,1
+Ollama,/api/push,401,1
+Text Generate WebUI,/v1/chat/completions,Error,993
+Text Generate WebUI,/v1/internal/logits,Error,332
+Text Generate WebUI,/v1/completions,Error,331
+Text Generate WebUI,/v1/internal/model/list,Error,331
+Text Generate WebUI,/v1/internal/model/list,403,3
+Ollama,/api/delete,500,1
+Ollama,/api/create,404,1
+Text Generate WebUI,/v1/completions,401,1
+Text Generate WebUI,/v1/chat/completions,401,3
+Text Generate WebUI,/v1/internal/logits,401,1
+Text Generate WebUI,/v1/internal/model/list,401,1
+ComfyUI,/upload/image,Error,308
+ComfyUI,/queue,Error,716
+ComfyUI,/upload/image,400,34
+ComfyUI,/embeddings,200,41
+ComfyUI,/extensions,200,39
+ComfyUI,/history/8b918008-751f-414c-9575-7174e841ceac,200,40
+ComfyUI,/history,200,41
+ComfyUI,/prompt,200,13
+ComfyUI,/system_stats,200,18
+ComfyUI,/extensions,Error,300
+ComfyUI,/embeddings,Error,295
+ComfyUI,/history,Error,294
+ComfyUI,/view,Error,324
+ComfyUI,/history/8b918008-751f-414c-9575-7174e841ceac,Error,296
+ComfyUI,/interrupt,Error,359
+ComfyUI,/system_stats,Error,332
+ComfyUI,/object_info,Error,347
+ComfyUI,/prompt,Error,340
+ComfyUI,/object_info/Ksampler,Error,353
+ComfyUI,/view,404,27
+ComfyUI,/queue,200,6
+ComfyUI,/object_info/Ksampler,200,7
+ComfyUI,/history,404,12
+ComfyUI,/object_info,200,9
+ComfyUI,/interrupt,404,3
+ComfyUI,/history,401,7
+ComfyUI,/history,502,1
+ComfyUI,/history,400,4
+ComfyUI,/embeddings,404,11
+ComfyUI,/embeddings,401,7
+ComfyUI,/embeddings,502,1
+ComfyUI,/embeddings,400,4
+ComfyUI,/history/8b918008-751f-414c-9575-7174e841ceac,401,7
+ComfyUI,/extensions,401,6
+ComfyUI,/history/8b918008-751f-414c-9575-7174e841ceac,404,11
+ComfyUI,/history/8b918008-751f-414c-9575-7174e841ceac,502,1
+ComfyUI,/history/8b918008-751f-414c-9575-7174e841ceac,400,4
+ComfyUI,/history,504,3
+ComfyUI,/extensions,400,4
+ComfyUI,/extensions,404,9
+ComfyUI,/upload/image,404,9
+ComfyUI,/upload/image,401,6
+ComfyUI,/view,401,4
+ComfyUI,/extensions,502,1
+ComfyUI,/system_stats,404,7
+ComfyUI,/upload/image,502,1
+ComfyUI,/embeddings,504,3
+ComfyUI,/view,400,2
+ComfyUI,/system_stats,401,3
+ComfyUI,/prompt,404,5
+ComfyUI,/object_info,404,4
+ComfyUI,/upload/image,200,2
+ComfyUI,/history/8b918008-751f-414c-9575-7174e841ceac,504,3
+ComfyUI,/object_info/Ksampler,404,2
+ComfyUI,/queue,404,2
+ComfyUI,/view,502,1
+ComfyUI,/view,200,3
+ComfyUI,/extensions,504,3
+ComfyUI,/prompt,401,3
+ComfyUI,/object_info,401,2
+ComfyUI,/upload/image,504,2
+ComfyUI,/system_stats,400,1
+ComfyUI,/view,504,1
+ComfyUI,/system_stats,502,1
+ComfyUI,/prompt,502,1
+GPT4All,/v1/models/<name>,404,15
+GPT4All,/v1/models,404,3
+GPT4All,/v1/chat/completions,404,3
+GPT4All,/v1/completions,404,3
+GPT4All,/v1/models,Error,234
+GPT4All,/v1/models/<name>,Error,233
+GPT4All,/v1/chat/completions,Error,234
+GPT4All,/v1/completions,Error,235
+GPT4All,/v1/models,200,11
+GPT4All,/v1/models,400,1
+GPT4All,/v1/models,500,1
+GPT4All,/v1/models,401,3
+GPT4All,/v1/models/<name>,401,3
+GPT4All,/v1/completions,401,4
+GPT4All,/v1/chat/completions,401,4
+GPT4All,/v1/models/<name>,400,1
+GPT4All,/v1/completions,200,8
+GPT4All,/v1/completions,400,1
+GPT4All,/v1/chat/completions,200,9
+GPT4All,/v1/chat/completions,400,1
+GPT4All,/v1/models/<name>,500,1
+GPT4All,/v1/completions,500,2
+GPT4All,/v1/chat/completions,500,2
+Gradio,/predict,404,71
+Gradio,/auth,404,70
+Gradio,/logs,404,71
+Gradio,/settings,404,70
+Gradio,/launch,404,71
+Gradio,/status,404,71
+Gradio,/predict,Error,294
+Gradio,/logs,Error,294
+Gradio,/launch,Error,294
+Gradio,/auth,Error,295
+Gradio,/status,Error,294
+Gradio,/settings,Error,294
+Gradio,/launch,400,8
+Gradio,/status,400,8
+Gradio,/predict,400,8
+Gradio,/logs,400,8
+Gradio,/auth,400,8
+Gradio,/settings,400,8
+Gradio,/settings,405,1
+Jupyter Notebook,/api/contents/notebooks/uploaded_notebook.ipynb,403,83
+Jupyter Notebook,/api/kernels/12345,404,25
+Jupyter Notebook,/api/kernelspecs/python3,403,10
+Jupyter Notebook,/api,200,53
+Jupyter Notebook,/api/contents,403,50
+Jupyter Notebook,/api/clusters,404,2
+Jupyter Notebook,/api/contents/notebooks/example.ipynb,403,47
+Jupyter Notebook,/api/sessions,403,9
+Jupyter Notebook,/api/kernels,403,31
+Jupyter Notebook,/api/sessions/abcd1234,403,1
+Jupyter Notebook,/api/sessions/abdc1234,404,2
+Jupyter Notebook,/api/kernelspecs,403,16
+Jupyter Notebook,/api,400,11
+Jupyter Notebook,/api/kernelspecs/python3,400,2
+Jupyter Notebook,/api/contents,400,11
+Jupyter Notebook,/api/contents/notebooks/example.ipynb,400,10
+Jupyter Notebook,/api/clusters,400,1
+Jupyter Notebook,/api/kernels/12345,400,2
+Jupyter Notebook,/api/sessions,400,2
+Jupyter Notebook,/api/sessions/abcd1234,Error,377
+Jupyter Notebook,/api/sessions,404,2
+Jupyter Notebook,/api/kernelspecs,400,2
+Jupyter Notebook,/api/kernelspecs,404,3
+Jupyter Notebook,/api/contents/notebooks/example.ipynb,404,10
+Jupyter Notebook,/api/contents/notebooks/uploaded_notebook.ipynb,400,17
+Jupyter Notebook,/api/sessions/abdc1234,400,1
+Jupyter Notebook,/api/kernels,404,6
+Jupyter Notebook,/api/contents/notebooks/uploaded_notebook.ipynb,404,13
+Jupyter Notebook,/api,404,10
+Jupyter Notebook,/api/sessions/abcd1234,404,1
+Jupyter Notebook,/api/contents,404,10
+Jupyter Notebook,/api/kernelspecs/python3,404,1
+Jupyter Notebook,/api/kernels,400,7
+Jupyter Notebook,/api,Error,305
+Jupyter Notebook,/api/kernels,Error,335
+Jupyter Notebook,/api/sessions/abdc1234,Error,376
+Jupyter Notebook,/api/kernelspecs/python3,Error,366
+Jupyter Notebook,/api/kernelspecs,Error,358
+Jupyter Notebook,/api/contents/notebooks/example.ipynb,Error,312
+Jupyter Notebook,/api/contents/notebooks/uploaded_notebook.ipynb,Error,643
+Jupyter Notebook,/api/sessions,Error,745
+Jupyter Notebook,/api/clusters,Error,376
+Jupyter Notebook,/api/kernels/12345,Error,352
+Jupyter Notebook,/api/contents,Error,308
+Jupyter Notebook,/api/contents/notebooks/uploaded_notebook.ipynb,405,2
+Llamacpp,/v1/models/{model_id},404,16
+Llamacpp,/detokenize,500,37
+Llamacpp,/health,200,8
+Llamacpp,/tokenize,200,41
+Llamacpp,/v1/models,200,18
+Llamacpp,/completion,Error,249
+Llamacpp,/v1/models/{model_id},Error,288
+Llamacpp,/detokenize,Error,251
+Llamacpp,/embedding,Error,256
+Llamacpp,/v1/models,Error,281
+Llamacpp,/completion,200,38
+Llamacpp,/health,Error,293
+Llamacpp,/v1/completions,Error,273
+Llamacpp,/v1/chat/completions,Error,266
+Llamacpp,/tokenize,Error,248
+Llamacpp,/v1/chat/completions,200,24
+Llamacpp,/embedding,501,11
+Llamacpp,/completion,400,3
+Llamacpp,/completion,403,6
+Llamacpp,/completion,404,4
+Llamacpp,/tokenize,403,6
+Llamacpp,/v1/completions,200,7
+Llamacpp,/tokenize,404,3
+Llamacpp,/tokenize,400,3
+Llamacpp,/completion,401,4
+Llamacpp,/completion,502,1
+Llamacpp,/tokenize,401,4
+Llamacpp,/detokenize,400,3
+Llamacpp,/detokenize,403,6
+Llamacpp,/embedding,200,19
+Llamacpp,/detokenize,401,4
+Llamacpp,/detokenize,404,3
+Llamacpp,/embedding,404,3
+Llamacpp,/embedding,400,5
+Llamacpp,/v1/chat/completions,404,3
+Llamacpp,/embedding,403,6
+Llamacpp,/v1/chat/completions,400,2
+Llamacpp,/embedding,401,4
+Llamacpp,/v1/completions,400,2
+Llamacpp,/v1/chat/completions,401,2
+Llamacpp,/v1/chat/completions,403,6
+Llamacpp,/v1/completions,404,15
+Llamacpp,/embedding,502,1
+Llamacpp,/v1/completions,401,2
+Llamacpp,/v1/completions,403,5
+Llamacpp,/v1/models,404,4
+Llamacpp,/v1/chat/completions,502,1
+Llamacpp,/detokenize,200,1
+Llamacpp,/v1/models,400,1
+Llamacpp,/v1/chat/completions,500,1
+Llamacpp,/v1/models,403,1
+Llamacpp,/health,404,3
+Llamacpp,/v1/models/{model_id},400,1
+Llamacpp,/health,400,1
+Llamacpp,/v1/completions,502,1
+Jan,/v1/files/file_id,404,13
+Jan,/v1/audio/transcriptions,404,28
+Jan,/v1/moderations,404,4
+Jan,/v1/fine_tuning/jobs/job_id,404,22
+Jan,/v1/models,404,5
+Jan,/v1/embeddings,404,29
+Jan,/v1/files,404,13
+Jan,/v1/audio/translations,404,28
+Jan,/v1/images/edits,404,29
+Jan,/v1/images/variations,404,30
+Jan,/v1/models/{model_id},404,3
+Jan,/v1/audio/speech,404,24
+Jan,/v1/completions,404,29
+Jan,/v1/chat/completions,404,31
+Jan,/v1/images/generations,404,31
+Jan,/v1/chat/completions,400,17
+Jan,/v1/images/generations,419,2
+Jan,/v1/images/variations,419,2
+Jan,/v1/audio/translations,419,1
+Jan,/v1/chat/completions,Error,202
+Jan,/v1/chat/completions,419,2
+Jan,/v1/images/variations,Error,207
+Jan,/v1/images/generations,Error,204
+Jan,/v1/embeddings,Error,204
+Jan,/v1/completions,Error,203
+Jan,/v1/audio/translations,Error,212
+Jan,/v1/images/edits,Error,208
+Jan,/v1/audio/transcriptions,Error,213
+Jan,/v1/files,Error,234
+Jan,/v1/audio/speech,Error,217
+Jan,/v1/models,Error,251
+Jan,/v1/models/{model_id},Error,254
+Jan,/v1/files/file_id,Error,238
+Jan,/v1/moderations,Error,250
+Jan,/v1/fine_tuning/jobs/job_id,Error,224
+Jan,/v1/images/edits,419,2
+Jan,/v1/completions,419,2
+Jan,/v1/audio/speech,419,1
+Jan,/v1/fine_tuning/jobs/job_id,200,4
+Jan,/v1/embeddings,419,2
+Jan,/v1/files,200,4
+Jan,/v1/chat/completions,405,3
+Jan,/v1/completions,400,17
+Jan,/v1/chat/completions,200,3
+Jan,/v1/completions,200,3
+Jan,/v1/embeddings,400,16
+Jan,/v1/images/generations,400,15
+Jan,/v1/completions,405,3
+Jan,/v1/files/file_id,200,3
+Jan,/v1/images/edits,400,13
+Jan,/v1/images/variations,400,13
+Jan,/v1/audio/transcriptions,400,10
+Jan,/v1/audio/translations,400,11
+Jan,/v1/embeddings,405,3
+Jan,/v1/embeddings,200,3
+Jan,/v1/completions,500,1
+Jan,/v1/models/{model_id},200,1
+Jan,/v1/images/generations,405,3
+Jan,/v1/embeddings,500,1
+Jan,/v1/images/edits,405,3
+Jan,/v1/images/variations,405,3
+Jan,/v1/images/generations,200,3
+Jan,/v1/audio/transcriptions,405,3
+Jan,/v1/audio/translations,405,3
+Jan,/v1/images/edits,200,3
+Jan,/v1/images/variations,200,3
+Jan,/v1/audio/speech,400,10
+Jan,/v1/audio/transcriptions,200,3
+Jan,/v1/moderations,419,1
+Jan,/v1/audio/speech,405,3
+Jan,/v1/audio/translations,200,3
+Jan,/v1/fine_tuning/jobs/job_id,400,8
+Jan,/v1/audio/speech,200,3
+Jan,/v1/files,400,7
+Jan,/v1/audio/transcriptions,419,1
+Jan,/v1/files/file_id,400,4
+Jan,/v1/moderations,200,1
+Jan,/v1/moderations,400,2
+Jan,/v1/models,200,1
+Jan,/v1/models,400,1
+NextChat,/v1/files,404,5
+NextChat,/v1/embeddings,404,58
+NextChat,/v1/completions,404,62
+NextChat,/v1/images/generations,404,52
+NextChat,/v1/models,404,2
+NextChat,/v1/images/edits,404,44
+NextChat,/v1/fine_tuning/jobs/job_id,404,7
+NextChat,/v1/audio/translations,404,20
+NextChat,/v1/chat/completions,404,66
+NextChat,/v1/files/file_id,404,3
+NextChat,/v1/images/variations,404,34
+NextChat,/v1/audio/transcriptions,404,24
+NextChat,/v1/models/{model_id},404,2
+NextChat,/v1/moderations,404,2
+NextChat,/v1/audio/speech,404,11
+NextChat,/v1/chat/completions,401,1
+NextChat,/v1/chat/completions,Error,309
+NextChat,/v1/embeddings,Error,317
+NextChat,/v1/completions,Error,313
+NextChat,/v1/images/generations,Error,323
+NextChat,/v1/models,Error,375
+NextChat,/v1/moderations,Error,375
+NextChat,/v1/models/{model_id},Error,375
+NextChat,/v1/images/variations,Error,342
+NextChat,/v1/audio/translations,Error,357
+NextChat,/v1/audio/transcriptions,Error,353
+NextChat,/v1/images/edits,Error,331
+NextChat,/v1/fine_tuning/jobs/job_id,Error,370
+NextChat,/v1/files/file_id,Error,374
+NextChat,/v1/files,Error,372
+NextChat,/v1/audio/speech,Error,366
+NextChat,/v1/completions,401,1
+NextChat,/v1/chat/completions,403,1
+NextChat,/v1/embeddings,401,1
+NextChat,/v1/completions,403,1
+NextChat,/v1/embeddings,403,1
+NextChat,/v1/images/generations,401,1
+NextChat,/v1/images/generations,403,1
+NextChat,/v1/images/edits,401,1
+NextChat,/v1/images/edits,403,1
+NextChat,/v1/images/variations,403,1
+Llamafile,/v1/images/generations,Error,168
+Llamafile,/v1/completions,Error,168
+Llamafile,/v1/audio/translations,Error,181
+Llamafile,/v1/images/variations,Error,170
+Llamafile,/v1/files/file_id,Error,192
+Llamafile,/v1/chat/completions,Error,169
+Llamafile,/v1/fine_tuning/jobs/job_id,Error,185
+Llamafile,/v1/images/edits,Error,168
+Llamafile,/v1/embeddings,Error,169
+Llamafile,/v1/models,Error,193
+Llamafile,/v1/moderations,Error,193
+Llamafile,/v1/audio/transcriptions,Error,178
+Llamafile,/v1/audio/speech,Error,184
+Llamafile,/v1/models/{model_id},Error,194
+Llamafile,/v1/files,Error,189
+Llamafile,/v1/completions,404,31
+Llamafile,/v1/chat/completions,200,29
+Llamafile,/v1/chat/completions,401,1
+Llamafile,/v1/images/generations,404,31
+Llamafile,/v1/embeddings,200,28
+Llamafile,/v1/images/edits,404,31
+Llamafile,/v1/images/variations,404,29
+Llamafile,/v1/embeddings,503,2
+Llamafile,/v1/audio/transcriptions,404,21
+Llamafile,/v1/audio/translations,404,18
+Llamafile,/v1/audio/speech,404,15
+Llamafile,/v1/fine_tuning/jobs/job_id,404,14
+Llamafile,/v1/files,404,10
+Llamafile,/v1/files/file_id,404,7
+Llamafile,/v1/moderations,404,6
+Llamafile,/v1/models,200,6
+Llamafile,/v1/models/{model_id},404,5
+LM studio,/v1/fine_tuning/jobs/job_id,200,3
+LM studio,/v1/embeddings,200,1
+LM studio,/v1/images/variations,200,1
+LM studio,/v1/audio/speech,200,1
+LM studio,/v1/models,200,4
+LM studio,/v1/files/file_id,200,3
+LM studio,/v1/completions,200,1
+LM studio,/v1/chat/completions,200,1
+LM studio,/v1/images/edits,200,1
+LM studio,/v1/images/generations,200,2
+LM studio,/v1/files,200,3
+LM studio,/v1/audio/transcriptions,200,1
+LM studio,/v1/moderations,200,1
+LM studio,/v1/models/{model_id},200,3
+LM studio,/v1/chat/completions,Error,127
+LM studio,/v1/chat/completions,400,7
+LM studio,/v1/audio/translations,200,1
+LM studio,/v1/chat/completions,500,1
+LM studio,/v1/chat/completions,404,8
+LM studio,/v1/embeddings,Error,127
+LM studio,/v1/images/generations,Error,127
+LM studio,/v1/completions,Error,127
+LM studio,/v1/files/file_id,Error,127
+LM studio,/v1/models,Error,127
+LM studio,/v1/models/{model_id},Error,127
+LM studio,/v1/moderations,Error,127
+LM studio,/v1/audio/transcriptions,Error,128
+LM studio,/v1/audio/translations,Error,128
+LM studio,/v1/images/edits,Error,127
+LM studio,/v1/images/variations,Error,127
+LM studio,/v1/files,Error,127
+LM studio,/v1/audio/speech,Error,127
+LM studio,/v1/fine_tuning/jobs/job_id,Error,127
+LM studio,/v1/chat/completions,405,3
+LM studio,/v1/completions,400,7
+LM studio,/v1/completions,405,3
+LM studio,/v1/chat/completions,403,14
+LM studio,/v1/embeddings,400,7
+LM studio,/v1/embeddings,405,3
+LM studio,/v1/completions,404,8
+LM studio,/v1/images/generations,400,7
+LM studio,/v1/embeddings,404,9
+LM studio,/v1/completions,500,1
+LM studio,/v1/embeddings,403,14
+LM studio,/v1/completions,403,14
+LM studio,/v1/images/edits,400,7
+LM studio,/v1/images/generations,404,8
+LM studio,/v1/images/variations,400,7
+LM studio,/v1/images/edits,404,9
+LM studio,/v1/images/generations,403,14
+LM studio,/v1/images/generations,405,3
+LM studio,/v1/images/variations,404,9
+LM studio,/v1/images/edits,405,3
+LM studio,/v1/audio/transcriptions,404,8
+LM studio,/v1/images/edits,403,14
+LM studio,/v1/audio/translations,404,9
+LM studio,/v1/audio/transcriptions,400,7
+LM studio,/v1/audio/speech,404,9
+LM studio,/v1/audio/translations,400,7
+LM studio,/v1/chat/completions,401,1
+LM studio,/v1/images/variations,405,3
+LM studio,/v1/audio/speech,400,7
+LM studio,/v1/audio/transcriptions,405,3
+LM studio,/v1/completions,401,1
+LM studio,/v1/fine_tuning/jobs/job_id,404,23
+LM studio,/v1/audio/translations,405,2
+LM studio,/v1/images/variations,403,14
+LM studio,/v1/audio/speech,405,3
+LM studio,/v1/fine_tuning/jobs/job_id,400,7
+LM studio,/v1/audio/transcriptions,403,14
+LM studio,/v1/audio/translations,403,14
+LM studio,/v1/audio/speech,403,14
+LM studio,/v1/files,404,23
+LM studio,/v1/files/file_id,400,7
+LM studio,/v1/files/file_id,404,23
+LM studio,/v1/embeddings,401,1
+LM studio,/v1/images/generations,401,1
+LM studio,/v1/images/edits,401,1
+LM studio,/v1/fine_tuning/jobs/job_id,403,1
+LM studio,/v1/images/variations,401,1
+LM studio,/v1/moderations,400,7
+LM studio,/v1/audio/transcriptions,401,1
+LM studio,/v1/models,400,7
+LM studio,/v1/files,403,1
+LM studio,/v1/files,400,7
+LM studio,/v1/audio/translations,401,1
+LM studio,/v1/moderations,403,14
+LM studio,/v1/moderations,404,9
+LM studio,/v1/models/{model_id},400,7
+LM studio,/v1/models,404,22
+LM studio,/v1/models/{model_id},404,23
+LM studio,/v1/audio/speech,401,1
+LM studio,/v1/moderations,405,3
+LM studio,/v1/files/file_id,403,1
+LM studio,/v1/fine_tuning/jobs/job_id,401,1
+LM studio,/v1/files,401,1
+LM studio,/v1/models,403,1
+LM studio,/v1/models/{model_id},403,1
+LM studio,/v1/files/file_id,401,1
+LM studio,/v1/moderations,401,1
+LM studio,/v1/models,401,1
+LM studio,/v1/models/{model_id},401,1
+VLLM,/v1/embeddings,404,55
+VLLM,/v1/chat/completions,404,55
+VLLM,/v1/completions,404,55
+VLLM,/v1/fine_tuning/jobs/job_id,404,23
+VLLM,/v1/images/generations,404,55
+VLLM,/v1/images/edits,404,54
+VLLM,/v1/audio/translations,404,39
+VLLM,/v1/audio/speech,404,33
+VLLM,/v1/chat/completions,502,1
+VLLM,/v1/images/variations,404,50
+VLLM,/v1/audio/transcriptions,404,43
+VLLM,/v1/moderations,404,8
+VLLM,/v1/models,404,8
+VLLM,/v1/files/file_id,200,4
+VLLM,/v1/models/{model_id},404,7
+VLLM,/v1/files,200,8
+VLLM,/v1/chat/completions,400,5
+VLLM,/v1/files,500,3
+VLLM,/v1/images/generations,Error,203
+VLLM,/v1/embeddings,Error,202
+VLLM,/v1/fine_tuning/jobs/job_id,Error,248
+VLLM,/v1/images/edits,Error,206
+VLLM,/v1/completions,Error,202
+VLLM,/v1/chat/completions,Error,203
+VLLM,/v1/audio/translations,Error,223
+VLLM,/v1/audio/transcriptions,Error,217
+VLLM,/v1/images/variations,Error,210
+VLLM,/v1/audio/speech,Error,232
+VLLM,/v1/models/{model_id},Error,267
+VLLM,/v1/files,Error,255
+VLLM,/v1/models,Error,266
+VLLM,/v1/files/file_id,Error,261
+VLLM,/v1/moderations,Error,264
+VLLM,/v1/chat/completions,401,1
+VLLM,/v1/completions,502,1
+VLLM,/v1/chat/completions,403,4
+VLLM,/v1/completions,403,4
+VLLM,/v1/completions,401,1
+VLLM,/v1/chat/completions,405,2
+VLLM,/v1/chat/completions,501,2
+VLLM,/v1/completions,400,5
+VLLM,/v1/embeddings,400,5
+VLLM,/v1/embeddings,401,1
+VLLM,/v1/embeddings,502,1
+VLLM,/v1/embeddings,403,4
+VLLM,/v1/files/file_id,500,3
+VLLM,/v1/completions,405,3
+VLLM,/v1/embeddings,405,3
+VLLM,/v1/completions,500,1
+VLLM,/v1/images/generations,405,2
+VLLM,/v1/completions,501,2
+VLLM,/v1/images/generations,400,5
+VLLM,/v1/embeddings,200,1
+VLLM,/v1/images/edits,405,2
+VLLM,/v1/images/edits,400,4
+VLLM,/v1/images/variations,405,2
+VLLM,/v1/embeddings,501,2
+VLLM,/v1/images/generations,500,1
+VLLM,/v1/images/generations,502,1
+VLLM,/v1/images/generations,401,1
+VLLM,/v1/chat/completions,200,1
+VLLM,/v1/images/variations,400,4
+VLLM,/v1/images/generations,501,2
+VLLM,/v1/images/edits,502,1
+VLLM,/v1/images/edits,501,2
+VLLM,/v1/images/generations,403,4
+VLLM,/v1/images/variations,502,1
+VLLM,/v1/images/edits,401,1
+VLLM,/v1/audio/transcriptions,400,4
+VLLM,/v1/images/edits,403,4
+VLLM,/v1/files,404,6
+VLLM,/v1/audio/translations,400,5
+VLLM,/v1/files/file_id,404,4
+VLLM,/v1/images/variations,501,2
+VLLM,/v1/audio/speech,400,2
+VLLM,/v1/audio/transcriptions,502,1
+VLLM,/v1/images/variations,403,4
+VLLM,/v1/audio/transcriptions,501,2
+VLLM,/v1/images/variations,401,1
+VLLM,/v1/audio/translations,502,1
+VLLM,/v1/audio/transcriptions,403,4
+VLLM,/v1/audio/speech,502,1
+VLLM,/v1/fine_tuning/jobs/job_id,502,1
+VLLM,/v1/files,502,1
+VLLM,/v1/audio/translations,403,3
+VLLM,/v1/audio/speech,403,3
+VLLM,/v1/audio/transcriptions,405,1
+VLLM,/v1/audio/translations,501,1
+VLLM,/v1/fine_tuning/jobs/job_id,400,1
+VLLM,/v1/files,400,1
+VLLM,/v1/audio/translations,405,1
+VLLM,/v1/audio/transcriptions,401,1
+VLLM,/v1/files/file_id,400,1
+VLLM,/v1/moderations,400,1
+VLLM,/v1/files/file_id,502,1
+VLLM,/v1/moderations,502,1
+VLLM,/v1/audio/speech,405,1
+VLLM,/v1/audio/transcriptions,500,1
+VLLM,/v1/audio/speech,501,1
+VLLM,/v1/fine_tuning/jobs/job_id,200,1
+VLLM,/v1/audio/translations,401,1
+VLLM,/v1/audio/speech,401,1
+OpenWebUI,/ollama/api/tags,403,93
+OpenWebUI,/api/chat/completions,403,69
+OpenWebUI,/ollama/api/tags,404,4
+OpenWebUI,/api/models,403,91
+OpenWebUI,/api/models,401,2
+OpenWebUI,/api/chat/completions,401,14
+OpenWebUI,/ollama/api/tags,Error,279
+OpenWebUI,/api/models,Error,279
+OpenWebUI,/api/chat/completions,Error,279
+OpenWebUI,/api/models,404,3
+OpenWebUI,/api/models,400,3
+OpenWebUI,/api/chat/completions,500,11
+OpenWebUI,/api/models,200,2
+OpenWebUI,/api/chat/completions,405,2
+OpenWebUI,/api/chat/completions,404,3
+OpenWebUI,/api/chat/completions,400,3
+OpenWebUI,/ollama/api/tags,401,1
+OpenWebUI,/api/models,500,1
+OpenWebUI,/ollama/api/tags,400,3
+OpenWebUI,/ollama/api/tags,500,1
+Ray Serve,/api/serve/applications/,500,8
+Ray Serve,/api/serve/applications/,404,2
+Ray Serve,/api/serve/applications/,Error,194

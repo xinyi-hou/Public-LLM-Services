@@ -1,0 +1,72 @@
+{
+  "models": [
+    {
+      "name": "qwq:32b",
+      "model": "qwq:32b",
+      "modified_at": "2025-04-12T16:24:19.226960742+08:00",
+      "size": 19851349657,
+      "digest": "009cb3f08d74437380f3b84194c1bd34f1cc3d95a2bb87241d89387fc22a9ddf",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "32.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "nomic-embed-text:latest",
+      "model": "nomic-embed-text:latest",
+      "modified_at": "2025-04-12T15:48:57.931236358+08:00",
+      "size": 274302450,
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "nomic-bert",
+        "families": [
+          "nomic-bert"
+        ],
+        "parameter_size": "137M",
+        "quantization_level": "F16"
+      }
+    },
+    {
+      "name": "deepseek-r1:32b",
+      "model": "deepseek-r1:32b",
+      "modified_at": "2025-03-14T12:53:15.689010445+08:00",
+      "size": 19851337640,
+      "digest": "38056bbcbb2d068501ecb2d5ea9cea9dd4847465f1ab88c4d4a412a9f7792717",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "32.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "qwen2.5:32b",
+      "model": "qwen2.5:32b",
+      "modified_at": "2025-03-14T10:57:33.121987429+08:00",
+      "size": 19851349669,
+      "digest": "9f13ba1299afea09d9a956fc6a85becc99115a6d596fae201a5487a03bdc4368",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "32.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    }
+  ]
+}

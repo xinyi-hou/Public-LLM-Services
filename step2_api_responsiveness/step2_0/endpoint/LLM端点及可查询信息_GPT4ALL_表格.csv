@@ -1,0 +1,6 @@
+﻿功能,方法,路径,返回信息示例（JSON）
+获取模型列表,GET,/v1/models,"json { ""object"": ""list"", ""data"": [ { ""id"": ""Phi-3 Mini Instruct"", ""object"": ""model"" } ] } "
+获取模型详情,GET,/v1/models/<name>,"json { ""id"": ""Phi-3 Mini Instruct"", ""description"": ""Lightweight instruct-tuned model"", ""max_tokens"": 2048, ... } "
+生成补全（completion）,POST,/v1/completions,"json { ""id"": ""cmpl-xyz"", ""object"": ""text_completion"", ""choices"": [{ ""text"": ""Once upon a time..."" }], ""usage"": { ""prompt_tokens"": 10, ""completion_tokens"": 40, ""total_tokens"": 50 } } "
+聊天补全（chat）,POST,/v1/chat/completions,"json { ""id"": ""chatcmpl-abc"", ""object"": ""chat.completion"", ""choices"": [{ ""message"": { ""role"": ""assistant"", ""content"": ""Lionel Messi is an Argentine footballer..."" }, ""references"": [{ ""text"": ""..."", ""title"": ""FIFA Records"", ""author"": ""FIFA"", ""date"": ""2022"", ""page"": 5 }] }], ""usage"": {...} } 
+✅ 支持 LocalDocs 参考信息返回"

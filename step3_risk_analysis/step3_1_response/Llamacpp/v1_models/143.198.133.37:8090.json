@@ -1,0 +1,11 @@
+{
+  "data": [
+    {
+      "created": 1745728371,
+      "id": "llava-v1.5-7b-Q4_K.gguf",
+      "object": "model",
+      "owned_by": "llamacpp"
+    }
+  ],
+  "object": "list"
+}

@@ -1,0 +1,26 @@
+{
+  "system": {
+    "os": "posix",
+    "ram_total": 63194038272,
+    "ram_free": 50827833344,
+    "comfyui_version": "v0.2.2-94-g614377a",
+    "python_version": "3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]",
+    "pytorch_version": "2.5.0+cu124",
+    "embedded_python": false,
+    "argv": [
+      "main.py",
+      "--listen=0.0.0.0"
+    ]
+  },
+  "devices": [
+    {
+      "name": "cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 25430786048,
+      "vram_free": 14849127394,
+      "torch_vram_total": 6979321856,
+      "torch_vram_free": 6861794
+    }
+  ]
+}

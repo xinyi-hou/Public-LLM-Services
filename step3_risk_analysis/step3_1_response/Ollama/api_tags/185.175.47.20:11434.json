@@ -1,0 +1,38 @@
+{
+  "models": [
+    {
+      "name": "deepseek-v3:671b-q8_0",
+      "model": "deepseek-v3:671b-q8_0",
+      "modified_at": "2025-04-24T22:26:15.150329901Z",
+      "size": 713286526911,
+      "digest": "96061c74c1a59cd47b97e6e1456f0d2f73d74b178b5479079dcec272d33d85a5",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "deepseek2",
+        "families": [
+          "deepseek2"
+        ],
+        "parameter_size": "671.0B",
+        "quantization_level": "Q8_0"
+      }
+    },
+    {
+      "name": "mistral-nemo-rus:latest",
+      "model": "mistral-nemo-rus:latest",
+      "modified_at": "2025-04-02T10:56:11.182109314Z",
+      "size": 8727631078,
+      "digest": "7dc8d3aeea62e7e63eda90b10159ca842a6ff730ca927a4a60228da9ff43e107",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "12.2B",
+        "quantization_level": "Q5_K_M"
+      }
+    }
+  ]
+}

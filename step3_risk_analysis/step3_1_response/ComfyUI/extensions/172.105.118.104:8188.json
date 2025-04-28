@@ -1,0 +1,20 @@
+[
+  "/extensions/core/linkRenderMode.js",
+  "/extensions/core/groupOptions.js",
+  "/extensions/core/slotDefaults.js",
+  "/extensions/core/clipspace.js",
+  "/extensions/core/keybinds.js",
+  "/extensions/core/dynamicPrompts.js",
+  "/extensions/core/maskeditor.js",
+  "/extensions/core/noteNode.js",
+  "/extensions/core/uploadImage.js",
+  "/extensions/core/nodeTemplates.js",
+  "/extensions/core/rerouteNode.js",
+  "/extensions/core/contextMenuFilter.js",
+  "/extensions/core/editAttention.js",
+  "/extensions/core/colorPalette.js",
+  "/extensions/core/saveImageExtraOutput.js",
+  "/extensions/core/widgetInputs.js",
+  "/extensions/core/snapToGrid.js",
+  "/extensions/core/invertMenuScrolling.js"
+]

@@ -1,0 +1,24 @@
+{
+  "rollback-partition-information": {
+    "build": "5801",
+    "os-name": "ive-sa",
+    "os-version": "9.1R6"
+  },
+  "software-inventory": {
+    "software": {
+      "build": "6087",
+      "name": "IVE-OS",
+      "type": "operating-system",
+      "version": "9.1R7"
+    }
+  },
+  "system-information": {
+    "cluster-node": {},
+    "hardware-model": "PSA-3000",
+    "host-name": "node1",
+    "machine-id": "8812MB24A0EZ504VS",
+    "os-name": "ive-sa",
+    "os-version": "9.1R7",
+    "serial-number": "8812022017100103"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "models": [
+    {
+      "name": "dimavz/whisper-tiny:latest",
+      "model": "dimavz/whisper-tiny:latest",
+      "modified_at": "2025-04-26T03:04:17.619234505Z",
+      "size": 44039248,
+      "digest": "9aafc61ff108ca6baffe7131bbd34ad157dfaf30799f81b6dcc455efeea6b8b0",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "unknown",
+        "families": [
+          "unknown"
+        ],
+        "parameter_size": "37.76M",
+        "quantization_level": "unknown"
+      }
+    },
+    {
+      "name": "qwq:latest",
+      "model": "qwq:latest",
+      "modified_at": "2025-03-07T06:13:06.855441564Z",
+      "size": 19851349390,
+      "digest": "cc1091b0e276012ba4c1662ea103be2c87a1543d2ee435eb5715b37b9b680d27",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "32.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "qwen2.5:7b",
+      "model": "qwen2.5:7b",
+      "modified_at": "2025-02-11T02:34:46.602710491Z",
+      "size": 4683087332,
+      "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "7.6B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "qwen2.5:32b",
+      "model": "qwen2.5:32b",
+      "modified_at": "2025-02-11T02:34:43.461720766Z",
+      "size": 19851349669,
+      "digest": "9f13ba1299afea09d9a956fc6a85becc99115a6d596fae201a5487a03bdc4368",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "32.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "qwen2.5:14b",
+      "model": "qwen2.5:14b",
+      "modified_at": "2025-02-11T02:34:41.835726078Z",
+      "size": 8988124069,
+      "digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "14.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "qwen2.5-coder:7b",
+      "model": "qwen2.5-coder:7b",
+      "modified_at": "2025-02-11T02:34:40.258731228Z",
+      "size": 4683087519,
+      "digest": "2b0496514337a3d5901f1d253d01726c890b721e891335a56d6e08cedf3e2cb0",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "7.6B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "deepseek-r1:7b",
+      "model": "deepseek-r1:7b",
+      "modified_at": "2025-02-11T02:34:38.716736254Z",
+      "size": 4683075271,
+      "digest": "0a8c266910232fd3291e71e5ba1e058cc5af9d411192cf88b6d30e92b6e73163",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "7.6B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "deepseek-r1:32b",
+      "model": "deepseek-r1:32b",
+      "modified_at": "2025-02-11T02:34:35.58574645Z",
+      "size": 19851337640,
+      "digest": "38056bbcbb2d068501ecb2d5ea9cea9dd4847465f1ab88c4d4a412a9f7792717",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "32.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "deepseek-r1:14b",
+      "model": "deepseek-r1:14b",
+      "modified_at": "2025-02-11T02:34:34.008751578Z",
+      "size": 8988112040,
+      "digest": "ea35dfe18182f635ee2b214ea30b7520fe1ada68da018f8b395b444b662d4f1a",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "14.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    }
+  ]
+}

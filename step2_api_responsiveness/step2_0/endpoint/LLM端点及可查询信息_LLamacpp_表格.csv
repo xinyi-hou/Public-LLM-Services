@@ -1,0 +1,144 @@
+﻿端点,方法,描述,返回信息示例（JSON）,测试情况
+/completion,POST,生成文本补全，支持提示词、温度、top-p 采样等参数。,"json {
+  ""content"": ""模型生成的文本补全结果"",
+  ""id_slot"": ""会话槽位 ID，标识当前请求的会话线程编号"",
+  ""stop"": ""布尔值，表示模型是否已停止生成"",
+  ""model"": ""所使用模型的文件路径"",
+  ""tokens_predicted"": ""模型生成的 token 数量"",
+  ""tokens_evaluated"": ""提示语中被模型评估过的 token 数量"",
+  ""generation_settings"": {
+    ""n_ctx"": ""上下文窗口大小（最大 token 上限）"",
+    ""n_predict"": ""请求生成的最大 token 数，-1 表示无限制"",
+    ""model"": ""当前使用的模型路径"",
+    ""seed"": ""用于控制随机性的种子值，4294967295 表示自动生成"",
+    ""seed_cur"": ""实际使用的当前种子"",
+    ""temperature"": ""温度参数，控制生成的随机性和多样性"",
+    ""dynatemp_range"": ""动态温度控制的范围"",
+    ""dynatemp_exponent"": ""动态温度控制的指数"",
+    ""top_k"": ""Top-K 采样，控制候选 token 数"",
+    ""top_p"": ""Top-P（核采样）控制生成的累积概率阈值"",
+    ""min_p"": ""采样的最小概率阈值"",
+    ""tfs_z"": ""Tail-Free Sampling 参数"",
+    ""typical_p"": ""Typical Sampling 参数"",
+    ""repeat_last_n"": ""对最后 n 个 token 应用重复惩罚"",
+    ""repeat_penalty"": ""重复惩罚系数，值越大越倾向避免重复"",
+    ""presence_penalty"": ""惩罚已出现过的 token（影响 token 多样性）"",
+    ""frequency_penalty"": ""惩罚频繁出现的 token（影响频率）"",
+    ""mirostat"": ""是否启用 Mirostat 自适应采样"",
+    ""mirostat_tau"": ""Mirostat 控制目标熵"",
+    ""mirostat_eta"": ""Mirostat 控制更新步长"",
+    ""penalize_nl"": ""是否惩罚换行符"",
+    ""stop"": ""用户自定义的停止词数组"",
+    ""max_tokens"": ""最大允许生成的 token 数量"",
+    ""n_keep"": ""生成时保留的 prompt token 数"",
+    ""n_discard"": ""丢弃的 token 数量"",
+    ""ignore_eos"": ""是否忽略生成时遇到的 EOS token"",
+    ""stream"": ""是否启用流式输出"",
+    ""n_probs"": ""返回概率的 token 数量（用于调试或可视化）"",
+    ""min_keep"": ""采样时保留的最小 token 数"",
+    ""grammar"": ""用于控制输出的语法规则（空表示不使用）"",
+    ""samplers"": ""实际使用的采样策略名称数组""
+  },
+  ""prompt"": ""用户输入的提示语"",
+  ""has_new_line"": ""生成的文本中是否包含换行符"",
+  ""truncated"": ""提示是否因超长而被截断"",
+  ""stopped_eos"": ""是否因生成了 EOS（end-of-sequence）token 而停止"",
+  ""stopped_word"": ""是否因匹配到了某个停止词而停止"",
+  ""stopped_limit"": ""是否因达到最大生成 token 限制而停止"",
+  ""stopping_word"": ""触发停止的词（如果有）"",
+  ""tokens_cached"": ""命中缓存的 token 数量"",
+  ""timings"": {
+    ""prompt_n"": ""提示语中 token 的数量"",
+    ""prompt_ms"": ""处理提示语所耗时间（毫秒）"",
+    ""prompt_per_token_ms"": ""每个提示 token 的处理时间"",
+    ""prompt_per_second"": ""处理提示的速度（token 每秒）"",
+    ""predicted_n"": ""生成的 token 数量"",
+    ""predicted_ms"": ""生成 token 所用总时间（毫秒）"",
+    ""predicted_per_token_ms"": ""每个生成 token 的平均耗时"",
+    ""predicted_per_second"": ""生成速度（token 每秒）""
+  },
+  ""index"": ""当前响应在 batch 请求中的索引位置""
+}",正常
+/tokenize,POST,将文本转换为 token 数组（编码）。,"json {""tokens"": [1, 2, 3...], ""length"": N}",未测试
+/detokenize,POST,将 token 数组转换回文本（解码）。,"json {""content"": ""解码后的文本""}",未测试
+/embedding,POST,生成输入文本的嵌入向量（embedding）。,"json {""embedding"": [0.1, 0.2, ...], ""n_tokens"": N}",未测试
+/v1/chat/completions,POST,OpenAI 兼容的聊天补全接口，支持 messages 列表和角色设定。,"json {
+  ""content"": ""模型生成的补全文本"",
+  ""id_slot"": ""请求使用的会话槽 ID，用于区分多个会话或请求线程"",
+  ""stop"": ""是否已完成生成（true 表示生成结束）"",
+  ""model"": ""使用的模型路径或文件名"",
+  ""tokens_predicted"": ""生成的 token 数量"",
+  ""tokens_evaluated"": ""输入提示中参与计算的 token 数量"",
+  ""generation_settings"": {
+    ""n_ctx"": ""上下文窗口大小（最大 token 数）"",
+    ""n_predict"": ""希望生成的最大 token 数（-1 表示不限）"",
+    ""model"": ""使用的模型路径"",
+    ""seed"": ""随机种子，控制生成可复现性"",
+    ""seed_cur"": ""当前实际使用的随机种子"",
+    ""temperature"": ""控制生成多样性的温度参数"",
+    ""dynatemp_range"": ""动态温度调整范围（若启用）"",
+    ""dynatemp_exponent"": ""动态温度调整指数"",
+    ""top_k"": ""Top-K 采样限制候选词数量"",
+    ""top_p"": ""Top-P 采样限制累积概率"",
+    ""min_p"": ""最小概率阈值过滤"",
+    ""tfs_z"": ""Tail Free Sampling 参数"",
+    ""typical_p"": ""Typical Sampling 概率阈值"",
+    ""repeat_last_n"": ""应用重复惩罚的 token 长度"",
+    ""repeat_penalty"": ""重复惩罚系数"",
+    ""presence_penalty"": ""token 出现惩罚系数"",
+    ""frequency_penalty"": ""频率惩罚系数"",
+    ""mirostat"": ""是否启用 Mirostat 自适应采样"",
+    ""mirostat_tau"": ""Mirostat 控制熵值"",
+    ""mirostat_eta"": ""Mirostat 更新步长"",
+    ""penalize_nl"": ""是否惩罚换行符"",
+    ""stop"": ""停止词列表（触发停止）"",
+    ""max_tokens"": ""最大生成 token 数"",
+    ""n_keep"": ""保留的 prompt token 数量"",
+    ""n_discard"": ""丢弃的 token 数量"",
+    ""ignore_eos"": ""是否忽略 EOS token"",
+    ""stream"": ""是否启用流式生成"",
+    ""n_probs"": ""返回概率值的 token 数"",
+    ""min_keep"": ""采样时保留的最小候选数量"",
+    ""grammar"": ""用于限制生成格式的语法（若为空则不限制）"",
+    ""samplers"": ""使用的采样策略数组""
+  },
+  ""prompt"": ""用户输入的提示语（prompt）"",
+  ""has_new_line"": ""生成的文本中是否包含换行符"",
+  ""truncated"": ""提示是否被截断"",
+  ""stopped_eos"": ""是否因 EOS token 停止"",
+  ""stopped_word"": ""是否因停止词触发而停止"",
+  ""stopped_limit"": ""是否因达到最大 token 限制而停止"",
+  ""stopping_word"": ""停止时命中的词（如有）"",
+  ""tokens_cached"": ""命中缓存的 token 数"",
+  ""timings"": {
+    ""prompt_n"": ""提示中 token 的数量"",
+    ""prompt_ms"": ""提示处理耗时（毫秒）"",
+    ""prompt_per_token_ms"": ""每个提示 token 平均耗时"",
+    ""prompt_per_second"": ""提示处理速度（token 每秒）"",
+    ""predicted_n"": ""生成的 token 数量"",
+    ""predicted_ms"": ""生成阶段总耗时（毫秒）"",
+    ""predicted_per_token_ms"": ""生成每个 token 的平均耗时"",
+    ""predicted_per_second"": ""生成速度（token 每秒）""
+  },
+  ""index"": ""请求在 batch 中的索引""
+}",正常
+/v1/completions,POST,OpenAI 兼容的文本补全接口（类似 /completion）。,"json {""object"": ""text_completion"", ""choices"": [{""text"": ""生成的文本""}]}",未测试，其与/completion相似
+/v1/models,GET,返回当前加载的模型信息（OpenAI 格式）。,"json {""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""models/ggml-model-i2s-bitnet.gguf"",
+      ""object"": ""model"",
+      ""created"": 1745290230,
+      ""owned_by"": ""llamacpp"",
+      ""meta"": {
+        ""vocab_type"": 2,
+        ""n_vocab"": 128256,
+        ""n_ctx_train"": 4096,
+        ""n_embd"": 2560,
+        ""n_params"": 2741155840,
+        ""size"": 1836120640
+      }
+    }
+  ]}",正常
+/v1/models/{model_id},GET,返回指定模型的信息（如 model_id=llama）。,"json {""id"": ""llama"", ""object"": ""model"", ""owned_by"": ""owner""}",正常
+/health,GET,检查服务器是否运行正常。,"json {""status"": ""ok""}",正常

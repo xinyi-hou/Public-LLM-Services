@@ -1,0 +1,13 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "koboldcpp/Qwen2.5-14B_Uncensored_Instruct-Q4_K_M",
+      "object": "model",
+      "created": 1745728004,
+      "owned_by": "koboldcpp",
+      "permission": [],
+      "root": "koboldcpp"
+    }
+  ]
+}

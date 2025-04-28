@@ -1,0 +1,21 @@
+{
+  "models": [
+    {
+      "name": "deepseek-r1:1.5b",
+      "model": "deepseek-r1:1.5b",
+      "modified_at": "2025-03-19T01:16:33.454754488Z",
+      "size": 1117322599,
+      "digest": "a42b25d8c10a841bd24724309898ae851466696a7d7f3a0a408b895538ccbc96",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "1.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    }
+  ]
+}

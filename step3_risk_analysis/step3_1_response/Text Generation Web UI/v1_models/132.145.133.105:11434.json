@@ -1,0 +1,477 @@
+{
+  "data": [
+    {
+      "id": "amazon/nova-lite-v1",
+      "object": "model",
+      "owned_by": "Amazon",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "amazon/nova-micro-v1",
+      "object": "model",
+      "owned_by": "Amazon",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "amazon/nova-pro-v1",
+      "object": "model",
+      "owned_by": "Amazon",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "anthropic/claude-3-opus",
+      "object": "model",
+      "owned_by": "Anthropic",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "anthropic/claude-3-5-haiku-20241022",
+      "object": "model",
+      "owned_by": "Anthropic",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "anthropic/claude-3.5-sonnet",
+      "object": "model",
+      "owned_by": "Anthropic",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "anthropic/claude-3.7-sonnet",
+      "object": "model",
+      "owned_by": "Anthropic",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "anthropic/claude-3.7-sonnet:thinking",
+      "object": "model",
+      "owned_by": "Anthropic",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "cohere/command-r-08-2024",
+      "object": "model",
+      "owned_by": "Cohere",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "cohere/command-r-plus-08-2024",
+      "object": "model",
+      "owned_by": "Cohere",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-chat",
+      "object": "model",
+      "owned_by": "DeepSeek V3",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "object": "model",
+      "owned_by": "DeepSeek",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-r1:nitro",
+      "object": "model",
+      "owned_by": "DeepSeek",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "object": "model",
+      "owned_by": "DeepSeek",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "cognitivecomputations/dolphin-mixtral-8x7b",
+      "object": "model",
+      "owned_by": "Dolphin 2.6 Mixtral 8x7B",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "eva-unit-01/eva-qwen-2.5-14b",
+      "object": "model",
+      "owned_by": "EVA Qwen2.5 14B",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "alpindale/goliath-120b",
+      "object": "model",
+      "owned_by": "Goliath 120B",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "google/gemini-2.0-flash-001",
+      "object": "model",
+      "owned_by": "Google",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "google/gemini-pro-1.5",
+      "object": "model",
+      "owned_by": "Google",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview-03-25",
+      "object": "model",
+      "owned_by": "Google",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "google/gemma-2-27b-it",
+      "object": "model",
+      "owned_by": "Google",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "gryphe/mythomax-l2-13b",
+      "object": "model",
+      "owned_by": "Gryphe",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3-70b-instruct:nitro",
+      "object": "model",
+      "owned_by": "Meta",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.1-405b-instruct",
+      "object": "model",
+      "owned_by": "Meta",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "object": "model",
+      "owned_by": "Meta",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct",
+      "object": "model",
+      "owned_by": "Meta",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "meta-llama/llama-4-maverick",
+      "object": "model",
+      "owned_by": "Meta",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "microsoft/phi-4",
+      "object": "model",
+      "owned_by": "Microsoft",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "mistralai/codestral-mamba",
+      "object": "model",
+      "owned_by": "Mistral",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "mistralai/mistral-large",
+      "object": "model",
+      "owned_by": "Mistral",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "mistralai/mixtral-8x7b-instruct",
+      "object": "model",
+      "owned_by": "Mistral",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+      "object": "model",
+      "owned_by": "NVIDIA",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-nano",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-2024-08-06",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-2024-11-20",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/o1",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/o1-pro",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/o1-mini",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/o3-mini-high",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/o3-mini",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/o4-mini",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "openai/o4-mini-high",
+      "object": "model",
+      "owned_by": "OpenAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "perplexity/llama-3.1-sonar-large-128k-online",
+      "object": "model",
+      "owned_by": "Perplexity",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "perplexity/llama-3.1-sonar-small-128k-online",
+      "object": "model",
+      "owned_by": "Perplexity",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "perplexity/sonar",
+      "object": "model",
+      "owned_by": "Perplexity",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "perplexity/sonar-deep-research",
+      "object": "model",
+      "owned_by": "Perplexity",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "perplexity/sonar-reasoning",
+      "object": "model",
+      "owned_by": "Perplexity",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "qwen/qwen-2-vl-72b-instruct",
+      "object": "model",
+      "owned_by": "Qwen2-VL 72B Instruct",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "qwen/qwen-2.5-72b-instruct",
+      "object": "model",
+      "owned_by": "Qwen2.5 72B Instruct",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "qwen/qwen-2.5-coder-32b-instruct",
+      "object": "model",
+      "owned_by": "Qwen2.5 Coder 32B Instruct",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "qwen/qwq-32b-preview",
+      "object": "model",
+      "owned_by": "Qwen",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "qwen/qwen2.5-vl-32b-instruct:free",
+      "object": "model",
+      "owned_by": "Qwen",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "microsoft/wizardlm-2-8x22b",
+      "object": "model",
+      "owned_by": "WizardLM-2 8x22B",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "x-ai/grok-2-1212",
+      "object": "model",
+      "owned_by": "xAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "x-ai/grok-3-beta",
+      "object": "model",
+      "owned_by": "xAI",
+      "permission": [
+        {}
+      ]
+    },
+    {
+      "id": "x-ai/grok-3-mini-beta",
+      "object": "model",
+      "owned_by": "xAI",
+      "permission": [
+        {}
+      ]
+    }
+  ],
+  "object": "list"
+}

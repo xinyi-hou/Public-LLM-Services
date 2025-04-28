@@ -1,0 +1,27 @@
+{
+  "system": {
+    "os": "posix",
+    "ram_total": 126606106624,
+    "ram_free": 113717121024,
+    "comfyui_version": "0.3.27",
+    "python_version": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+    "pytorch_version": "2.6.0+cu124",
+    "embedded_python": false,
+    "argv": [
+      "main.py",
+      "--listen",
+      "0.0.0.0"
+    ]
+  },
+  "devices": [
+    {
+      "name": "cuda:0 GRID A100D-80C : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 85895020544,
+      "vram_free": 62639243264,
+      "torch_vram_total": 0,
+      "torch_vram_free": 0
+    }
+  ]
+}

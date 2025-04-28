@@ -1,0 +1,19 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "/home/llama3/Llama3-8B-Chinese-Chat.q5_k_m.GGUF",
+      "object": "model",
+      "created": 1745728364,
+      "owned_by": "llamacpp",
+      "meta": {
+        "vocab_type": 2,
+        "n_vocab": 128256,
+        "n_ctx_train": 8192,
+        "n_embd": 4096,
+        "n_params": 8030261248,
+        "size": 5725151232
+      }
+    }
+  ]
+}

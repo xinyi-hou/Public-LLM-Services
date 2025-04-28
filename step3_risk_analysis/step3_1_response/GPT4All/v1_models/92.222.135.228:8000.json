@@ -1,0 +1,89 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "bert-embeddings",
+      "object": "model"
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "object": "model"
+    },
+    {
+      "id": "gpt-4",
+      "object": "model"
+    },
+    {
+      "id": "gpt-4-vision-preview",
+      "object": "model"
+    },
+    {
+      "id": "gpt4all-j",
+      "object": "model"
+    },
+    {
+      "id": "jina-reranker-v1-base-en",
+      "object": "model"
+    },
+    {
+      "id": "phi-2",
+      "object": "model"
+    },
+    {
+      "id": "stablediffusion",
+      "object": "model"
+    },
+    {
+      "id": "text-embedding-ada-002",
+      "object": "model"
+    },
+    {
+      "id": "tts-1",
+      "object": "model"
+    },
+    {
+      "id": "vicuna",
+      "object": "model"
+    },
+    {
+      "id": "whisper-1",
+      "object": "model"
+    },
+    {
+      "id": "13B",
+      "object": "model"
+    },
+    {
+      "id": "7B",
+      "object": "model"
+    },
+    {
+      "id": "MODEL_CARD",
+      "object": "model"
+    },
+    {
+      "id": "bakllava-mmproj.gguf",
+      "object": "model"
+    },
+    {
+      "id": "ggml-alpaca-7b-q4.bin",
+      "object": "model"
+    },
+    {
+      "id": "stablediffusion_assets",
+      "object": "model"
+    },
+    {
+      "id": "tokenizer.model",
+      "object": "model"
+    },
+    {
+      "id": "tokenizer_checklist.chk",
+      "object": "model"
+    },
+    {
+      "id": "voice-en-us-amy-low.tar.gz",
+      "object": "model"
+    }
+  ]
+}

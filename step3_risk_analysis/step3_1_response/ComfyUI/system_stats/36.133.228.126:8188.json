@@ -1,0 +1,30 @@
+{
+  "system": {
+    "os": "posix",
+    "ram_total": 135168102400,
+    "ram_free": 118946820096,
+    "comfyui_version": "v0.3.10-41-g2307ff6",
+    "python_version": "3.11.11 (main, Dec 11 2024, 16:28:39) [GCC 11.2.0]",
+    "pytorch_version": "2.6.0+cu124",
+    "embedded_python": false,
+    "argv": [
+      "main.py",
+      "--highvram",
+      "--port",
+      "8188",
+      "--listen",
+      "0.0.0.0"
+    ]
+  },
+  "devices": [
+    {
+      "name": "cuda:0 NVIDIA A100-PCIE-40GB : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 42285268992,
+      "vram_free": 41707372544,
+      "torch_vram_total": 33554432,
+      "torch_vram_free": 25034752
+    }
+  ]
+}

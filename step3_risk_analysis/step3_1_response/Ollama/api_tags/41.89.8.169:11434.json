@@ -1,0 +1,21 @@
+{
+  "models": [
+    {
+      "name": "deepseek-coder-v2:latest",
+      "model": "deepseek-coder-v2:latest",
+      "modified_at": "2025-03-12T11:23:20.17366732Z",
+      "size": 8905126121,
+      "digest": "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "deepseek2",
+        "families": [
+          "deepseek2"
+        ],
+        "parameter_size": "15.7B",
+        "quantization_level": "Q4_0"
+      }
+    }
+  ]
+}

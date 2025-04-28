@@ -1,0 +1,25 @@
+{
+  "system": {
+    "os": "posix",
+    "ram_total": 539180859392,
+    "ram_free": 519510257664,
+    "comfyui_version": "latest-1979-gb666539",
+    "python_version": "3.10.14 (main, May  6 2024, 19:42:50) [GCC 11.2.0]",
+    "pytorch_version": "2.2.2",
+    "embedded_python": false,
+    "argv": [
+      "main.py"
+    ]
+  },
+  "devices": [
+    {
+      "name": "cuda:0 Tesla V100-SXM2-32GB : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 34079637504,
+      "vram_free": 31045967668,
+      "torch_vram_total": 2046820352,
+      "torch_vram_free": 71950132
+    }
+  ]
+}

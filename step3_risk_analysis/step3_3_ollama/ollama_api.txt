@@ -1,0 +1,12 @@
+/api/generate
+/api/chat
+/api/tags
+/api/pull
+/api/push
+/api/delete
+/api/copy
+/api/show
+/api/create
+/api/embeddings
+/api/running
+/api/version

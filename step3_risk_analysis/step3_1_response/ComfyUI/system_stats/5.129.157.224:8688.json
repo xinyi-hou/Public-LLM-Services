@@ -1,0 +1,28 @@
+{
+  "system": {
+    "os": "nt",
+    "ram_total": 68667920384,
+    "ram_free": 56568135680,
+    "comfyui_version": "0.3.26",
+    "python_version": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "pytorch_version": "2.5.1+cu124",
+    "embedded_python": true,
+    "argv": [
+      "ComfyUI\\main.py",
+      "--listen",
+      "--port",
+      "8688"
+    ]
+  },
+  "devices": [
+    {
+      "name": "cuda:0 NVIDIA GeForce RTX 3080 Ti : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 12884246528,
+      "vram_free": 11609833472,
+      "torch_vram_total": 0,
+      "torch_vram_free": 0
+    }
+  ]
+}

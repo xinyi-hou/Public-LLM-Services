@@ -1,0 +1,89 @@
+{
+  "models": [
+    {
+      "name": "llama3.1:8b-instruct-q4_K_M",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "modified_at": "2025-04-26T03:14:40.983068375Z",
+      "size": 4920753328,
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "llama3.1:8b",
+      "model": "llama3.1:8b",
+      "modified_at": "2025-04-24T20:59:50.647142077Z",
+      "size": 4920753328,
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "smollm:1.7b",
+      "model": "smollm:1.7b",
+      "modified_at": "2025-04-23T22:02:31.989159347Z",
+      "size": 990741362,
+      "digest": "95f6557a0f0f1e1d08ba0d426e50de0927dd2b0861a384b193802c551b298c28",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "1.7B",
+        "quantization_level": "Q4_0"
+      }
+    },
+    {
+      "name": "smollm2:135m",
+      "model": "smollm2:135m",
+      "modified_at": "2025-04-01T23:39:59.332381561Z",
+      "size": 270898672,
+      "digest": "9077fe9d2ae1a4a41a868836b56b8163731a8fe16621397028c2c76f838c6907",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "134.52M",
+        "quantization_level": "F16"
+      }
+    },
+    {
+      "name": "hermes3:8b",
+      "model": "hermes3:8b",
+      "modified_at": "2025-03-06T13:17:37.208908585Z",
+      "size": 4661227243,
+      "digest": "4f6b83f30b62bc3d0cf9be09266db222805ee815c8fd7d8b38f863f655be78b7",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_0"
+      }
+    }
+  ]
+}

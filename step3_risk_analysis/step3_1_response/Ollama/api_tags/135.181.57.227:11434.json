@@ -1,0 +1,21 @@
+{
+  "models": [
+    {
+      "name": "hf.co/bartowski/Chronos-Gold-12B-1.0-GGUF:Q8_0",
+      "model": "hf.co/bartowski/Chronos-Gold-12B-1.0-GGUF:Q8_0",
+      "modified_at": "2025-02-19T20:40:44.376018165+01:00",
+      "size": 13022369661,
+      "digest": "b40c5146dee349d01a985eba210dcb6f187028c04971fc1b6bf6f430e561b726",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "12.2B",
+        "quantization_level": "unknown"
+      }
+    }
+  ]
+}

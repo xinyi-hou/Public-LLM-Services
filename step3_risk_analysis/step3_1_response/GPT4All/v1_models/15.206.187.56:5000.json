@@ -1,0 +1,13 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "koboldcpp/model",
+      "object": "model",
+      "created": 1745727931,
+      "owned_by": "koboldcpp",
+      "permission": [],
+      "root": "koboldcpp"
+    }
+  ]
+}

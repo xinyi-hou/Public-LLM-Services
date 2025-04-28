@@ -1,0 +1,5630 @@
+{
+  "46c42114-a53c-4912-9640-f92f7093494a": {
+    "prompt": [
+      0,
+      "46c42114-a53c-4912-9640-f92f7093494a",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 4
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 621297060
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "暗丛荆棘.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "漫山_F1_欧美人像_极致时尚模特摄影_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "杰作，质量上乘，穿着泳装的美女，在强烈的灯光下，木条在她的脸上投射出对角线的阴影，创造出令人难忘的明暗对比效果,高级光影，电影质感，动态，俯视图，强光，坐在客厅的沙发上，一条腿抬高，8K，光线对比强烈，客厅全景",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "加噪点氛围人像摄影_1.safetensors",
+            "strength_model": 0.5,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "温馨家居风_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05671_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05672_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05673_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05674_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          ""
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "46c42114-a53c-4912-9640-f92f7093494a",
+            "timestamp": 1745717248089
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "46c42114-a53c-4912-9640-f92f7093494a",
+            "timestamp": 1745717248093
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "46c42114-a53c-4912-9640-f92f7093494a",
+            "timestamp": 1745717382137
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "58986459-1001-4a46-9241-937cd87f2d6a": {
+    "prompt": [
+      1,
+      "58986459-1001-4a46-9241-937cd87f2d6a",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 4
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 353788455
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "暗丛荆棘.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "麦橘真人修复脸型写实系列_图文5天破万粉_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "泳装，杰作，质量上乘，美女，在强烈的灯光下，木条在她的脸上投射出对角线的阴影，创造出令人难忘的明暗对比效果,高级光影，电影质感，动态，俯视图，强光，坐在客厅的沙发上，一条腿抬高，8K，光线对比强烈，客厅全景",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "加噪点氛围人像摄影_1.safetensors",
+            "strength_model": 0.5,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "室内设计_装修风格_侘寂奶油风客厅_卧室_V1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05675_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05676_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05677_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05678_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "Swimsuit, masterpiece, high quality, beauty, under the strong light, wooden strips cast diagonal shadows on her face, creating an unforgettable contrast of light and dark, high-end light and shadow, movie texture, dynamic, top view, bright light, sitting on the sofa in the living room, one leg raised, 8K, strong light contrast, panoramic view of the living room"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "58986459-1001-4a46-9241-937cd87f2d6a",
+            "timestamp": 1745717439581
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "110",
+              "117",
+              "219"
+            ],
+            "prompt_id": "58986459-1001-4a46-9241-937cd87f2d6a",
+            "timestamp": 1745717439588
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "58986459-1001-4a46-9241-937cd87f2d6a",
+            "timestamp": 1745717551588
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "532cab79-0598-46b2-8735-0bfe5c356927": {
+    "prompt": [
+      2,
+      "532cab79-0598-46b2-8735-0bfe5c356927",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 4
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 152367442
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "浮光橙影.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "漫山_F1_欧美人像_极致时尚模特摄影_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "杰作，质量上乘，夜晚，月色，穿着泳装的美女，高级光影，木条在她的脸上投射出对角线的阴影，创造出令人难忘的明暗对比效果,电影质感，动态，俯视图，强光，坐在泳池边，8K，光线对比强烈，泳池全景",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "F1大模型下的春日胶片类型_v1.safetensors",
+            "strength_model": 0.5,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "家装13_F1_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05679_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05680_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05681_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05682_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "Masterpiece, high quality, night, moonlight, beauty in swimsuit, high-end light and shadow, wooden strips cast diagonal shadows on her face, creating an unforgettable contrast of light and dark, movie texture, dynamic, top view, bright light, sitting by the pool, 8K, strong light contrast, pool panoramic view"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "532cab79-0598-46b2-8735-0bfe5c356927",
+            "timestamp": 1745717600200
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "110"
+            ],
+            "prompt_id": "532cab79-0598-46b2-8735-0bfe5c356927",
+            "timestamp": 1745717600206
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "532cab79-0598-46b2-8735-0bfe5c356927",
+            "timestamp": 1745717713390
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "5c622f60-e08f-4fb0-87a5-d1247e601299": {
+    "prompt": [
+      3,
+      "5c622f60-e08f-4fb0-87a5-d1247e601299",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 4
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 276744582
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "浮光蓝影.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "漫山_F1_欧美人像_极致时尚模特摄影_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "杰作，质量上乘，夜晚，月色，穿着泳装的美女，高级光影，木条在她的脸上投射出对角线的阴影，创造出令人难忘的明暗对比效果,电影质感，动态，俯视图，强光，坐在泳池边，8K，光线对比强烈，泳池全景",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘超黑_v1.safetensors",
+            "strength_model": 0.5,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "家装13_F1_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05683_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05684_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05685_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05686_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "Masterpiece, high quality, night, moonlight, beauty in swimsuit, high-end light and shadow, wooden strips cast diagonal shadows on her face, creating an unforgettable contrast of light and dark, movie texture, dynamic, top view, bright light, sitting by the pool, 8K, strong light contrast, pool panoramic view"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "5c622f60-e08f-4fb0-87a5-d1247e601299",
+            "timestamp": 1745717763496
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "103",
+              "110",
+              "225",
+              "230"
+            ],
+            "prompt_id": "5c622f60-e08f-4fb0-87a5-d1247e601299",
+            "timestamp": 1745717763502
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "5c622f60-e08f-4fb0-87a5-d1247e601299",
+            "timestamp": 1745717871618
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "3e349a59-01c1-4167-86f3-1b800c6bad70": {
+    "prompt": [
+      4,
+      "3e349a59-01c1-4167-86f3-1b800c6bad70",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 4
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 870354166
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "浮光蓝影.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "漫山_F1_欧美人像_极致时尚模特摄影_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "杰作，质量上乘，夜晚，月色，穿着泳装的美女，高级光影，木条在她的脸上投射出对角线的阴影，创造出令人难忘的明暗对比效果,电影质感，动态，俯视图，强光，坐在泳池边，8K，光线对比强烈，泳池全景",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘超黑_v1.safetensors",
+            "strength_model": 0.5,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CCF1夏日西班牙泳池写真_V1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05687_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05688_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05689_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05690_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "Masterpiece, high quality, night, moonlight, beauty in swimsuit, high-end light and shadow, wooden strips cast diagonal shadows on her face, creating an unforgettable contrast of light and dark, movie texture, dynamic, top view, bright light, sitting by the pool, 8K, strong light contrast, pool panoramic view"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "3e349a59-01c1-4167-86f3-1b800c6bad70",
+            "timestamp": 1745717873660
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "103",
+              "110",
+              "117",
+              "219",
+              "225",
+              "228",
+              "230",
+              "232"
+            ],
+            "prompt_id": "3e349a59-01c1-4167-86f3-1b800c6bad70",
+            "timestamp": 1745717873669
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "3e349a59-01c1-4167-86f3-1b800c6bad70",
+            "timestamp": 1745717980036
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "879598a8-8fa2-4ac7-a0df-7ff81ca5de43": {
+    "prompt": [
+      5,
+      "879598a8-8fa2-4ac7-a0df-7ff81ca5de43",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 4
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 251439160
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "浮光蓝影.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "漫山_F1_欧美人像_极致时尚模特摄影_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "杰作，质量上乘，夜晚，月色，穿着泳装的美女，高级光影，木条在她的脸上投射出对角线的阴影，创造出令人难忘的明暗对比效果,电影质感，动态，俯视图，强光，坐在泳池边，8K，光线对比强烈，泳池全景",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "星辰AI_光影关系_F1.safetensors",
+            "strength_model": 0.5,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CCF1夏日西班牙泳池写真_V1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05691_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05692_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05693_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05694_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "Masterpiece, high quality, night, moonlight, beauty in swimsuit, high-end light and shadow, wooden strips cast diagonal shadows on her face, creating an unforgettable contrast of light and dark, movie texture, dynamic, top view, bright light, sitting by the pool, 8K, strong light contrast, pool panoramic view"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "879598a8-8fa2-4ac7-a0df-7ff81ca5de43",
+            "timestamp": 1745717983920
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "103",
+              "110",
+              "117",
+              "219",
+              "225",
+              "228",
+              "230"
+            ],
+            "prompt_id": "879598a8-8fa2-4ac7-a0df-7ff81ca5de43",
+            "timestamp": 1745717983926
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "879598a8-8fa2-4ac7-a0df-7ff81ca5de43",
+            "timestamp": 1745718089287
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "b0e1da6f-c81c-4058-bd9b-c96c4c5b7d38": {
+    "prompt": [
+      6,
+      "b0e1da6f-c81c-4058-bd9b-c96c4c5b7d38",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 4
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 320908431
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "浮光蓝影.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "漫山_F1_欧美人像_极致时尚模特摄影_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "杰作，质量上乘，夜晚，月色，穿着泳装的美女，高级光影，木条在她的脸上投射出对角线的阴影，创造出令人难忘的明暗对比效果,电影质感，动态，俯视图，强光，坐在泳池边，8K，光线对比强烈，泳池全景",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "星辰AI_光影关系_F1.safetensors",
+            "strength_model": 0.5,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CCF1夏日西班牙泳池写真_V1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05695_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05696_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05697_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05698_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "Masterpiece, high quality, night, moonlight, beauty in swimsuit, high-end light and shadow, wooden strips cast diagonal shadows on her face, creating an unforgettable contrast of light and dark, movie texture, dynamic, top view, bright light, sitting by the pool, 8K, strong light contrast, pool panoramic view"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "b0e1da6f-c81c-4058-bd9b-c96c4c5b7d38",
+            "timestamp": 1745718885941
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "103",
+              "109",
+              "110",
+              "111",
+              "113",
+              "117",
+              "219",
+              "225",
+              "228",
+              "230",
+              "232",
+              "233"
+            ],
+            "prompt_id": "b0e1da6f-c81c-4058-bd9b-c96c4c5b7d38",
+            "timestamp": 1745718885948
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "b0e1da6f-c81c-4058-bd9b-c96c4c5b7d38",
+            "timestamp": 1745718989090
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "890756bc-9045-4965-b99a-256b38c80f79": {
+    "prompt": [
+      7,
+      "890756bc-9045-4965-b99a-256b38c80f79",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 4
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 133888009
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "繁花夜梦平角.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "漫山_F1_欧美人像_极致时尚模特摄影_v1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "美女穿着黑色长袖贴身潜水服，前面有拉链。潜水服的袖子上有蓝色、紫色和绿色的鲜艳抽象花卉图案。潜水服上有“TOSWIM”的logo。杰作，质量上乘，夜晚，高级光影，木条在她的脸上投射出对角线的阴影，创造出令人难忘的明暗对比效果,电影质感，动态，俯视图，强光，坐在泳池边，8K，光线对比强烈，泳池全景",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘超黑_v1.safetensors",
+            "strength_model": 0.5,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CCF1夏日西班牙泳池写真_V1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05699_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05700_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05701_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05702_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "The beauty is wearing a black long-sleeved, close-fitting diving suit with a zipper on the front. The sleeves of the diving suit feature bright abstract floral patterns in blue, purple and green. There is a logo of \"TOSWIM\" on the diving suit. Masterpiece, high quality, night, high-end light and shadow, wooden strips cast diagonal shadows on her face, creating an unforgettable contrast of light and dark, movie texture, dynamic, top view, bright light, sitting by the pool, 8K, strong light contrast, pool panoramic view"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "890756bc-9045-4965-b99a-256b38c80f79",
+            "timestamp": 1745719273371
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "110"
+            ],
+            "prompt_id": "890756bc-9045-4965-b99a-256b38c80f79",
+            "timestamp": 1745719273381
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "890756bc-9045-4965-b99a-256b38c80f79",
+            "timestamp": 1745719387634
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "c781d98d-16ad-4f20-81cc-4bafcbbe90bb": {
+    "prompt": [
+      8,
+      "c781d98d-16ad-4f20-81cc-4bafcbbe90bb",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 2
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 789380107
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "繁花夜梦平角.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘抖音小红书极致真实_v1.safetensors",
+            "strength_model": 0.3,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "美女穿着黑色长袖贴身潜水服，前面有拉链。潜水服的袖子上有蓝色、紫色和绿色的鲜艳抽象花卉图案。潜水服上有“TOSWIM”的logo。GGHJ,这张照片描绘了一位年轻的亚洲女子在自然阳光下对着一根风化的、粗糙的石柱摆姿势。她有一头黑色的长发，侧身站着，眼睛朝上微微向右凝视。她穿着一件简单的芥末黄色无袖背心，细带子松散地垂在她的身体上，露出适度的胸部和苗条的身材。她白皙的皮肤质地光滑，肤色微红。背景柔和模糊，让人联想到阳光明媚的户外环境，树叶在柱子上投下斑驳的阴影，增强了自然氛围。她的服装与她身后暗淡的灰色石头形成鲜明对比，可以看到一些风化的斑点。整体构图融合了一丝随意的优雅与质朴的背景，突出了主题精致而自信的风度。这张照片散发出一种宁静的、近乎沉思的情绪，在自然光下捕捉转瞬即逝的瞬间。摄影师专注于光影的相互作用，整体色调的柔和创造了一种和谐的美感。",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "加噪点氛围人像摄影_1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CAFE现代简约咖啡厅设计_Cafe_SDXL_V1.safetensors",
+            "strength_model": 0.1,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05703_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05704_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "The beauty is wearing a black long-sleeved, close-fitting diving suit with a zipper on the front. The sleeves of the diving suit feature bright abstract floral patterns in blue, purple and green. There is a logo of \"TOSWIM\" on the diving suit. GGHJ, this photo depicts a young Asian woman posing in the natural sunshine against a weathered, rough stone pillar. She had long black hair, stood sideways, her eyes slightly staring to the right. She wore a simple mustard yellow sleeveless vest with thin straps hanging loosely on her body, revealing her moderate breasts and slim figure. Her fair skin has a smooth texture and a slightly red complexion. The background is soft and blurry, reminiscent of the sunny outdoor environment, with leaves casting mottled shadows on the pillars, enhancing the natural atmosphere. Her outfit contrasts sharply with the dull gray stone behind her, with some weathered spots visible. The overall composition combines a touch of casual elegance and rustic background, highlighting the exquisite and confident demeanor of the theme. This photo exudes a quiet, nearly contemplative mood that captures fleeting moments in natural light. The photographer focuses on the interaction of light and shadow, and the softness of the overall tone creates a harmonious aesthetic."
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "c781d98d-16ad-4f20-81cc-4bafcbbe90bb",
+            "timestamp": 1745721332413
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "110",
+              "117",
+              "219"
+            ],
+            "prompt_id": "c781d98d-16ad-4f20-81cc-4bafcbbe90bb",
+            "timestamp": 1745721332421
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "c781d98d-16ad-4f20-81cc-4bafcbbe90bb",
+            "timestamp": 1745721396110
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "3ba87032-a485-42ac-9ab8-0f78a55621fd": {
+    "prompt": [
+      9,
+      "3ba87032-a485-42ac-9ab8-0f78a55621fd",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 2
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 146931772
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "繁花夜梦平角.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘抖音小红书极致真实_v1.safetensors",
+            "strength_model": 0.3,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "GGHJ,这张照片捕捉到一个女人正漂浮在一条平静的小溪的水面下。这幅画充满了宁静、空灵的气质，描绘了一位年轻女子，她皮肤白皙，长长的、潮湿的黑发在身后层叠，在水中呈扇形展开。她平静的表情被柔和的自然光所突出，这些自然光通过水面过滤和反射。她看上去二十出头，脖子修长，五官柔美。她穿着黑色长袖贴身潜水服，前面有拉链。潜水服的袖子上有蓝色、紫色和绿色的鲜艳抽象花卉图案。潜水服上有“TOSWIM”的logo，紧贴着她纤细的身材，浸湿的布料紧贴着她的胸部和躯干，微妙地露出了她小到中等大小的乳房的轮廓。她周围的水波光粼粼，阳光创造了一个戏剧性的光与影的游戏。背景，稍微偏离焦点，由柔和的绿色树叶和岩石组成，暗示一个隐蔽的，自然的地方，可能是森林或山区。这张照片的整体基调是神秘和内省的，通过主导场景的冷蓝色阴影来增强。水的柔软质感和她潮湿的头发与她光滑的皮肤和精致透明的衣服形成对比。",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "加噪点氛围人像摄影_1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CAFE现代简约咖啡厅设计_Cafe_SDXL_V1.safetensors",
+            "strength_model": 0.1,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05705_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05706_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "GGHJ, this photo captures a woman floating under the water of a calm stream. The painting is full of tranquil, ethereal temperament, depicting a young woman with fair skin and long, damp black hair layered behind her, fanning in the water. Her calm expression is highlighted by soft natural light, which filters and reflects through the water. She looks in her early twenties, has a long neck and a soft facial features. She wore a black long-sleeved, close-fitting diving suit with a zipper on the front. The sleeves of the diving suit feature bright abstract floral patterns in blue, purple and green. The diving suit has the \"TOSWIM\" logo, which is close to her slender figure, and the soaked fabric is close to her breasts and torso, subtly revealing the outline of her small to medium-sized breasts. The water around her sparkles, and the sun creates a dramatic game of light and shadow. The background, slightly off-focus, consists of soft green leaves and rocks, suggesting a hidden, natural place, possibly forest or mountainous area. The overall tone of this photo is mysterious and introspective, enhanced by the cold blue shades that dominate the scene. The soft texture of the water and her damp hair contrasted with her smooth skin and delicate and transparent clothing."
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "3ba87032-a485-42ac-9ab8-0f78a55621fd",
+            "timestamp": 1745721666730
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "110",
+              "111",
+              "113",
+              "117",
+              "219",
+              "228",
+              "232",
+              "233"
+            ],
+            "prompt_id": "3ba87032-a485-42ac-9ab8-0f78a55621fd",
+            "timestamp": 1745721666737
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "3ba87032-a485-42ac-9ab8-0f78a55621fd",
+            "timestamp": 1745721724750
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "a901481c-cfa6-4439-a4e0-4ead447d9f58": {
+    "prompt": [
+      10,
+      "a901481c-cfa6-4439-a4e0-4ead447d9f58",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 2
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 156652939
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "繁花夜梦平角.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘抖音小红书极致真实_v1.safetensors",
+            "strength_model": 0.3,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "GGHJ,这张照片捕捉到一个女人正漂浮在一条平静的小溪的水面下。这幅画充满了宁静、空灵的气质，描绘了一位年轻女子，她皮肤白皙，长长的、潮湿的黑发在身后层叠，在水中呈扇形展开。她平静的表情被柔和的自然光所突出，这些自然光通过水面过滤和反射。她看上去二十出头，脖子修长，五官柔美。她穿着黑色长袖贴身潜水服，前面有拉链。潜水服的袖子上有蓝色、紫色和绿色的鲜艳抽象花卉图案。潜水服上有“TOSWIM”的logo，紧贴着她纤细的身材，浸湿的布料紧贴着她的胸部和躯干，微妙地露出了她小到中等大小的乳房的轮廓。她周围的水波光粼粼，阳光创造了一个戏剧性的光与影的游戏。背景，稍微偏离焦点，由柔和的绿色树叶和岩石组成，暗示一个隐蔽的，自然的地方，可能是森林或山区。这张照片的整体基调是神秘和内省的，通过主导场景的冷蓝色阴影来增强。水的柔软质感和她潮湿的头发与她光滑的皮肤和精致透明的衣服形成对比。开心，放松，微笑，享受的表情",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "加噪点氛围人像摄影_1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CAFE现代简约咖啡厅设计_Cafe_SDXL_V1.safetensors",
+            "strength_model": 0.1,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05707_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05708_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "GGHJ, this photo captures a woman floating under the water of a calm stream. The painting is full of tranquil, ethereal temperament, depicting a young woman with fair skin and long, damp black hair layered behind her, fanning in the water. Her calm expression is highlighted by soft natural light, which filters and reflects through the water. She looks in her early twenties, has a long neck and a soft facial features. She wore a black long-sleeved, close-fitting diving suit with a zipper on the front. The sleeves of the diving suit feature bright abstract floral patterns in blue, purple and green. The diving suit has the \"TOSWIM\" logo, which is close to her slender figure, and the soaked fabric is close to her breasts and torso, subtly revealing the outline of her small to medium-sized breasts. The water around her sparkles, and the sun creates a dramatic game of light and shadow. The background, slightly off-focus, consists of soft green leaves and rocks, suggesting a hidden, natural place, possibly forest or mountainous area. The overall tone of this photo is mysterious and introspective, enhanced by the cold blue shades that dominate the scene. The soft texture of the water and her damp hair contrasted with her smooth skin and delicate and transparent clothing. Happy, relaxed, smiling, enjoyable expression"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "a901481c-cfa6-4439-a4e0-4ead447d9f58",
+            "timestamp": 1745721752298
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "110",
+              "111",
+              "113",
+              "117",
+              "219",
+              "228",
+              "232",
+              "233"
+            ],
+            "prompt_id": "a901481c-cfa6-4439-a4e0-4ead447d9f58",
+            "timestamp": 1745721752308
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "a901481c-cfa6-4439-a4e0-4ead447d9f58",
+            "timestamp": 1745721809293
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "d5ff85de-c147-4789-9c99-e7ae85bd1460": {
+    "prompt": [
+      11,
+      "d5ff85de-c147-4789-9c99-e7ae85bd1460",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1600,
+            "height": 2000,
+            "batch_size": 2
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 156652939
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "繁花夜梦平角.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "wiow001_FLUX03.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘抖音小红书极致真实_v1.safetensors",
+            "strength_model": 0.3,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "GGHJ,这张照片捕捉到一个女人正漂浮在一条平静的小溪的水面下。这幅画充满了宁静、空灵的气质，描绘了一位年轻女子，她皮肤白皙，长长的、潮湿的黑发在身后层叠，在水中呈扇形展开。她平静的表情被柔和的自然光所突出，这些自然光通过水面过滤和反射。她看上去二十出头，脖子修长，五官柔美。她穿着黑色长袖贴身潜水服，前面有拉链。潜水服的袖子上有蓝色、紫色和绿色的鲜艳抽象花卉图案。潜水服上有“TOSWIM”的logo，紧贴着她纤细的身材，浸湿的布料紧贴着她的胸部和躯干，微妙地露出了她小到中等大小的乳房的轮廓。她周围的水波光粼粼，阳光创造了一个戏剧性的光与影的游戏。背景，稍微偏离焦点，由柔和的绿色树叶和岩石组成，暗示一个隐蔽的，自然的地方，可能是森林或山区。这张照片的整体基调是神秘和内省的，通过主导场景的冷蓝色阴影来增强。水的柔软质感和她潮湿的头发与她光滑的皮肤和精致透明的衣服形成对比。开心，放松，微笑，享受的表情",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "加噪点氛围人像摄影_1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CAFE现代简约咖啡厅设计_Cafe_SDXL_V1.safetensors",
+            "strength_model": 0.1,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05709_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05710_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "GGHJ, this photo captures a woman floating under the water of a calm stream. The painting is full of tranquil, ethereal temperament, depicting a young woman with fair skin and long, damp black hair layered behind her, fanning in the water. Her calm expression is highlighted by soft natural light, which filters and reflects through the water. She looks in her early twenties, has a long neck and a soft facial features. She wore a black long-sleeved, close-fitting diving suit with a zipper on the front. The sleeves of the diving suit feature bright abstract floral patterns in blue, purple and green. The diving suit has the \"TOSWIM\" logo, which is close to her slender figure, and the soaked fabric is close to her breasts and torso, subtly revealing the outline of her small to medium-sized breasts. The water around her sparkles, and the sun creates a dramatic game of light and shadow. The background, slightly off-focus, consists of soft green leaves and rocks, suggesting a hidden, natural place, possibly forest or mountainous area. The overall tone of this photo is mysterious and introspective, enhanced by the cold blue shades that dominate the scene. The soft texture of the water and her damp hair contrasted with her smooth skin and delicate and transparent clothing. Happy, relaxed, smiling, enjoyable expression"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "d5ff85de-c147-4789-9c99-e7ae85bd1460",
+            "timestamp": 1745723386100
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "103",
+              "108",
+              "109",
+              "110",
+              "111",
+              "113",
+              "117",
+              "219",
+              "225",
+              "228",
+              "230",
+              "232",
+              "233"
+            ],
+            "prompt_id": "d5ff85de-c147-4789-9c99-e7ae85bd1460",
+            "timestamp": 1745723386111
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "d5ff85de-c147-4789-9c99-e7ae85bd1460",
+            "timestamp": 1745723517685
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "372167a3-3365-4991-abe6-0844d4cf135b": {
+    "prompt": [
+      12,
+      "372167a3-3365-4991-abe6-0844d4cf135b",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 2
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 494075044
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "繁花夜梦平角.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "SAM_INS_小红书_抖音-网红摄影_泳装模特_固定美女_v1.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘抖音小红书极致真实_v1.safetensors",
+            "strength_model": 0.3,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "models001，GGHJ,这张照片捕捉到一个女人正漂浮在一条平静的小溪的水面下。这幅画充满了宁静、空灵的气质，描绘了一位年轻女子，她皮肤白皙，长长的、潮湿的黑发在身后层叠，在水中呈扇形展开。她平静的表情被柔和的自然光所突出，这些自然光通过水面过滤和反射。她看上去二十出头，脖子修长，五官柔美。她穿着黑色长袖贴身潜水服，前面有拉链。潜水服的袖子上有蓝色、紫色和绿色的鲜艳抽象花卉图案。潜水服上有“TOSWIM”的logo，紧贴着她纤细的身材，浸湿的布料紧贴着她的胸部和躯干，微妙地露出了她小到中等大小的乳房的轮廓。她周围的水波光粼粼，阳光创造了一个戏剧性的光与影的游戏。背景，稍微偏离焦点，由柔和的绿色树叶和岩石组成，暗示一个隐蔽的，自然的地方，可能是森林或山区。这张照片的整体基调是神秘和内省的，通过主导场景的冷蓝色阴影来增强。水的柔软质感和她潮湿的头发与她光滑的皮肤和精致透明的衣服形成对比。开心，放松，微笑，享受的表情",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "加噪点氛围人像摄影_1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CAFE现代简约咖啡厅设计_Cafe_SDXL_V1.safetensors",
+            "strength_model": 0.1,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05711_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05712_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "models001, GGHJ, this photo captures a woman floating under the water of a calm stream. The painting is full of tranquil, ethereal temperament, depicting a young woman with fair skin and long, damp black hair layered behind her, fanning in the water. Her calm expression is highlighted by soft natural light, which filters and reflects through the water. She looks in her early twenties, has a long neck and a soft facial features. She wore a black long-sleeved, close-fitting diving suit with a zipper on the front. The sleeves of the diving suit feature bright abstract floral patterns in blue, purple and green. The diving suit has the \"TOSWIM\" logo, which is close to her slender figure, and the soaked fabric is close to her breasts and torso, subtly revealing the outline of her small to medium-sized breasts. The water around her sparkles, and the sun creates a dramatic game of light and shadow. The background, slightly off-focus, consists of soft green leaves and rocks, suggesting a hidden, natural place, possibly forest or mountainous area. The overall tone of this photo is mysterious and introspective, enhanced by the cold blue shades that dominate the scene. The soft texture of the water and her damp hair contrasted with her smooth skin and delicate and transparent clothing. Happy, relaxed, smiling, enjoyable expression"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "372167a3-3365-4991-abe6-0844d4cf135b",
+            "timestamp": 1745725555908
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "110",
+              "117"
+            ],
+            "prompt_id": "372167a3-3365-4991-abe6-0844d4cf135b",
+            "timestamp": 1745725555919
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "372167a3-3365-4991-abe6-0844d4cf135b",
+            "timestamp": 1745725627186
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  },
+  "75f62247-853e-4ad3-b573-ef7b52018cc5": {
+    "prompt": [
+      13,
+      "75f62247-853e-4ad3-b573-ef7b52018cc5",
+      {
+        "97": {
+          "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn_fast"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "UNET加载器"
+          }
+        },
+        "98": {
+          "inputs": {
+            "clip_name1": "t5xxl_fp16.safetensors",
+            "clip_name2": "clip_l.safetensors",
+            "type": "flux"
+          },
+          "class_type": "DualCLIPLoader",
+          "_meta": {
+            "title": "双CLIP加载器"
+          }
+        },
+        "99": {
+          "inputs": {
+            "vae_name": "ae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "VAE加载器"
+          }
+        },
+        "101": {
+          "inputs": {
+            "width": 1000,
+            "height": 1500,
+            "batch_size": 2
+          },
+          "class_type": "EmptySD3LatentImage",
+          "_meta": {
+            "title": "空Latent_SD3"
+          }
+        },
+        "103": {
+          "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+              "230",
+              0
+            ]
+          },
+          "class_type": "FluxGuidance",
+          "_meta": {
+            "title": "Flux引导"
+          }
+        },
+        "107": {
+          "inputs": {
+            "noise": [
+              "108",
+              0
+            ],
+            "guider": [
+              "109",
+              0
+            ],
+            "sampler": [
+              "110",
+              0
+            ],
+            "sigmas": [
+              "111",
+              0
+            ],
+            "latent_image": [
+              "101",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "自定义采样器(高级)"
+          }
+        },
+        "108": {
+          "inputs": {
+            "noise_seed": 103661378
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "随机噪波"
+          }
+        },
+        "109": {
+          "inputs": {
+            "model": [
+              "113",
+              0
+            ],
+            "conditioning": [
+              "103",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "基础引导"
+          }
+        },
+        "110": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "K采样器选择"
+          }
+        },
+        "111": {
+          "inputs": {
+            "scheduler": "beta",
+            "steps": 25,
+            "denoise": 1.0,
+            "model": [
+              "113",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "基础调度器"
+          }
+        },
+        "112": {
+          "inputs": {
+            "samples": [
+              "107",
+              0
+            ],
+            "vae": [
+              "99",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE解码"
+          }
+        },
+        "113": {
+          "inputs": {
+            "max_shift": 1.15,
+            "base_shift": 0.8,
+            "width": 1424,
+            "height": 2000,
+            "model": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "模型采样算法Flux"
+          }
+        },
+        "117": {
+          "inputs": {
+            "lora_name": "繁花夜梦平角.safetensors",
+            "strength_model": 1.0,
+            "model": [
+              "97",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "176": {
+          "inputs": {
+            "filename_prefix": "XXXXX",
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "保存图像"
+          }
+        },
+        "219": {
+          "inputs": {
+            "lora_name": "SAM_INS_小红书_抖音-网红摄影_泳装模特_固定美女_v1.safetensors",
+            "strength_model": 0.8,
+            "model": [
+              "117",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "225": {
+          "inputs": {
+            "text": [
+              "230",
+              1
+            ],
+            "text_1": "Swimsuit, inside girl in the room, aster photography, realistic style, fashion model, 1 girl, fashion, 1 fashion model, the room features a combination of modern and classical elements. The floor is covered with carpets in white and pink patterns, and the walls are painted in a soft pink color. Large arched windows with black frames allow plenty of natural light to pour into the space. The ceiling is made of wood with intricate patterns and a few hanging chandeliers for a touch of elegance. The seats are composed of round tables with white table tops and wooden chairs with light wooden frames and woven seats. The chairs are arranged around the table, creating a comfortable and tempting atmosphere. The table is also decorated with pink cushions, adding to the overall beauty. The room was filled with lush greenery, which were placed in different locations, including near windows and on tables. Plants add natural and refreshing elements to the space, making it feel more lively and warm. The room also features a large vaulted porch leading to another area, indicating that the space is part of a larger building. Overall, the image presents a well-designed, beautiful interior environment that combines natural elements and modern design to create a pleasant and tempting atmosphere. The sun is bright, the light is abundant, and the smile is bright!"
+          },
+          "class_type": "ShowText|pysssss",
+          "_meta": {
+            "title": "展示文本"
+          }
+        },
+        "228": {
+          "inputs": {
+            "lora_name": "MajicFlus_麦橘抖音小红书极致真实_v1.safetensors",
+            "strength_model": 0.3,
+            "model": [
+              "219",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "229": {
+          "inputs": {
+            "file_path": "\\\\toswim\\共享文件\\AI养号图\\01",
+            "speak_and_recognation": true,
+            "images": [
+              "112",
+              0
+            ]
+          },
+          "class_type": "SaveImageToLocal",
+          "_meta": {
+            "title": "保存图像到本地"
+          }
+        },
+        "230": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": "models001，GGHJ,这张照片捕捉到一个女人正漂浮在一条平静的小溪的水面下。这幅画充满了宁静、空灵的气质，描绘了一位年轻女子，她皮肤白皙，长长的、潮湿的黑发在身后层叠，在水中呈扇形展开。她平静的表情被柔和的自然光所突出，这些自然光通过水面过滤和反射。她看上去二十出头，脖子修长，五官柔美。她穿着黑色长袖贴身潜水服，前面有拉链。潜水服的袖子上有蓝色、紫色和绿色的鲜艳抽象花卉图案。潜水服上有“TOSWIM”的logo，紧贴着她纤细的身材，浸湿的布料紧贴着她的胸部和躯干，微妙地露出了她小到中等大小的乳房的轮廓。她周围的水波光粼粼，阳光创造了一个戏剧性的光与影的游戏。背景，稍微偏离焦点，由柔和的绿色树叶和岩石组成，暗示一个隐蔽的，自然的地方，可能是森林或山区。这张照片的整体基调是神秘和内省的，通过主导场景的冷蓝色阴影来增强。水的柔软质感和她潮湿的头发与她光滑的皮肤和精致透明的衣服形成对比。开心，放松，微笑，享受的表情",
+            "Show proxy": "proxy_hide",
+            "Show authorization": "authorization_hide",
+            "speak_and_recognation": true,
+            "clip": [
+              "98",
+              0
+            ]
+          },
+          "class_type": "DeepTranslatorCLIPTextEncodeNode",
+          "_meta": {
+            "title": "CLIP文本编码器(翻译高级)"
+          }
+        },
+        "232": {
+          "inputs": {
+            "lora_name": "加噪点氛围人像摄影_1.safetensors",
+            "strength_model": 0.2,
+            "model": [
+              "228",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        },
+        "233": {
+          "inputs": {
+            "lora_name": "CAFE现代简约咖啡厅设计_Cafe_SDXL_V1.safetensors",
+            "strength_model": 0.1,
+            "model": [
+              "232",
+              0
+            ]
+          },
+          "class_type": "LoraLoaderModelOnly",
+          "_meta": {
+            "title": "LoRA加载器(仅模型)"
+          }
+        }
+      },
+      {
+        "client_id": "67511410e261ae628bd9d65a"
+      },
+      [
+        "225",
+        "230",
+        "229",
+        "176"
+      ]
+    ],
+    "outputs": {
+      "230": {
+        "detected_lang": [
+          "auto"
+        ]
+      },
+      "176": {
+        "images": [
+          {
+            "filename": "XXXXX_05713_.png",
+            "subfolder": "",
+            "type": "output"
+          },
+          {
+            "filename": "XXXXX_05714_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      },
+      "225": {
+        "text": [
+          "models001, GGHJ, this photo captures a woman floating under the water of a calm stream. The painting is full of tranquil, ethereal temperament, depicting a young woman with fair skin and long, damp black hair layered behind her, fanning in the water. Her calm expression is highlighted by soft natural light, which filters and reflects through the water. She looks in her early twenties, has a long neck and a soft facial features. She wore a black long-sleeved, close-fitting diving suit with a zipper on the front. The sleeves of the diving suit feature bright abstract floral patterns in blue, purple and green. The diving suit has the \"TOSWIM\" logo, which is close to her slender figure, and the soaked fabric is close to her breasts and torso, subtly revealing the outline of her small to medium-sized breasts. The water around her sparkles, and the sun creates a dramatic game of light and shadow. The background, slightly off-focus, consists of soft green leaves and rocks, suggesting a hidden, natural place, possibly forest or mountainous area. The overall tone of this photo is mysterious and introspective, enhanced by the cold blue shades that dominate the scene. The soft texture of the water and her damp hair contrasted with her smooth skin and delicate and transparent clothing. Happy, relaxed, smiling, enjoyable expression"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "75f62247-853e-4ad3-b573-ef7b52018cc5",
+            "timestamp": 1745725740332
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "97",
+              "98",
+              "99",
+              "101",
+              "103",
+              "109",
+              "110",
+              "111",
+              "113",
+              "117",
+              "219",
+              "225",
+              "228",
+              "230",
+              "232",
+              "233"
+            ],
+            "prompt_id": "75f62247-853e-4ad3-b573-ef7b52018cc5",
+            "timestamp": 1745725740342
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "75f62247-853e-4ad3-b573-ef7b52018cc5",
+            "timestamp": 1745725793109
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "230": {
+        "node_id": "230",
+        "display_node": "230",
+        "parent_node": null,
+        "real_node_id": "230"
+      },
+      "176": {
+        "node_id": "176",
+        "display_node": "176",
+        "parent_node": null,
+        "real_node_id": "176"
+      },
+      "225": {
+        "node_id": "225",
+        "display_node": "225",
+        "parent_node": null,
+        "real_node_id": "225"
+      }
+    }
+  }
+}

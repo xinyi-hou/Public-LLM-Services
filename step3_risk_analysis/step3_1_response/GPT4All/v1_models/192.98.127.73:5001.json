@@ -1,0 +1,13 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "koboldcpp/capybarahermes-2.5-mistral-7b.Q8_0",
+      "object": "model",
+      "created": 1745728129,
+      "owned_by": "koboldcpp",
+      "permission": [],
+      "root": "koboldcpp"
+    }
+  ]
+}

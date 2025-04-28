@@ -1,0 +1,89 @@
+{
+  "models": [
+    {
+      "name": "llama3.1:8b",
+      "model": "llama3.1:8b",
+      "modified_at": "2025-04-15T23:17:44.60716539Z",
+      "size": 4920753328,
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "llama3.2:1b-text-q4_K_M",
+      "model": "llama3.2:1b-text-q4_K_M",
+      "modified_at": "2025-04-04T05:58:17.57066142Z",
+      "size": 807704380,
+      "digest": "131cc658d843e52e49119dec8be15b19ed37ddab04ef29c81095a2861bbb17f4",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "1.2B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "llama3.2:1b",
+      "model": "llama3.2:1b",
+      "modified_at": "2025-04-04T05:57:59.02635827Z",
+      "size": 1321098329,
+      "digest": "baf6a787fdffd633537aa2eb51cfd54cb93ff08e28040095462bb63daf552878",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "1.2B",
+        "quantization_level": "Q8_0"
+      }
+    },
+    {
+      "name": "hellord/mxbai-embed-large-v1:f16",
+      "model": "hellord/mxbai-embed-large-v1:f16",
+      "modified_at": "2025-04-02T09:55:53.063210748Z",
+      "size": 669603972,
+      "digest": "f15f96241a95fddd6a487689105b328ede7af6adec6775116c22e6a3ac7d9bec",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "bert",
+        "families": [
+          "bert"
+        ],
+        "parameter_size": "334M",
+        "quantization_level": "F16"
+      }
+    },
+    {
+      "name": "driaforall/tiny-agent-a:0.5b",
+      "model": "driaforall/tiny-agent-a:0.5b",
+      "modified_at": "2025-04-02T09:55:47.689239176Z",
+      "size": 531069657,
+      "digest": "a68f7171f43c7c30096a67bd84fe5e557967603c03626d8e6dd7115fa7464a41",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "494.03M",
+        "quantization_level": "Q8_0"
+      }
+    }
+  ]
+}

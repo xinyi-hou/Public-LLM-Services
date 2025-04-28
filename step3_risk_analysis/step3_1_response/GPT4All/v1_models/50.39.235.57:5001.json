@@ -1,0 +1,13 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "koboldcpp/Mistral-Nemo-Instruct-2407.Q4_K_M",
+      "object": "model",
+      "created": 1745727928,
+      "owned_by": "koboldcpp",
+      "permission": [],
+      "root": "koboldcpp"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "models": [
+    {
+      "name": "qwq:latest",
+      "model": "qwq:latest",
+      "modified_at": "2025-03-08T06:18:15.052598734Z",
+      "size": 19851349390,
+      "digest": "cc1091b0e276012ba4c1662ea103be2c87a1543d2ee435eb5715b37b9b680d27",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "32.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+﻿端点路径,方法类型,功能描述,返回信息
+/v1/chat/completions,POST,与对话模型（如 GPT-4、GPT-3.5）交互,choices（生成的回复）、usage（token 消耗）等。
+/v1/completions,POST,旧版文本补全（逐步淘汰）,同 chat/completions，但仅支持旧模型（如 text-davinci-003）。
+/v1/embeddings,POST,生成文本嵌入向量,data（嵌入向量数组）、model（使用的模型）等。
+/v1/images/generations,POST,通过 DALL·E 生成图像,url（图像下载链接）、revised_prompt（优化后的提示词）等。
+/v1/images/edits,POST,编辑图像（需上传原图和掩码）,同 images/generations。
+/v1/images/variations,POST,生成图像变体,同 images/generations。
+/v1/audio/transcriptions,POST,语音转文本（Whisper 模型）,text（转录的文本）。
+/v1/audio/translations,POST,语音翻译为英语,text（翻译后的英文文本）。
+/v1/audio/speech,POST,文本转语音（TTS）,返回音频文件流（如 MP3）。
+/v1/fine_tuning/jobs,POST/GET,创建或列出微调任务,POST 返回 job_id；GET 返回任务列表。
+/v1/fine_tuning/jobs/{job_id},GET,获取微调任务详情,任务状态、模型 ID、训练文件等。
+/v1/files,POST/GET,上传或列出文件,POST 返回 file_id；GET 返回文件列表。
+/v1/files/{file_id},DELETE/GET,删除或检索文件,DELETE 返回删除状态；GET 返回文件元数据。
+/v1/moderations,POST,内容审核,flagged（是否违规）、categories（违规类型）等。
+/v1/models,GET,列出可用模型,data（模型列表，包括 ID 和权限）。
+/v1/models/{model_id},GET,获取模型信息,模型详细信息（如所有者、可用性）。

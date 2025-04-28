@@ -1,0 +1,328 @@
+os,server,count,percentage
+ubuntu,nginx/1.18.0 (ubuntu),7242,42.84%
+ubuntu,nginx/1.24.0 (ubuntu),3659,21.65%
+windows,microsoft-iis/10.0,567,3.35%
+ubuntu,apache/2.4.52 (ubuntu),545,3.22%
+debian,apache/2.4.62 (debian),457,2.7%
+ubuntu,apache/2.4.41 (ubuntu),420,2.48%
+ubuntu,nginx/1.14.0 (ubuntu),389,2.3%
+ubuntu,apache/2.4.29 (ubuntu),357,2.11%
+unix,apache/2.4.62 (unix),218,1.29%
+ubuntu,apache/2.4.58 (ubuntu),194,1.15%
+ubuntu,nginx/1.26.0 (ubuntu),194,1.15%
+debian,apache/2.4.25 (debian),139,0.82%
+unix,apache/2.4.57 (unix),122,0.72%
+windows,microsoft-iis/8.5,119,0.7%
+unix,apache/2.4.63 (unix),117,0.69%
+ubuntu,nginx/1.10.3 (ubuntu),112,0.66%
+windows,microsoft-iis/7.5,101,0.6%
+debian,apache/2.4.38 (debian),90,0.53%
+debian,apache/2.4.10 (debian),89,0.53%
+debian,apache/2.4.59 (debian) svn/1.10.4 mod_fcgid/2.3.9 openssl/1.1.1n,75,0.44%
+ubuntu,apache/2.4.18 (ubuntu),69,0.41%
+windows,microsoft-iis/6.0,65,0.38%
+ubuntu,nginx/1.22.0 (ubuntu),64,0.38%
+raspbian,apache/2.4.10 (raspbian),57,0.34%
+debian,apache/2.4.59 (debian),54,0.32%
+ubuntu,apache/2.2.22 (ubuntu),51,0.3%
+linux,linux/2.4 upnp/1.0 brcm400/1.0,44,0.26%
+raspbian,apache/2.4.25 (raspbian),44,0.26%
+debian,apache/2.4.56 (debian),44,0.26%
+windows,microsoft-iis/5.1,44,0.26%
+windows,apache/2.4.9 (win32) openssl/1.0.1g php/5.5.11,43,0.25%
+unix,apache/2.2.0 (unix) mod_ssl/2.2.0 openssl/0.9.7g php/5.1.1,43,0.25%
+windows,microsoft-iis/8.0,41,0.24%
+unix,apache/2.4.46 (unix) openssl/1.1.1j,40,0.24%
+unix,apache/1.3.31 (unix),38,0.22%
+unix,apache/1.3.28 (unix) mod_ssl/2.8.15 openssl/0.9.8d,38,0.22%
+unix,apache/2.4.27 (unix) openssl/1.0.2k,37,0.22%
+linux,linux/2.x upnp/1.0 avtech/1.0,37,0.22%
+unix,cherokee/0.99.9 (unix),34,0.2%
+windows,apache/2.4.23 (win32) openssl/1.0.2h php/5.6.24,32,0.19%
+windows,microsoft-iis/7.0,31,0.18%
+debian,apache/2.2.22 (debian),29,0.17%
+unix,apache/2.4.43 (unix) openssl/1.1.1g,28,0.17%
+windows,apache/2.4.12 (win32) openssl/1.0.1l php/5.6.8,28,0.17%
+unix,apache/2.4.56 (unix) openssl/1.1.1t php/8.2.4 mod_perl/2.0.12 perl/v5.34.1,24,0.14%
+ubuntu,apache/2.4.7 (ubuntu),21,0.12%
+ubuntu,apache/1,18,0.11%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/7.4.33,17,0.1%
+ubuntu,apache/2.4.63 (ubuntu),16,0.09%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/8.2.20,15,0.09%
+debian,apache/2.4.54 (debian),14,0.08%
+windows,apache/2.4.39 (win64) openssl/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02,12,0.07%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.4.16,11,0.07%
+ubuntu,nginx/1.4.6 (ubuntu),11,0.07%
+ubuntu,nginx/1.17.10 (ubuntu),11,0.07%
+ubuntu,nginx,10,0.06%
+debian,apache/2.4.57 (debian),10,0.06%
+debian,apache/2.4.61 (debian),9,0.05%
+ubuntu,apache/2.4.62 (ubuntu),8,0.05%
+windows,apache/2.4.58 (win64) openssl/3.1.3 php/8.2.12,8,0.05%
+ubuntu,nginx/1.16.1 (ubuntu),8,0.05%
+unix,apache/2.4.62 (unix) openssl/1.1.1k,7,0.04%
+windows,microsoft-iis/9.0,7,0.04%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.6.40,6,0.04%
+raspbian,apache/2.4.59 (raspbian),6,0.04%
+windows,apache/2.4.55 (win64) openssl/1.1.1s mod_fcgid/2.3.9a,6,0.04%
+suse,apache/2.4.58 (linux/suse),5,0.03%
+unix,apache/2.4.54 (unix) openssl/1.1.1s php/7.4.33 mod_perl/2.0.12 perl/v5.34.1,5,0.03%
+ubuntu,nginx/1.15.9 (ubuntu),5,0.03%
+ubuntu,thttpd/2.23beta1 26may2002,5,0.03%
+unix,apache/2.4.58 (unix),5,0.03%
+raspbian,apache/2.4.56 (raspbian),4,0.02%
+ubuntu,netpresenz,4,0.02%
+unix,apache/2.4.56 (unix),4,0.02%
+unix,apache/2.4.52 (unix) openssl/1.1.1n,4,0.02%
+unix,apache/2.2.34 (unix) mod_ssl/2.2.34 openssl/1.0.2k dav/2,4,0.02%
+cpanel,apache/2.4.53 (cpanel) openssl/1.1.1n mod_bwlimited/1.4,4,0.02%
+windows,microsoft-iis,4,0.02%
+unix,apache/2.4.62 (unix) openssl/3.0.9,4,0.02%
+unix,apache/2.4.62 (unix) openssl/3.4.0,4,0.02%
+unix,apache/2.4.62 (unix) openssl/3.4.1 mod_fcgid/2.3.9,4,0.02%
+unix,apache/2.4.39 (unix) openssl/1.1.1b,4,0.02%
+ubuntu,apache/2.4.46 (ubuntu),4,0.02%
+freebsd,apache/2.4.41 (freebsd) openssl/1.0.2u mod_fcgid/2.3.9,4,0.02%
+windows,apache/2.2.4 (win32) php/5.2.3,4,0.02%
+ubuntu,ibm_http_server/1.3.12 apache/1.3.12 (unix),3,0.02%
+freebsd,apache/2.4.41 (freebsd) openssl/1.0.2s mod_fcgid/2.3.9,3,0.02%
+redhat,apache/2.4.34 (red hat),3,0.02%
+unix,apache/2.4.46 (unix) openssl/1.1.1d php/7.4.29,3,0.02%
+unix,apache/2.4.57 (unix) openssl/1.0.2k-fips,3,0.02%
+red hat enterprise linux,apache/2.4.6 (red hat enterprise linux) openssl/1.0.2k-fips mod_fcgid/2.3.9 php/5.6.34,3,0.02%
+unix,apache/2.4.58 (unix) openssl/1.1.1w php/8.2.12 mod_perl/2.0.12 perl/v5.34.1,3,0.02%
+red hat enterprise linux,apache/2.4.37 (red hat enterprise linux) openssl/1.1.1k,3,0.02%
+ubuntu,apache tomcat/4.1.27-le-jdk14 (http/1.1 connector),3,0.02%
+debian,apache/2.4.52 (debian),3,0.02%
+ubuntu,"linux-i386-2.6.33.2, upnp/1.0, pms/1.21.1",3,0.02%
+ubuntu,monkey/0.6.2,3,0.02%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips,3,0.02%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips mod_wsgi/4.7.1 python/3.4,3,0.02%
+centos,apache/2.4.62 (centos),3,0.02%
+cpanel,apache/2.4.59 (cpanel) openssl/1.1.1w mod_bwlimited/1.4 php/5.6.40,3,0.02%
+windows,apache/2.4.54 (win64) openssl/1.1.1p mod_fcgid/2.3.9a,3,0.02%
+ubuntu,apache,2,0.01%
+debian,apache/2.4.51 (debian),2,0.01%
+ubuntu,cl-http,2,0.01%
+ubuntu,apache/2.4.54 (ubuntu),2,0.01%
+raspbian,apache/2.4.54 (raspbian),2,0.01%
+linux,linux/2.4.21 upnp/1.0 miniupnpd/1.0,2,0.01%
+ubuntu,apache/2.4.57 (ubuntu),2,0.01%
+fedora,apache/2.4.46 (fedora) openssl/1.1.1i mod_perl/2.0.11 perl/v5.32.0,2,0.01%
+freebsd,apache/2.4.57 (freebsd) openssl/1.0.2u mod_fcgid/2.3.9,2,0.01%
+ubuntu,avaya cmbe/2.0.0,2,0.01%
+cpanel,apache/2.4.62 (cpanel) openssl/1.1.1w mod_bwlimited/1.4,2,0.01%
+debian,apache/2.4.37 (debian),2,0.01%
+ubuntu,fnord,2,0.01%
+cpanel,apache/2.4.63 (cpanel) openssl/1.1.1w mod_bwlimited/1.4,2,0.01%
+ubuntu,compaqhttpserver,2,0.01%
+ubuntu,atphttpd,2,0.01%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.6.38,2,0.01%
+ubuntu,crushftp http server,2,0.01%
+ubuntu,compaqhttpserver/9.9 hp system management homepage/2.1.5.146,2,0.01%
+ubuntu,big-ip,2,0.01%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/8.0.30,2,0.01%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.4.16 mod_perl/2.0.11 perl/v5.16.3,2,0.01%
+suse,apache/2.4.33 (linux/suse),2,0.01%
+centos,apache/2.2.15 (centos),2,0.01%
+debian,apache/2.2.16 (debian),2,0.01%
+ubuntu,polycom soundpoint ip telephone httpd,2,0.01%
+ubuntu,ibm_http_server/2.0.47.1-pk01070 apache/2.0.47 (win32) php/5.0.4,2,0.01%
+unix,apache/2.4.59 (unix) openssl/3.3.0 php/8.3.7,2,0.01%
+ubuntu,mbedthis-appweb/2.4.0,2,0.01%
+unix,apache/2.4.37 (unix) openssl/1.0.2k php/7.2.12,2,0.01%
+ubuntu,mbedthis-appweb/2.4.2,2,0.01%
+ubuntu,microsoft-iis/5.1,2,0.01%
+ubuntu,isos/9.0 upnp/1.0 conexant-emweb/r6_1_0,2,0.01%
+ubuntu,iplanet-web-proxy-server/3.6-sp5,2,0.01%
+unix,apache/2.4.62 (unix) openssl/1.1.1zb php/8.1.30,2,0.01%
+unix,apache/2.4.52 (unix) openssl/1.1.1d,2,0.01%
+windows,microsoft-iis/5.0,2,0.01%
+unix,ibm_http_server/7.0.0.9 (unix),2,0.01%
+unix,apache/2.4.51 (unix) openssl/1.1.1n,2,0.01%
+windows,microsoft-iis/4.0,2,0.01%
+unix,apache/2.4.51 (unix) openssl/1.1.1d svn/1.14.1 phusion_passenger/6.0.12 mod_perl/2.0.11 perl/v5.28.1,2,0.01%
+ubuntu,thttpd/2.04 10aug98,2,0.01%
+unix,apache/2.2.26 (unix) dav/2 mod_ssl/2.2.26 openssl/0.9.8y,2,0.01%
+unix,apache/2.4.51 (unix) openssl/1.1.1d,2,0.01%
+windows,apache/2.4.54 (win64) openssl/1.1.1p php/7.4.33,2,0.01%
+unix,apache/2.4.63 (unix) openssl/3.4.1 php/8.4.4,2,0.01%
+windows,apache/2.4.54 (win64) openssl/1.1.1p php/8.1.10,2,0.01%
+ubuntu,php/5.3.14 zendserver/5.0,2,0.01%
+ubuntu,nsc/0.6.4 (jvm),2,0.01%
+windows,apache/2.4.56 (win64) openssl/3.0.8 mod_fcgid/2.3.9a mod_log_rotate/1.02,2,0.01%
+ubuntu,hp web jetadmin 10.3.85669,1,0.01%
+ubuntu,hp-chaiserver/2.2,1,0.01%
+ubuntu,ibm_http_server,1,0.01%
+ubuntu,ibm_http_server/1.3.19.2  apache/1.3.20 (win32),1,0.01%
+ubuntu,ipswitch-imail/7.07,1,0.01%
+ubuntu,ibm_http_server/2.0.42.2-pk25355 apache/2.0.47 (unix) dav/2,1,0.01%
+ubuntu,ibm_http_server/6.0 apache/2.0.47 (unix) dav/2,1,0.01%
+ubuntu,ibm_http_server/7.0.0.9 (unix),1,0.01%
+ubuntu,ipos/7.0 upnp/1.0 tl-wr741n/1.0/2.0,1,0.01%
+ubuntu,intel(r) active management technology,1,0.01%
+ubuntu,intel(r) standard manageability 9.0.3,1,0.01%
+ubuntu,fedora/10 upnp/1.0 miniupnpd/1.4,1,0.01%
+ubuntu,ipos/7.0 upnp/1.0 tl-wr941n/2.0,1,0.01%
+ubuntu,ipswitch-imail/5.08,1,0.01%
+ubuntu,mini dome ip camera,1,0.01%
+ubuntu,mini_httpd/1 23jun2000,1,0.01%
+ubuntu,miniserv/0.01,1,0.01%
+ubuntu,gunicorn/19.7.1,1,0.01%
+ubuntu,reecam ip camera,1,0.01%
+ubuntu,homedoor,1,0.01%
+ubuntu,delegate/7.7.0,1,0.01%
+ubuntu,gsoap/2.7,1,0.01%
+ubuntu,goserve,1,0.01%
+centos,apache/2.2.3 (centos),1,0.01%
+ubuntu,"linux/2.6.32-24-generic, upnp/1.0, portable sdk for upnp devices/1.6.6",1,0.01%
+ubuntu,"linux/2.6.32-279.14.1.el6.x86_64, upnp/1.0, portable sdk for upnp devices/1.6.14",1,0.01%
+ubuntu,linux/cross_compiled upnp/1.0 miniupnpd/1.0,1,0.01%
+ubuntu,litespeed/5.2.8 enterprise,1,0.01%
+ubuntu,embedded http server,1,0.01%
+ubuntu,draytek/vigor2130 upnp/1.0 miniupnpd/1.0,1,0.01%
+ubuntu,microsoft wince fidelix v11.50.29,1,0.01%
+ubuntu,microsoft-iis,1,0.01%
+ubuntu,microsoft-iis/5.0,1,0.01%
+ubuntu,php/4.4.2-1build1,1,0.01%
+ubuntu,microsoft-iis/6.0,1,0.01%
+ubuntu,microsoft-iis/7.5,1,0.01%
+ubuntu,jetty(6.1.12.rc2),1,0.01%
+ubuntu,jans server,1,0.01%
+ubuntu,ews-nic3/6.31,1,0.01%
+ubuntu,folkweb,1,0.01%
+ubuntu,goahead-webs/2.5.0,1,0.01%
+ubuntu,goahead-webs/2.5.0 peersec-matrixssl/3.4.2-open,1,0.01%
+ubuntu,oracle http server powered by apache/1.3.19 (win32) mod_ssl/2.8.1 openssl/0.9.5a mod_fastcgi/2.2.10 mod_oprocmgr/1.0 mod_perl/1.25,1,0.01%
+ubuntu,sentinelkeysserver/1,1,0.01%
+ubuntu,php/5.1.2,1,0.01%
+ubuntu,nginx/1.10.1,1,0.01%
+ubuntu,mylo/0.2.0,1,0.01%
+ubuntu,net-dk/1.0,1,0.01%
+ubuntu,netcache appliance (netapp/5.6.1d22),1,0.01%
+ubuntu,netcache appliance (netapp/6.0.4),1,0.01%
+ubuntu,netgear/1.0 upnp/1.0 miniupnpd/1.0,1,0.01%
+ubuntu,cross web server,1,0.01%
+ubuntu,nginx/0.8.53 + phusion passenger 3.0.0 (mod_rails/mod_rack),1,0.01%
+ubuntu,opentv/5.40,1,0.01%
+ubuntu,compaqhttpserver/9.9 hp system management homepage,1,0.01%
+ubuntu,debian/wheezy/sid upnp/1.1 miniupnpd/1.8,1,0.01%
+ubuntu,cloudfront,1,0.01%
+ubuntu,cloudflare,1,0.01%
+ubuntu,cleo harmony/5.7.0.8 (linux),1,0.01%
+ubuntu,cisco-ios/12.1 http-server/1.0(1),1,0.01%
+ubuntu,cherokee/0.2.7,1,0.01%
+ubuntu,chainpoint-node,1,0.01%
+ubuntu,boa/0.92p os-9 version,1,0.01%
+ubuntu,linux/2.4.21 upnp/1.0 miniupnpd/1.0,1,0.01%
+ubuntu,mycio,1,0.01%
+ubuntu,mongrel 1.1.5,1,0.01%
+ubuntu,bkhttp/0.3,1,0.01%
+ubuntu,rushhour,1,0.01%
+ubuntu,pi3web/2.0,1,0.01%
+ubuntu,bigip,1,0.01%
+ubuntu,powerweb,1,0.01%
+ubuntu,qtss/5.0 (build/452; platform/macosx; release/panther; ),1,0.01%
+ubuntu,rapid logic/1,1,0.01%
+ubuntu,resin/1,1,0.01%
+ubuntu,openwrt/kamikaze upnp/1.0 miniupnpd/1.5,1,0.01%
+ubuntu,resin/3.0.23,1,0.01%
+ubuntu,sentinelkeysserver/1.0,1,0.01%
+ubuntu,nginx + phusion passenger,1,0.01%
+ubuntu,sentinelprotectionserver/7,1,0.01%
+ubuntu,sentinelprotectionserver/7.0,1,0.01%
+ubuntu,sentinelprotectionserver/7.3,1,0.01%
+ubuntu,servlet/3.0; jbossas-6,1,0.01%
+ubuntu,goahead-webs,1,0.01%
+ubuntu,oracle application server containers for j2ee 10g (9.0.4.0.0),1,0.01%
+ubuntu,openvpn-as,1,0.01%
+ubuntu,mod_security/1.71,1,0.01%
+ubuntu,"linux/2.6.28, upnp/1.0, portable sdk for upnp devices/1.6.10",1,0.01%
+ubuntu,gfe/1,1,0.01%
+ubuntu,"linux/2.4.18_mvl30-ixdp425, upnp/1.0, intel sdk for upnp devices/1.3.1",1,0.01%
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.40.0",1,0.01%
+ubuntu,varnish-cache,1,0.01%
+unix,apache/1.3.28 (unix) mod_auth_pam/1.1.1,1,0.01%
+ubuntu,virata-emweb/r6_2_0,1,0.01%
+ubuntu,vqserver,1,0.01%
+ubuntu,weblogic server 8.1 sp3 tue jun 29 23:11:19 pdt 2004 404973,1,0.01%
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.20",1,0.01%
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.20.412",1,0.01%
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.25.1",1,0.01%
+unix,apache/1.3.28 (unix),1,0.01%
+ubuntu,ubuntu/precise upnp/1.0 miniupnpd/1.4,1,0.01%
+unix,apache/2.4.51 (unix) openssl/1.1.1n svn/1.14.1 phusion_passenger/6.0.12 mod_perl/2.0.11 perl/v5.28.1,1,0.01%
+ubuntu,agranat-emweb,1,0.01%
+ubuntu,american sitebuilder,1,0.01%
+windows,apache/2.4.57 (win64) openssl/3.1.2,1,0.01%
+debian,apache/2.4.54 (debian) openssl/1.1.1n,1,0.01%
+windows,apache/2.4.12 (win32) openssl/1.0.2k php/7.2.5,1,0.01%
+debian,apache/2.4.53 (debian),1,0.01%
+windows,apache/2.4.23 (win32) openssl/1.0.2j php/5.4.45,1,0.01%
+ubuntu,ubuntu/saucy upnp/1.0 miniupnpd/1.4,1,0.01%
+ubuntu,ubuntu/9.04 upnp/1.0 miniupnpd/1.0,1,0.01%
+windows,apache/2.4.43 (win64) openssl/1.1.1g php/7.4.4,1,0.01%
+ubuntu,apache/2.4.38 (ubuntu),1,0.01%
+ubuntu,apache-coyote/1.1,1,0.01%
+ubuntu,asp.net,1,0.01%
+ubuntu,apache/1.3.9,1,0.01%
+ubuntu,apache/2,1,0.01%
+ubuntu,apache/2.4.55 (ubuntu),1,0.01%
+unix,apache/2.4.37 (unix) openssl/1.1.1k php/7.2.8,1,0.01%
+unix,apache/2.4.48 (unix) openssl/1.1.1k,1,0.01%
+ubuntu,apache/2.4.43 (ubuntu),1,0.01%
+ubuntu,apache/2.2.8 (ubuntu) mod_python/3.3.1 python/2.5.2 php/5.2.4-2ubuntu5.7 with suhosin-patch mod_ssl/2.2.8 openssl/0.9.8g,1,0.01%
+ubuntu,tomcat web server/3.3.1 final ( jsp 1.1; servlet 2.2 ),1,0.01%
+ubuntu,apache/2.2.4 (win32) php/5.2.2,1,0.01%
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.52.1",1,0.01%
+ubuntu,avenida,1,0.01%
+ubuntu,ubuntu/xenial upnp/1.0 miniupnpd/1.4,1,0.01%
+ubuntu,squid/2.3.stable1,1,0.01%
+ubuntu,sun-java-system-web-server/7.0,1,0.01%
+ubuntu,thttpd/2.19-mx jan 24 2006,1,0.01%
+ubuntu,avocent dsview 3/3.7.0.71,1,0.01%
+windows,apache/2.4.38 (win64) openssl/1.0.2r,1,0.01%
+debian,apache/2.4.48 (debian),1,0.01%
+ubuntu,embedthis-http,1,0.01%
+unix,apache/2.4.63 (unix) openssl/3.4.0 php/8.2.27,1,0.01%
+unix,apache/2.4.59 (unix) openssl/3.0.11,1,0.01%
+freebsd,apache/2.4.48 (freebsd) openssl/1.0.2u mod_fcgid/2.3.9,1,0.01%
+redhat,apache/2.2.3 (red hat),1,0.01%
+red hat enterprise linux,apache/2.4.62 (red hat enterprise linux) openssl/3.2.2 mod_wsgi/4.7.1 python/3.9,1,0.01%
+red hat enterprise linux,apache/2.4.62 (red hat enterprise linux),1,0.01%
+red hat enterprise linux,apache/2.4.37 (red hat enterprise linux) openssl/1.1.1k mod_fcgid/2.3.9,1,0.01%
+unix,apache/2.4.62 (unix) openssl/3.3.2,1,0.01%
+raspbian,apache/2.4.38 (raspbian),1,0.01%
+freebsd,apache/2.4.54 (freebsd) openssl/1.0.2u mod_fcgid/2.3.9,1,0.01%
+unix,apache/2.4.58 (unix) openssl/1.1.1p php/8.1.24,1,0.01%
+ubuntu,squid,1,0.01%
+ubuntu,simplehttp/0.6 python/2.7.6,1,0.01%
+ubuntu,smoothwall express/3.0 upnp/1.0 miniupnpd/1.0,1,0.01%
+ubuntu,simplehttp/0.6 python/3.4.0,1,0.01%
+ubuntu,jetty/4.2.x (vxworks/wind version 2.9 ppc java/1.1-rr-std-b12),1,0.01%
+ubuntu,jrun/3.1,1,0.01%
+ubuntu,linux upnp/1.0 sonos/31.3-22220 (anvil),1,0.01%
+ubuntu,linux upnp/1.0 sonos/47.2-59120 (zps3),1,0.01%
+suse,apache/2.4.10 (linux/suse),1,0.01%
+ubuntu,"5.2.3790 2/service pack 1, upnp/1.0, tversity media server",1,0.01%
+debian,apache/2.4.25 (debian) openssl/1.0.2u,1,0.01%
+centos,apache/2.4.6 (centos) openssl/1.0.1e-fips php/5.6.33,1,0.01%
+windows,apache/2.4.62 (win64),1,0.01%
+windows,apache/2.2.4 (win32) php/5.2.2,1,0.01%
+cpanel,apache/2.4.43 (cpanel),1,0.01%
+centos,apache/2.4.7 (centos),1,0.01%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/7.2.34 mod_perl/2.0.11 perl/v5.16.3,1,0.01%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/7.2.34,1,0.01%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.6.37,1,0.01%
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips mod_wsgi/3.4 python/2.7.5 php/8.2.20,1,0.01%
+centos,apache/2.4.58 (centos),1,0.01%
+ubuntu,sonicwall sslvpn web server,1,0.01%
+debian,apache/2.4.63 (debian),1,0.01%
+windows,apache/2.2.19 (win32) php/5.2.17,1,0.01%
+unix,apache/2.4.54 (unix) openssl/1.0.2k-fips,1,0.01%
+unix,apache/2.4.59 (unix),1,0.01%
+ubuntu,allegro-software-rompager,1,0.01%
+unix,apache/2.4.55 (unix),1,0.01%
+ubuntu,alibaba,1,0.01%
+ubuntu,agranat-emweb/r5_1_2,1,0.01%
+ubuntu,"linux/2.6.28.1-xxxx-std-ipv4-32, upnp/1.0, portable sdk for upnp devices/1.4.3",1,0.01%

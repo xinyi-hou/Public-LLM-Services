@@ -1,0 +1,19 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "models/ggml-model-i2s-bitnet.gguf",
+      "object": "model",
+      "created": 1745728231,
+      "owned_by": "llamacpp",
+      "meta": {
+        "vocab_type": 2,
+        "n_vocab": 128256,
+        "n_ctx_train": 4096,
+        "n_embd": 2560,
+        "n_params": 2741155840,
+        "size": 1836120640
+      }
+    }
+  ]
+}

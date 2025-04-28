@@ -1,0 +1,4 @@
+﻿类别,HTTP 方法,端点,描述
+应用管理,GET,/api/serve/applications/,获取所有应用及状态
+,PUT,/api/serve/applications/,部署或更新应用
+,DELETE,/api/serve/applications/{app_name},删除指定应用

@@ -1,0 +1,15 @@
+﻿功能模块,方法,端点路径,返回信息
+获取所有模型,GET,/api/models,"json { ""models"": [ { ""id"": ""llama3.1"", ""name"": ""LLaMA 3.1"", ""provider"": ""ollama"", ""status"": ""available"" }, ... ] } "
+聊天补全（OpenAI兼容）,POST,/api/chat/completions,"json { ""id"": ""chatcmpl-abc123"", ""object"": ""chat.completion"", ""created"": 1680000000, ""choices"": [ { ""index"": 0, ""message"": { ""role"": ""assistant"", ""content"": ""Hello! How can I help you today?"" }, ""finish_reason"": ""stop"" } ], ""usage"": { ""prompt_tokens"": 12, ""completion_tokens"": 9, ""total_tokens"": 21 } } "
+上传文件（用于RAG）,POST,/api/v1/files/,"json { ""id"": ""file-abc123"", ""filename"": ""example.pdf"", ""status"": ""uploaded"", ""vectorized"": true } "
+添加文件到知识库,POST,/api/v1/knowledge/{id}/file/add,"json { ""status"": ""success"", ""message"": ""File added to knowledge base."" } "
+使用文件进行聊天,POST,/api/chat/completions,"同聊天补全返回，但需加上：
+""files"": [""file-abc123""] 在请求体中"
+使用知识库进行聊天,POST,/api/chat/completions,"同聊天补全返回，但需加上：
+""collection_ids"": [""kb-001""] 在请求体中"
+Ollama 补全（流式）,POST,/ollama/api/generate,"流式响应（chunk）：
+json { ""response"": ""Hello"", ""done"": false }
+...直到
+json { ""response"": """", ""done"": true }"
+Ollama 模型列表,GET,/ollama/api/tags,"json { ""models"": [ { ""name"": ""llama3"", ""size"": ""7B"", ""quantization"": ""q4_0"", ""modified_at"": ""2024-04-01T12:00:00Z"" }, ... ] } "
+Ollama 生成嵌入,POST,/ollama/api/embed,"json { ""embedding"": [[0.123, 0.234, ...]], ""tokens"": [""This"", ""is"", ""text""] } "

@@ -1,0 +1,235 @@
+{
+  "60df442c-e6d2-4c4f-9040-c82d12206082": {
+    "prompt": [
+      0,
+      "60df442c-e6d2-4c4f-9040-c82d12206082",
+      {
+        "10": {
+          "inputs": {
+            "language": "python",
+            "Add Input variable": "add_input_variable",
+            "Add Output variable": "add_output_variable",
+            "Clear": "clear_code",
+            "pycode": "import os\nimport sys\nimport requests  \nimport subprocess\nimport threading\nimport time\nimport socket\n\ndirs=subprocess.getstatusoutput('pwd')[1]\ndef cloud_thread(port,dirs):\n  import os\n  import sys\n  import requests  \n  import subprocess\n  import threading\n  import time\n  import socket\n  while True:\n      time.sleep(0.5)\n      sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n      result = sock.connect_ex(('127.0.0.1', port))\n      if result == 0:\n        break\n      sock.close()\n\n  htmlstr=\"\"\"\n        <html lang=\"en\">\n        <head>\n            <script>\n                window.onload = function() {\n                    setTimeout(function() {\n                        window.location.href = \"xxxxx\";\n                    }, 500);\n                };\n            </script>\n        </head>\n        <body>\n            <h1></h1>\n        </body>\n        </html>\n  \"\"\"\n\n  p = subprocess.Popen([\"./.cf/cloudflared\", \"tunnel\", \"--protocol\", \"http2\",\"--url\", \"http://127.0.0.1:{}\".format(port)], stdout=subprocess.PIPE, stderr=subprocess.PIPE)\n  for line in p.stderr:\n    l = line.decode()\n    if \"trycloudflare.com \" in l:\n      print(\"This is the URL to access ComfyUI:\", l[l.find(\"http\"):], end='')\n\ndef comfyui_thread(port,dirs):\n  import os\n  import sys\n  import requests  \n  import subprocess\n  import threading\n  import time\n  import socket\n  x=subprocess.getstatusoutput(f\"{sys.executable} {dirs}/.cf/main.py  --fp8_e4m3fn-text-enc --fp8_e4m3fn-unet --fp16-vae --fast --gpu-only --port {port}\")\n  print(result)\n\nport = 8396\n#threading.Thread(target=comfyui_thread,args=(port,dirs,)).start()\n#threading.Thread(target=cloud_thread,args=(port,dirs,)).start()\n#os.chdir(dirs)\nresult=subprocess.getstatusoutput('nvidia-smi')[1]\n"
+          },
+          "class_type": "IDENode",
+          "_meta": {
+            "title": "IDE Node"
+          }
+        },
+        "11": {
+          "inputs": {
+            "text": [
+              "10",
+              0
+            ],
+            "PreviewTextNode_0": "root        1070       1  0 Feb20 tty4     00:00:00 /usr/bin/less /var/log/cloud-init.log\nubuntu    523883  339318  0 03:17 ?        00:00:00 /bin/sh -c ps -ef | grep cloud\nubuntu    523886  523883  0 03:17 ?        00:00:00 grep cloud\navahi    1938123       1  0 Apr09 ?        00:00:00 avahi-daemon: running [cloudgpu01.local]",
+            "speak_and_recognation": {
+              "__value__": [
+                false,
+                true
+              ]
+            }
+          },
+          "class_type": "PreviewTextNode",
+          "_meta": {
+            "title": "Preview Text Node"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "id": "071034b7-f11e-4711-b79e-60a2e54e1e2a",
+            "revision": 0,
+            "last_node_id": 11,
+            "last_link_id": 10,
+            "nodes": [
+              {
+                "id": 10,
+                "type": "IDENode",
+                "pos": [
+                  318,
+                  227.33334350585938
+                ],
+                "size": [
+                  530,
+                  448
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "label": "var1",
+                    "name": "var1",
+                    "type": "*",
+                    "link": null
+                  },
+                  {
+                    "label": "var2",
+                    "name": "var2",
+                    "type": "*",
+                    "link": null
+                  },
+                  {
+                    "label": "var3",
+                    "name": "var3",
+                    "type": "*",
+                    "link": null
+                  }
+                ],
+                "outputs": [
+                  {
+                    "label": "result",
+                    "name": "result",
+                    "type": "*",
+                    "links": [
+                      10
+                    ]
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui_custom_nodes_alekpet",
+                  "ver": "c53e9c3c2f8927406aa5819e3589337a70a76f29",
+                  "Node name for S&R": "IDENode"
+                },
+                "widgets_values": [
+                  "python",
+                  "monokai",
+                  "add_input_variable",
+                  "add_output_variable",
+                  "clear_code",
+                  "import os\nimport sys\nimport requests  \nimport subprocess\nimport threading\nimport time\nimport socket\n\ndirs=subprocess.getstatusoutput('pwd')[1]\ndef cloud_thread(port,dirs):\n  import os\n  import sys\n  import requests  \n  import subprocess\n  import threading\n  import time\n  import socket\n  while True:\n      time.sleep(0.5)\n      sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n      result = sock.connect_ex(('127.0.0.1', port))\n      if result == 0:\n        break\n      sock.close()\n\n  htmlstr=\"\"\"\n        <html lang=\"en\">\n        <head>\n            <script>\n                window.onload = function() {\n                    setTimeout(function() {\n                        window.location.href = \"xxxxx\";\n                    }, 500);\n                };\n            </script>\n        </head>\n        <body>\n            <h1></h1>\n        </body>\n        </html>\n  \"\"\"\n\n  p = subprocess.Popen([\"./.cf/cloudflared\", \"tunnel\", \"--protocol\", \"http2\",\"--url\", \"http://127.0.0.1:{}\".format(port)], stdout=subprocess.PIPE, stderr=subprocess.PIPE)\n  for line in p.stderr:\n    l = line.decode()\n    if \"trycloudflare.com \" in l:\n      print(\"This is the URL to access ComfyUI:\", l[l.find(\"http\"):], end='')\n\ndef comfyui_thread(port,dirs):\n  import os\n  import sys\n  import requests  \n  import subprocess\n  import threading\n  import time\n  import socket\n  x=subprocess.getstatusoutput(f\"{sys.executable} {dirs}/.cf/main.py  --fp8_e4m3fn-text-enc --fp8_e4m3fn-unet --fp16-vae --fast --gpu-only --port {port}\")\n  print(result)\n\nport = 8396\n#threading.Thread(target=comfyui_thread,args=(port,dirs,)).start()\n#threading.Thread(target=cloud_thread,args=(port,dirs,)).start()\n#os.chdir(dirs)\nresult=subprocess.getstatusoutput('nvidia-smi')[1]\n"
+                ]
+              },
+              {
+                "id": 11,
+                "type": "PreviewTextNode",
+                "pos": [
+                  911.3333740234375,
+                  221.33334350585938
+                ],
+                "size": [
+                  807.3333740234375,
+                  418
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "label": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                      "name": "text"
+                    },
+                    "link": 10
+                  }
+                ],
+                "outputs": [
+                  {
+                    "label": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": null
+                  }
+                ],
+                "properties": {
+                  "cnr_id": "comfyui_custom_nodes_alekpet",
+                  "ver": "c53e9c3c2f8927406aa5819e3589337a70a76f29",
+                  "Node name for S&R": "PreviewTextNode"
+                },
+                "widgets_values": [
+                  "",
+                  "root        1070       1  0 Feb20 tty4     00:00:00 /usr/bin/less /var/log/cloud-init.log\nubuntu    523883  339318  0 03:17 ?        00:00:00 /bin/sh -c ps -ef | grep cloud\nubuntu    523886  523883  0 03:17 ?        00:00:00 grep cloud\navahi    1938123       1  0 Apr09 ?        00:00:00 avahi-daemon: running [cloudgpu01.local]",
+                  [
+                    false,
+                    true
+                  ]
+                ]
+              }
+            ],
+            "links": [
+              [
+                10,
+                10,
+                0,
+                11,
+                0,
+                "STRING"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 1,
+                "offset": [
+                  -77.333251953125,
+                  -344.00001525878906
+                ]
+              },
+              "ue_links": [],
+              "VHS_latentpreview": false,
+              "VHS_latentpreviewrate": 0,
+              "VHS_MetadataImage": true,
+              "VHS_KeepIntermediate": true
+            },
+            "version": 0.4,
+            "widget_idx_map": {},
+            "seed_widgets": {}
+          }
+        },
+        "client_id": "9ab1c0542d5c4c619f91ec9012122474"
+      },
+      [
+        "11"
+      ]
+    ],
+    "outputs": {
+      "11": {
+        "string": [
+          "Sun Apr 27 03:20:11 2025       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 550.90.07              Driver Version: 550.90.07      CUDA Version: 12.4     |\n|-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  GRID A100D-80C                 On  |   00000000:06:00.0 Off |                    0 |\n| N/A   N/A    P0             N/A /  N/A  |   16275MiB /  81920MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n                                                                                         \n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A      1964      C   /usr/local/bin/python                         519MiB |\n|    0   N/A  N/A     82623      C   python3                                      5281MiB |\n|    0   N/A  N/A    339318      C   ...niconda3/envs/comfui-new/bin/python        415MiB |\n|    0   N/A  N/A    523885      C   ...niconda3/envs/comfui-new/bin/python        415MiB |\n|    0   N/A  N/A    547992      C   Model: CosyVoice2-0.5B-0                     4497MiB |\n|    0   N/A  N/A    548208      C   Model: CosyVoice2-0.5B-0                     5139MiB |\n+-----------------------------------------------------------------------------------------+"
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "60df442c-e6d2-4c4f-9040-c82d12206082",
+            "timestamp": 1745695211493
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "60df442c-e6d2-4c4f-9040-c82d12206082",
+            "timestamp": 1745695211495
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "60df442c-e6d2-4c4f-9040-c82d12206082",
+            "timestamp": 1745695211588
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "11": {
+        "node_id": "11",
+        "display_node": "11",
+        "parent_node": null,
+        "real_node_id": "11"
+      }
+    }
+  }
+}

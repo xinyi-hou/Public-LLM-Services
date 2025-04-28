@@ -1,0 +1,38 @@
+{
+  "models": [
+    {
+      "name": "smollm2:135m",
+      "model": "smollm2:135m",
+      "modified_at": "2025-04-01T16:09:48.819018983Z",
+      "size": 270898672,
+      "digest": "9077fe9d2ae1a4a41a868836b56b8163731a8fe16621397028c2c76f838c6907",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "134.52M",
+        "quantization_level": "F16"
+      }
+    },
+    {
+      "name": "hf.co/bartowski/Chronos-Gold-12B-1.0-GGUF:Q8_0",
+      "model": "hf.co/bartowski/Chronos-Gold-12B-1.0-GGUF:Q8_0",
+      "modified_at": "2025-02-19T19:40:27.563175792Z",
+      "size": 13022369661,
+      "digest": "b40c5146dee349d01a985eba210dcb6f187028c04971fc1b6bf6f430e561b726",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "12.2B",
+        "quantization_level": "unknown"
+      }
+    }
+  ]
+}

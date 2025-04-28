@@ -1,0 +1,510 @@
+framework,ip,count
+Ollama,http://172.104.178.137:3016,12
+Ollama,http://47.128.145.130:10225,5
+Ollama,http://172.104.167.115:3022,3
+Ollama,http://172.234.236.109:2079,7
+Ollama,http://23.239.12.230:3054,5
+Ollama,http://139.144.212.26:1724,13
+Ollama,http://45.33.95.187:6510,5
+Ollama,http://139.162.112.41:7712,3
+Ollama,http://172.104.41.42:3072,4
+Ollama,http://172.104.178.85:3019,8
+Ollama,http://172.104.146.25:3095,4
+Ollama,http://97.107.137.87:3134,4
+Ollama,http://139.162.229.77:12362,4
+Ollama,http://172.233.233.49:3108,3
+Ollama,http://172.234.64.214:6561,7
+Ollama,http://172.233.228.183:4443,7
+Ollama,http://15.223.207.175:3528,8
+Ollama,http://85.159.210.170:9870,3
+Ollama,http://172.104.41.237:8082,3
+Ollama,http://172.236.150.11:66,7
+Ollama,http://139.144.203.131:5002,7
+Ollama,http://85.90.247.40:2096,6
+Ollama,http://173.255.192.81:3141,7
+Ollama,http://172.233.120.84:12366,7
+Ollama,http://88.80.186.38:4344,6
+Ollama,http://198.58.114.202:3104,6
+Ollama,http://72.146.53.17:80,7
+Ollama,http://172.234.246.4:4431,6
+Ollama,http://178.79.149.219:12323,4
+Ollama,http://198.58.112.235:3147,7
+Ollama,http://173.255.235.20:3524,5
+Ollama,http://198.58.112.235:9595,3
+Ollama,http://39.162.11.137:11434,4
+Ollama,http://172.234.120.16:63045,5
+Ollama,http://54.215.157.140:9001,6
+Ollama,http://45.33.245.225:11434,4
+Ollama,http://45.33.1.142:4070,6
+Ollama,http://185.175.47.20:11434,4
+Ollama,http://172.105.91.242:3051,4
+Ollama,http://172.236.203.139:3388,4
+Ollama,http://172.233.192.168:3175,7
+Ollama,http://41.89.8.169:11434,3
+Ollama,http://45.56.71.80:20292,9
+Ollama,http://139.162.229.238:12364,3
+Ollama,http://85.159.210.170:8834,3
+Ollama,http://45.79.180.44:3156,1
+Ollama,http://117.53.144.221:11434,3
+Ollama,http://3.252.41.72:8002,2
+Ollama,http://139.162.189.84:3081,8
+Ollama,http://139.144.212.26:243,7
+Ollama,http://220.194.141.61:12233,4
+Ollama,http://15.223.199.62:523,3
+Ollama,http://23.249.179.245:11434,7
+Ollama,http://15.168.238.161:10087,6
+Ollama,http://139.162.82.239:3528,5
+Ollama,http://173.255.192.81:3016,3
+Ollama,http://172.233.116.54:58443,7
+Ollama,http://23.239.12.230:3175,7
+Ollama,http://45.79.180.14:30005,2
+Ollama,http://23.239.12.184:3086,1
+Ollama,http://139.162.150.179:8082,2
+Ollama,http://43.206.220.6:15000,5
+Ollama,http://139.144.210.30:9090,3
+Ollama,http://172.234.44.170:443,3
+Ollama,http://198.74.57.198:4524,5
+Ollama,http://43.239.162.94:11434,3
+Ollama,http://14.103.164.189:11434,2
+Ollama,http://87.98.183.146:11434,2
+Ollama,http://129.153.229.32:11434,4
+Ollama,http://1.95.144.211:11434,5
+Ollama,http://50.116.23.37:3074,5
+Ollama,http://164.92.81.201:11434,2
+Ollama,http://15.235.66.180:11434,3
+Ollama,http://43.207.114.39:8888,7
+Ollama,http://23.249.178.43:11434,5
+Ollama,http://172.105.70.168:3021,5
+Ollama,http://38.54.75.244:3132,4
+Ollama,http://103.49.70.253:11434,3
+Ollama,http://216.152.233.170:11434,3
+Ollama,http://173.255.192.64:3089,4
+Ollama,http://16.176.2.121:10093,6
+Ollama,http://97.107.137.240:3096,5
+Ollama,http://172.233.27.101:60099,7
+Ollama,http://125.76.225.65:11434,3
+Ollama,http://182.92.153.44:11434,2
+Ollama,http://139.162.17.182:3016,3
+Ollama,http://216.12.173.86:11434,1
+Ollama,http://88.80.186.5:2882,4
+Ollama,http://120.55.65.148:9050,3
+Ollama,http://172.233.233.31:2024,4
+Ollama,http://13.203.204.120:9200,3
+Ollama,http://13.211.233.65:27017,2
+Ollama,http://117.72.82.15:11434,3
+Ollama,http://203.69.53.137:27000,1
+Ollama,http://110.235.85.220:11434,3
+Ollama,http://172.93.186.226:11434,3
+Ollama,http://203.69.53.137:2002,1
+Ollama,http://108.187.251.194:11434,2
+Ollama,http://8.138.24.157:11434,3
+Ollama,http://108.187.250.245:11434,1
+Ollama,http://111.229.47.38:11434,1
+Text Generate WebUI,http://104.168.122.166:8080,2
+Ollama,http://108.187.250.157:11434,6
+Ollama,http://13.112.4.5:10283,7
+Ollama,http://172.104.41.34:3010,9
+Ollama,http://172.104.242.228:3082,6
+Ollama,http://170.187.142.172:7199,6
+Ollama,http://45.79.180.119:3108,4
+Ollama,http://172.233.123.92:62080,8
+Ollama,http://172.234.120.16:3689,8
+Ollama,http://172.234.43.118:3116,6
+Ollama,http://172.105.203.215:3299,5
+Ollama,http://63.178.23.6:777,3
+Ollama,http://172.104.41.106:3055,4
+Ollama,http://139.162.185.152:4433,3
+Ollama,http://69.164.193.108:4439,6
+Ollama,http://172.104.151.37:57783,4
+Ollama,http://23.239.24.249:52230,9
+Ollama,http://172.105.89.21:12361,7
+Ollama,http://172.104.214.104:3127,1
+Ollama,http://139.162.195.205:3099,7
+Ollama,http://154.205.140.170:5902,10
+Ollama,http://172.234.44.170:5701,7
+Ollama,http://172.234.151.170:53413,5
+Ollama,http://172.232.128.235:4022,8
+Ollama,http://172.233.27.101:55481,9
+Ollama,http://45.33.2.200:3137,5
+Ollama,http://66.175.209.243:3138,13
+Ollama,http://172.235.17.116:8443,7
+Ollama,http://18.230.20.109:81,5
+Ollama,http://45.33.1.142:12350,8
+Ollama,http://172.104.151.37:93,3
+Ollama,http://176.58.105.12:12361,4
+Ollama,http://172.233.237.54:7707,9
+Ollama,http://150.136.244.107:11434,6
+Ollama,http://96.126.106.253:3117,6
+Ollama,http://172.104.252.169:58532,4
+Ollama,http://172.233.228.88:3053,7
+Ollama,http://65.2.11.52:8020,4
+Ollama,http://172.233.204.220:2404,13
+Ollama,http://139.162.161.191:20292,7
+Ollama,http://3.69.45.82:8888,4
+Ollama,http://172.104.189.206:3094,9
+Ollama,http://139.162.82.239:50001,4
+Ollama,http://216.152.233.198:11434,5
+Ollama,http://198.58.114.202:3079,7
+Ollama,http://139.129.216.174:11434,3
+Ollama,http://23.239.11.69:3065,5
+Ollama,http://172.236.148.100:2087,6
+Ollama,http://45.79.180.119:3077,2
+Ollama,http://45.79.215.11:8800,6
+Ollama,http://96.126.106.159:3014,4
+Ollama,http://3.71.195.3:8008,7
+Ollama,http://172.104.167.185:3109,8
+Ollama,http://139.162.17.182:3013,7
+Ollama,http://176.58.126.184:3160,5
+Ollama,http://172.104.238.92:12327,5
+Ollama,http://96.126.106.253:3131,6
+Ollama,http://172.104.242.228:3099,5
+Ollama,http://139.162.60.37:54327,4
+Ollama,http://15.223.197.180:8123,4
+Ollama,http://173.255.235.204:31,6
+Ollama,http://139.162.52.149:3121,6
+Ollama,http://172.104.214.104:3117,10
+Ollama,http://14.178.142.213:8251,3
+Ollama,http://149.200.253.177:11434,3
+Ollama,http://49.233.55.149:11434,3
+Ollama,http://158.69.163.177:11434,3
+Ollama,http://108.187.250.23:11434,4
+Ollama,http://176.58.105.248:9092,3
+Ollama,http://172.104.83.132:57788,4
+Ollama,http://45.79.221.60:3119,3
+Ollama,http://97.107.137.240:3073,7
+Ollama,http://216.12.168.88:11434,3
+Ollama,http://178.79.149.219:2079,5
+Ollama,http://18.216.198.36:9020,6
+Ollama,http://116.178.28.213:18002,3
+Ollama,http://39.65.87.134:11434,3
+Ollama,http://69.164.213.20:12347,7
+Ollama,http://35.209.79.241:8080,3
+Ollama,http://172.104.178.137:3083,3
+Ollama,http://50.116.34.133:2078,2
+Ollama,http://140.206.95.94:62434,3
+Ollama,http://139.162.215.207:3003,7
+Ollama,http://172.232.7.42:51201,7
+Ollama,http://221.234.128.109:43434,2
+Ollama,http://178.79.157.158:666,6
+Ollama,http://45.33.245.245:11434,3
+Ollama,http://101.126.152.137:11434,3
+Ollama,http://104.232.101.35:11434,3
+Ollama,http://108.187.251.230:11434,3
+Ollama,http://106.15.52.47:11434,2
+Ollama,http://104.232.99.144:11434,3
+Ollama,http://8.219.86.157:11434,3
+Ollama,http://139.177.194.240:57782,4
+Ollama,http://165.22.123.147:11434,1
+Ollama,http://58.186.161.188:11434,3
+Ollama,http://66.228.34.109:3070,4
+Ollama,http://8.153.37.253:11434,3
+Ollama,http://47.122.126.142:11434,2
+Ollama,http://139.144.201.82:10030,2
+Ollama,http://47.129.206.191:3000,3
+Ollama,http://108.187.251.176:11434,2
+Ollama,http://47.122.20.47:11434,3
+Ollama,http://43.143.216.241:61130,3
+Ollama,http://107.163.206.3:11434,3
+Ollama,http://47.108.186.100:11434,3
+Ollama,http://40.160.3.2:3000,3
+Ollama,http://139.162.112.20:1177,1
+Ollama,http://146.148.212.237:11434,2
+Ollama,http://120.27.135.170:11434,3
+Ollama,http://172.87.218.163:11434,1
+Ollama,http://111.67.202.146:11434,1
+Ollama,http://139.227.253.66:11434,1
+Ollama,http://111.198.34.4:11434,4
+Ollama,http://31.220.79.12:11434,6
+Ollama,http://13.212.39.231:10209,7
+Ollama,http://43.207.114.39:1433,4
+Ollama,http://139.162.60.37:55388,13
+Ollama,http://66.228.62.56:3169,13
+Ollama,http://173.255.192.64:3018,7
+Ollama,http://13.38.54.86:8058,9
+Ollama,http://178.79.183.232:3014,8
+Ollama,http://173.255.192.81:3083,5
+Ollama,http://66.228.32.175:3157,5
+Ollama,http://50.116.34.199:443,7
+Ollama,http://66.228.34.109:3065,5
+Ollama,http://104.200.19.241:20202,7
+Ollama,http://139.144.198.214:8005,6
+Ollama,http://97.107.137.87:8084,5
+Ollama,http://139.162.189.84:9090,6
+Ollama,http://172.234.42.54:5001,5
+Ollama,http://170.187.142.123:4036,7
+Ollama,http://38.54.76.5:3132,6
+Ollama,http://172.232.7.42:20332,8
+Ollama,http://23.92.30.249:1024,11
+Ollama,http://69.164.193.108:3100,4
+Ollama,http://170.187.142.172:7547,7
+Ollama,http://45.79.180.44:10095,7
+Ollama,http://45.79.221.11:3103,11
+Ollama,http://176.58.105.12:12364,5
+Ollama,http://74.207.229.249:3157,7
+Ollama,http://172.105.203.215:5919,2
+Ollama,http://172.105.13.253:59012,6
+Ollama,http://172.105.13.253:54327,8
+Ollama,http://172.233.228.48:3074,8
+Ollama,http://23.249.178.41:11434,6
+Ollama,http://172.104.41.42:3048,7
+Ollama,http://172.104.189.206:3120,4
+Ollama,http://45.79.221.11:3053,6
+Ollama,http://88.80.185.222:6665,6
+Ollama,http://172.104.178.85:3078,7
+Ollama,http://50.116.60.97:61617,3
+Ollama,http://23.239.24.249:5061,6
+Ollama,http://34.244.160.78:7547,4
+Ollama,http://172.233.120.84:12348,10
+Ollama,http://85.159.210.170:3072,6
+Ollama,http://139.162.82.239:8088,5
+Ollama,http://172.104.238.92:12341,5
+Ollama,http://139.177.200.128:12354,4
+Ollama,http://139.162.150.179:3134,9
+Ollama,http://74.207.227.127:5225,6
+Ollama,http://178.79.176.156:3093,5
+Ollama,http://74.207.232.213:3152,5
+Ollama,http://198.58.112.235:3121,9
+Ollama,http://23.239.12.230:3010,8
+Ollama,http://172.234.44.164:2010,5
+Ollama,http://85.159.209.239:3164,2
+Ollama,http://172.234.142.90:7014,6
+Ollama,http://54.90.144.239:2095,8
+Ollama,http://172.105.97.22:11434,3
+Ollama,http://173.255.192.47:3161,6
+Ollama,http://54.216.207.122:49152,7
+Ollama,http://85.175.97.73:80,1
+Ollama,http://1.92.136.213:11434,3
+Ollama,http://203.69.53.137:12136,3
+Ollama,http://173.255.203.214:9000,3
+Ollama,http://54.233.49.57:3310,5
+Ollama,http://47.109.16.135:11434,3
+Ollama,http://184.72.16.175:9080,3
+Ollama,http://172.105.78.117:12321,3
+Ollama,http://172.234.44.177:3168,7
+Ollama,http://172.104.238.92:12326,7
+Ollama,http://172.104.178.137:3158,2
+Ollama,http://97.107.137.87:3071,4
+Ollama,http://13.233.84.118:993,3
+Ollama,http://51.20.248.225:1025,6
+Ollama,http://50.116.23.197:3154,9
+Ollama,http://3.107.245.13:2103,2
+Ollama,http://50.116.41.137:3003,6
+Ollama,http://101.35.50.168:11434,3
+Ollama,http://202.92.214.37:11434,3
+Ollama,http://120.241.223.175:11434,2
+Ollama,http://139.162.189.230:8080,3
+Ollama,http://121.43.148.249:11434,3
+Ollama,http://52.175.29.2:11434,2
+Ollama,http://96.126.106.253:3099,3
+Ollama,http://23.239.12.211:3069,4
+Ollama,http://139.162.175.20:11434,3
+Ollama,http://146.56.172.187:11434,3
+Ollama,http://139.162.52.149:3160,1
+Ollama,http://172.87.194.10:11434,3
+Ollama,http://112.94.11.141:11434,3
+Ollama,http://144.76.2.121:11434,2
+Ollama,http://108.187.250.50:11434,3
+Ollama,http://135.181.57.227:11434,2
+Ollama,http://121.37.158.64:11434,2
+Ollama,http://81.70.23.38:6100,3
+Ollama,http://203.69.53.137:12082,2
+Ollama,http://107.163.179.154:11434,2
+ComfyUI,http://222.128.126.48:8189,10
+ComfyUI,http://36.133.228.126:8188,10
+ComfyUI,http://111.12.146.23:8087,9
+ComfyUI,http://111.207.155.116:8188,5
+ComfyUI,http://207.246.87.147:8188,6
+ComfyUI,http://34.70.121.100:8188,7
+ComfyUI,http://47.104.166.168:8187,8
+ComfyUI,http://20.6.8.15:8196,4
+ComfyUI,http://118.193.96.214:7002,9
+ComfyUI,http://47.96.165.206:8188,4
+ComfyUI,http://172.105.118.104:8188,5
+ComfyUI,http://116.196.93.93:8188,8
+ComfyUI,http://180.76.186.85:9010,7
+ComfyUI,http://39.101.78.78:9000,4
+ComfyUI,http://113.57.161.110:8182,5
+ComfyUI,http://8.218.158.189:3010,6
+ComfyUI,http://108.240.173.188:5001,3
+ComfyUI,http://36.103.199.247:9080,8
+ComfyUI,http://120.46.157.182:8188,5
+ComfyUI,http://61.48.133.26:8188,6
+ComfyUI,http://205.198.121.126:8183,4
+ComfyUI,http://5.129.157.224:8688,6
+ComfyUI,http://20.6.8.15:8197,4
+ComfyUI,http://95.31.17.96:8885,4
+ComfyUI,http://5.129.157.224:8488,4
+ComfyUI,http://124.71.222.110:8188,4
+ComfyUI,http://8.140.226.4:3010,6
+ComfyUI,http://139.155.97.164:8181,4
+ComfyUI,http://115.190.87.36:8188,2
+ComfyUI,http://65.109.75.23:8188,4
+ComfyUI,http://101.200.136.15:8388,4
+ComfyUI,http://119.23.48.193:82,4
+ComfyUI,http://81.181.76.222:8190,4
+ComfyUI,http://104.36.86.2:8188,5
+ComfyUI,http://45.250.34.11:8188,4
+ComfyUI,http://8.155.30.208:465,2
+ComfyUI,http://59.35.202.135:8188,4
+ComfyUI,http://116.177.238.103:5001,6
+ComfyUI,http://47.96.152.245:8188,4
+ComfyUI,http://91.107.234.192:8188,3
+ComfyUI,http://42.81.223.34:8334,4
+ComfyUI,http://118.193.96.212:8318,4
+GPT4All,http://159.223.194.89:5001,3
+GPT4All,http://50.39.235.57:5001,3
+GPT4All,http://73.73.231.190:5001,3
+GPT4All,http://47.223.225.187:5002,2
+GPT4All,http://92.222.135.228:8000,1
+GPT4All,http://15.206.187.56:5000,3
+GPT4All,http://73.230.221.193:5001,3
+GPT4All,http://51.195.42.24:5001,1
+GPT4All,http://98.170.212.135:5801,3
+GPT4All,http://71.8.190.71:5001,3
+GPT4All,http://188.25.209.15:5001,2
+GPT4All,http://192.98.127.73:5001,1
+Jupyter Notebook,http://101.89.155.234:8888,1
+Jupyter Notebook,http://54.223.212.188:8890,1
+Jupyter Notebook,http://101.227.64.243:8890,1
+Jupyter Notebook,http://182.92.114.78:8888,1
+Jupyter Notebook,http://121.5.114.4:8888,1
+Jupyter Notebook,http://220.130.138.253:7025,1
+Jupyter Notebook,http://62.68.146.157:8888,1
+Jupyter Notebook,http://188.93.149.175:80,1
+Jupyter Notebook,http://34.223.154.190:8888,1
+Jupyter Notebook,http://42.193.128.98:808,1
+Jupyter Notebook,http://43.143.28.19:7777,1
+Jupyter Notebook,http://123.56.192.25:8888,1
+Jupyter Notebook,http://125.33.211.205:8888,1
+Jupyter Notebook,http://52.53.60.32:8888,1
+Jupyter Notebook,http://43.155.78.33:12312,1
+Jupyter Notebook,http://111.230.149.170:8888,1
+Jupyter Notebook,http://121.169.18.220:7002,1
+Jupyter Notebook,http://47.106.22.125:10000,1
+Jupyter Notebook,http://35.89.132.245:8888,1
+Jupyter Notebook,http://183.60.156.25:5678,1
+Jupyter Notebook,http://114.55.94.169:8888,1
+Jupyter Notebook,http://114.236.141.195:3531,1
+Jupyter Notebook,http://114.80.150.195:8888,1
+Jupyter Notebook,http://132.247.195.9:9001,1
+Jupyter Notebook,http://140.114.36.52:8317,1
+Jupyter Notebook,http://104.237.158.66:8888,1
+Jupyter Notebook,http://54.65.155.79:8888,1
+Jupyter Notebook,http://80.241.208.200:8888,1
+Jupyter Notebook,http://142.4.214.112:8888,1
+Jupyter Notebook,http://8.140.53.238:8888,1
+Jupyter Notebook,http://129.146.18.205:10086,1
+Jupyter Notebook,http://8.153.68.88:10027,1
+Jupyter Notebook,http://121.43.96.86:8888,1
+Jupyter Notebook,http://200.239.172.197:8686,1
+Jupyter Notebook,http://208.87.135.216:8080,1
+Jupyter Notebook,http://47.115.57.106:6969,1
+Jupyter Notebook,http://39.106.53.201:35240,1
+Jupyter Notebook,http://103.143.72.50:8888,1
+Jupyter Notebook,http://122.114.228.78:8888,1
+Jupyter Notebook,http://136.36.170.193:8080,1
+Jupyter Notebook,http://147.46.219.97:8969,1
+Jupyter Notebook,http://45.77.247.125:8888,1
+Jupyter Notebook,http://80.211.10.60:8888,1
+Jupyter Notebook,http://34.22.100.244:8888,1
+Jupyter Notebook,http://34.138.12.53:8888,1
+Jupyter Notebook,http://115.70.36.7:80,1
+Jupyter Notebook,http://37.252.188.61:8888,1
+Jupyter Notebook,http://188.166.46.125:8888,1
+Jupyter Notebook,http://113.45.77.44:8888,1
+Jupyter Notebook,http://139.196.171.158:8888,1
+Jupyter Notebook,http://220.130.138.253:6333,1
+Jupyter Notebook,http://38.102.87.66:8888,1
+Jupyter Notebook,http://34.159.70.22:8801,1
+Llamacpp,http://49.13.169.209:8080,6
+Llamacpp,http://20.163.232.116:8080,6
+Llamacpp,http://172.190.143.64:8080,5
+Llamacpp,http://20.163.237.93:8080,5
+Llamacpp,http://172.206.213.188:8080,3
+Llamacpp,http://66.94.125.133:8090,4
+Llamacpp,http://20.163.237.51:8080,4
+Llamacpp,http://172.203.137.26:8080,2
+Llamacpp,http://95.214.54.196:8090,3
+Llamacpp,http://143.198.133.37:8090,5
+Llamacpp,http://2.56.99.109:8090,4
+Llamacpp,http://65.49.60.22:8090,3
+Llamacpp,http://144.91.105.18:8090,3
+Llamacpp,http://46.29.166.185:8088,2
+Llamacpp,http://144.76.56.210:7777,5
+Llamacpp,http://152.53.37.103:8090,4
+Llamacpp,http://45.126.120.33:8000,3
+Llamacpp,http://81.169.206.122:1234,4
+Llamacpp,http://35.224.50.12:8503,3
+Llamacpp,http://94.72.105.248:8090,5
+Llamacpp,http://138.201.139.121:8090,4
+Llamacpp,http://172.190.243.85:8080,5
+Llamacpp,http://20.235.41.63:8080,2
+Llamacpp,http://154.53.56.112:8090,6
+Llamacpp,http://150.230.186.45:8080,3
+Llamacpp,http://217.77.6.127:8090,6
+Llamacpp,http://96.46.48.244:8000,2
+Llamacpp,http://167.71.198.143:8090,6
+Llamacpp,http://65.109.144.47:8080,3
+Llamacpp,http://154.53.57.197:8090,4
+Llamacpp,http://82.29.162.62:8090,6
+Llamacpp,http://15.204.173.80:9898,7
+Llamacpp,http://52.142.54.118:8080,3
+Llamacpp,http://117.131.11.114:9090,2
+Llamacpp,http://66.220.29.112:8090,3
+Llamacpp,http://89.149.211.116:9100,2
+Llamacpp,http://152.53.88.53:8090,2
+Llamacpp,http://40.87.87.163:8080,2
+Llamacpp,http://54.244.40.131:8201,2
+Llamacpp,http://65.109.119.91:8090,2
+Llamacpp,http://62.146.227.5:8090,2
+Llamacpp,http://42.200.206.158:5001,2
+Llamacpp,http://23.88.4.214:8989,1
+Jan,http://152.53.49.200:8000,4
+Jan,http://109.133.66.104:8850,14
+Jan,http://164.92.135.37:8080,12
+Jan,http://78.80.146.85:8008,10
+Jan,http://65.108.128.58:9000,1
+Llamafile,http://85.239.237.152:8090,3
+Llamafile,http://94.72.117.207:8090,3
+Llamafile,http://149.102.153.156:8090,3
+Llamafile,http://89.117.17.238:8090,2
+Llamafile,http://62.146.227.5:8090,2
+Llamafile,http://65.19.178.22:8090,2
+Llamafile,http://65.108.68.79:8090,2
+Llamafile,http://151.80.20.199:8090,2
+Llamafile,http://2.56.99.109:8090,3
+Llamafile,http://65.109.39.154:8090,2
+Llamafile,http://92.60.36.224:8090,2
+Llamafile,http://176.10.127.176:8080,1
+Llamafile,http://209.126.11.170:8090,2
+Llamafile,http://152.53.134.92:8090,2
+Llamafile,http://188.68.60.33:8090,2
+Llamafile,http://154.12.243.0:8090,2
+Llamafile,http://66.94.125.133:8090,3
+Llamafile,http://82.29.162.62:8090,2
+Llamafile,http://65.109.54.13:8090,2
+Llamafile,http://144.91.105.18:8090,3
+Llamafile,http://66.220.29.11:8090,2
+Llamafile,http://65.109.119.91:8090,2
+Llamafile,http://194.163.153.162:8090,2
+Llamafile,http://167.71.198.143:8090,2
+Llamafile,http://78.46.73.188:8090,2
+Llamafile,http://158.220.117.55:8090,2
+Llamafile,http://94.72.117.117:8090,2
+Llamafile,http://154.12.247.18:8090,2
+Llamafile,http://154.53.56.112:8090,2
+LM studio,http://139.144.217.136:9928,15
+LM studio,http://132.145.133.105:11434,2
+LM studio,http://124.70.152.128:3000,10
+VLLM,http://168.138.195.227:8036,2
+VLLM,http://185.136.162.121:8020,2
+VLLM,http://144.24.79.10:3210,2
+VLLM,http://150.158.131.50:8084,2
+VLLM,http://20.191.144.66:9001,2
+VLLM,http://139.180.132.63:9090,1
+VLLM,http://148.135.70.154:50000,1
+VLLM,http://103.72.97.228:32768,1
+VLLM,http://3.209.67.229:8080,1
+VLLM,http://152.53.34.28:3002,1
+OpenWebUI,http://78.46.41.50:3000,1
+OpenWebUI,http://58.39.239.58:3000,1

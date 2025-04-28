@@ -1,0 +1,38 @@
+{
+  "models": [
+    {
+      "name": "hellord/mxbai-embed-large-v1:f16",
+      "model": "hellord/mxbai-embed-large-v1:f16",
+      "modified_at": "2025-04-16T03:09:30.688638362Z",
+      "size": 669603972,
+      "digest": "f15f96241a95fddd6a487689105b328ede7af6adec6775116c22e6a3ac7d9bec",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "bert",
+        "families": [
+          "bert"
+        ],
+        "parameter_size": "334M",
+        "quantization_level": "F16"
+      }
+    },
+    {
+      "name": "driaforall/tiny-agent-a:0.5b",
+      "model": "driaforall/tiny-agent-a:0.5b",
+      "modified_at": "2025-04-16T03:09:22.754544314Z",
+      "size": 531069657,
+      "digest": "a68f7171f43c7c30096a67bd84fe5e557967603c03626d8e6dd7115fa7464a41",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "494.03M",
+        "quantization_level": "Q8_0"
+      }
+    }
+  ]
+}

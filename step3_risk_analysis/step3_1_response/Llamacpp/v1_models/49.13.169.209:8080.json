@@ -1,0 +1,19 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "dolphin-2.6-mistral-7b.Q4_K_M.gguf",
+      "object": "model",
+      "created": 1745728232,
+      "owned_by": "llamacpp",
+      "meta": {
+        "vocab_type": 1,
+        "n_vocab": 32001,
+        "n_ctx_train": 32768,
+        "n_embd": 4096,
+        "n_params": 7241740288,
+        "size": 4367709728
+      }
+    }
+  ]
+}

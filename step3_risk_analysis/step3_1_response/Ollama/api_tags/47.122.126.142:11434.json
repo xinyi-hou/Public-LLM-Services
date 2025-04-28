@@ -1,0 +1,106 @@
+{
+  "models": [
+    {
+      "name": "qwen2.5:14b",
+      "model": "qwen2.5:14b",
+      "modified_at": "2024-09-29T12:40:27.685078711+08:00",
+      "size": 8988124069,
+      "digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "14.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "reflection:latest",
+      "model": "reflection:latest",
+      "modified_at": "2024-09-19T21:27:05.486419717+08:00",
+      "size": 39969818946,
+      "digest": "5084e77c1e102030795dfbb58fd19adb792e5c0ec5ebf684c5481e3b2d66b740",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "70.6B",
+        "quantization_level": "Q4_0"
+      }
+    },
+    {
+      "name": "llama3.1:latest",
+      "model": "llama3.1:latest",
+      "modified_at": "2024-09-19T19:01:56.417142258+08:00",
+      "size": 4661230766,
+      "digest": "42182419e9508c30c4b1fe55015f06b65f4ca4b9e28a744be55008d21998a093",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_0"
+      }
+    },
+    {
+      "name": "mistral:latest",
+      "model": "mistral:latest",
+      "modified_at": "2024-09-18T13:41:20.562245708+08:00",
+      "size": 4113301824,
+      "digest": "f974a74358d62a017b37c6f424fcdf2744ca02926c4f952513ddf474b2fa5091",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "7.2B",
+        "quantization_level": "Q4_0"
+      }
+    },
+    {
+      "name": "nomic-embed-text:latest",
+      "model": "nomic-embed-text:latest",
+      "modified_at": "2024-09-18T11:22:18.741368731+08:00",
+      "size": 274302450,
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "nomic-bert",
+        "families": [
+          "nomic-bert"
+        ],
+        "parameter_size": "137M",
+        "quantization_level": "F16"
+      }
+    },
+    {
+      "name": "Llama3-70B-Chinese-Chat-q4_0:latest",
+      "model": "Llama3-70B-Chinese-Chat-q4_0:latest",
+      "modified_at": "2024-08-03T16:00:51.795552406+08:00",
+      "size": 39970245640,
+      "digest": "d54b68daa62e268cfb99b31fe10ef9e0d4bf588dcbb6a72a343d97874b4701e7",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "70.6B",
+        "quantization_level": "Q4_0"
+      }
+    }
+  ]
+}

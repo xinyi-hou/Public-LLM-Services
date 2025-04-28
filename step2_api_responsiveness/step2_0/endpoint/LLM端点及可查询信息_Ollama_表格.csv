@@ -1,0 +1,49 @@
+﻿功能,方法,路径,返回信息,测试情况
+生成补全（文本）,POST,/api/generate,"流式返回：
+{ ""model"": ""llama3.2"", ""response"": ""The"", ""done"": false }
+最终一条含统计数据，如：
+""total_duration"": 8320000000",正常
+聊天补全,POST,/api/chat,"json { ""message"": ""Hi! How can I help?"" } （可流式）",正常
+列出本地模型,GET,/api/tags,"json { ""models"": [ { ""name"": ""gemma3:4b"",
+      ""model"": ""gemma3:4b"",
+      ""modified_at"": ""2025-04-21T04:22:20.846533643Z"",
+      ""size"": 3338801804,
+      ""digest"": ""a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a"",
+      ""details"": {
+        ""parent_model"": """",
+        ""format"": ""gguf"",
+        ""family"": ""gemma3"",
+        ""families"": [
+          ""gemma3""
+        ],
+        ""parameter_size"": ""4.3B"",
+        ""quantization_level"": ""Q4_K_M""} ] } ",正常
+拉取模型,POST,/api/pull,"json { ""status"": ""success"" } ",未测试
+推送模型,POST,/api/push,"json { ""status"": ""pushed"", ""model"": ""llama3"" } ",未测试
+删除模型,DELETE,/api/delete,"json { ""status"": ""deleted"", ""model"": ""llama3"" } ",正常，但未显示返回信息
+复制模型,POST,/api/copy,"json { ""status"": ""copied"", ""from"": ""a"", ""to"": ""b"" } ",未测试
+模型信息,POST,/api/show,"json { 
+  ""modelfile"": ""FROM llama3\nPARAMETER some=value\n..."",
+  ""parameters"": {
+    ""temperature"": 0.8,
+    ""top_p"": 0.9,
+    ""stop"": [""</s>""]
+  },
+  ""template"": ""{{ .Prompt }}"",
+  ""details"": {
+    ""format"": ""gguf"",
+    ""family"": ""llama"",
+    ""families"": [""llama3""],
+    ""parameter_size"": ""7B"",
+    ""quantization_level"": ""Q4_0"",
+    ""model_path"": ""/root/.ollama/models/llama3/..."",
+    ""num_transformer_layers"": 32,
+    ""num_attention_heads"": 32,
+    ""hidden_size"": 4096,
+    ""vocab_size"": 32000
+  }
+} ",正常
+创建模型,POST,/api/create,"json { ""status"": ""created"", ""model"": ""my-custom-model"" } ",未测试
+生成 Embedding 向量,POST,/api/embeddings,"json { ""embedding"": [[0.123, 0.456, ...]], ""num_tokens"": 12 } ",未测试
+当前加载模型列表,GET,/api/running,"json { ""models"": [""model_name_1"", ""model_name_2""] } ",正常
+获取 Ollama 版本,GET,/api/version,"json { ""version"": ""ollama_version"" } ",正常

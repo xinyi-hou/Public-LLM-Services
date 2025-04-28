@@ -1,0 +1,2354 @@
+os,server,count
+nan,nginx,97417
+nan,nan,52397
+nan,cloudflare,29414
+nan,uvicorn,23212
+nan,apache,8697
+ubuntu,nginx/1.18.0 (ubuntu),7242
+nan,nginx/1.22.1,5991
+nan,openresty,5463
+nan,tornadoserver/6.1,5219
+nan,vercel,3935
+ubuntu,nginx/1.24.0 (ubuntu),3659
+nan,tornadoserver/6.2,2503
+nan,caddy,2435
+nan,litespeed,1867
+nan,nginx/1.15.12,1804
+nan,tornadoserver/6.0.4,1640
+nan,nginx/1.20.1,1432
+nan,nginx/1.27.4,1176
+nan,tornadoserver/6.3.2,1136
+nan,tornadoserver/6.4,845
+nan,tornadoserver/6.0.3,731
+nan,nginx/1.16.1,721
+nan,nginx/1.27.0,682
+nan,nginx/1.18.0,648
+nan,nginx/1.25.5,646
+nan,nginx/1.27.3,629
+nan,apache/2,621
+nan,nginx/1.24.0,608
+nan,tornadoserver/5.1.1,601
+nan,concedollamaforkoboldserver,567
+windows,microsoft-iis/10.0,567
+nan,tengine,564
+ubuntu,apache/2.4.52 (ubuntu),545
+nan,tornadoserver/6.3.3,527
+nan,nginx/1.26.2,519
+nan,tornadoserver/6.4.1,491
+nan,nginx/1.14.1,482
+nan,nginx/1.27.2,468
+debian,apache/2.4.62 (debian),457
+ubuntu,apache/2.4.41 (ubuntu),420
+ubuntu,nginx/1.14.0 (ubuntu),389
+ubuntu,apache/2.4.29 (ubuntu),357
+nan,tornadoserver/6.4.2,315
+nan,nginx/1.21.5,311
+nan,nginx/1.26.3,304
+nan,llama.cpp,303
+nan,ideawebserver/6.3.1,293
+nan,nginx/1.10.1,271
+nan,nginx/1.25.4,238
+nan,nginx/1.13.8,231
+nan,nginx/1.14.2,231
+nan,tornadoserver/6.0.2,227
+nan,openresty/1.19.3.2,220
+unix,apache/2.4.62 (unix),218
+nan,elestio,213
+ubuntu,nginx/1.26.0 (ubuntu),194
+ubuntu,apache/2.4.58 (ubuntu),194
+nan,tornadoserver/5.1,191
+nan,nginx/1.23.4,173
+nan,tornadoserver/5.0.2,167
+nan,nginx/1.27.1,165
+nan,nginx/1.25.3,161
+nan,web server,157
+nan,google frontend,156
+nan,istio-envoy,154
+nan,tornadoserver/4.5.3,145
+debian,apache/2.4.25 (debian),139
+nan,amazons3,138
+nan,nginx/1.26.1,129
+nan,hcdn,129
+unix,apache/2.4.57 (unix),122
+nan,webserver,122
+windows,microsoft-iis/8.5,119
+unix,apache/2.4.63 (unix),117
+nan,github.com,115
+nan,httpd,114
+nan,netlify,113
+ubuntu,nginx/1.10.3 (ubuntu),112
+nan,ats,105
+nan,squarespace,102
+nan,python/3.10 aiohttp/3.11.13,101
+windows,microsoft-iis/7.5,101
+nan,nginx/1.10.3,100
+nan,httpserver1.0,97
+nan,cargo,93
+nan,tornadoserver/4.5.1,93
+nan,x-web,92
+nan,tornadoserver/6.3.1,91
+debian,apache/2.4.38 (debian),90
+nan,gse,90
+debian,apache/2.4.10 (debian),89
+nan,envoy,88
+nan,http server 1.0,86
+nan,openresty/1.19.3.1,85
+nan,httpserver,84
+nan,tornadoserver/4.5.2,83
+nan,nginx/1.23.3,83
+nan,openresty/1.25.3.1,82
+nan,http server,82
+nan,gunicorn,78
+nan,nginx/1.12.1,77
+nan,server,75
+debian,apache/2.4.59 (debian) svn/1.10.4 mod_fcgid/2.3.9 openssl/1.1.1n,75
+nan,cdn,74
+nan,webserver/1.0,72
+nan,python/3.12 aiohttp/3.11.11,72
+nan,nginx/1.13.7,71
+ubuntu,apache/2.4.18 (ubuntu),69
+nan,nginx/1.12.2,69
+nan,webs,68
+nan,openresty/1.19.9.1,68
+windows,microsoft-iis/6.0,65
+ubuntu,nginx/1.22.0 (ubuntu),64
+nan,cm4all webserver,64
+nan,lighttpd,64
+nan,nginx/1.26.0,64
+nan,nginx/1.25.2,62
+nan,tengine/3.1.0,62
+nan,nginx/1.17.9,61
+nan,nginx/1.22.0,61
+nan,kestrel,60
+nan,openresty/1.15.8.2,59
+nan,pdr-m800/1.0,59
+nan,nginx/1.20.2,59
+nan,jaws/1.0oct232015,59
+nan,apache/2.4.62,59
+nan,tornadoserver/6.3,58
+nan,openresty/1.13.6.2,58
+raspbian,apache/2.4.10 (raspbian),57
+nan,goahead/2.5.0peersec-matrixssl/3.2.1-open,57
+nan,success web server/1.0.0,56
+nan,python/3.10 aiohttp/3.11.11,56
+nan,sun glassfish enterprise server v2.1,56
+nan,nginx/1.14.0,55
+nan,miniwebserver2.0cdatacorp2017.,54
+nan,asustek upnp/1.0 miniupnpd/1.4,54
+nan,sap netweaver application server 7.45 / as java 7.40,54
+debian,apache/2.4.59 (debian),54
+nan,blueserver/5.5.4.1,53
+nan,"orientdb server v.2.2.37 (build a7541e7ceeabf592dd9a7b2928b6c023cbc73193, branch 2.2.x)",53
+nan,fpbx-14.0.17(13.38.3),53
+nan,jetty(winstone-2.8),53
+nan,cwmp-agent,53
+nan,d45964bf-d48c-477c-8655-56bb369797b6,53
+nan,awselb/2.0,52
+nan,lotus-domino,52
+nan,docker/19.03.8 (linux),52
+nan,wyf,52
+nan,netbox version 2.8 build 4128,52
+nan,app-webs/,52
+nan,httpd_ac 1.0,52
+nan,huawei auth-http server 1.0,52
+nan,boa/0.94.13,52
+nan,rompager/4.07,52
+nan,sonicwall,52
+nan,network_module/1.0 (rx-v581),51
+nan,ch,51
+nan,tornadoserver/4.4.3,51
+ubuntu,apache/2.2.22 (ubuntu),51
+nan,twistedweb/12.1.0,51
+nan,oracle-http-server-11g,51
+nan,"linux/2.6.21.5, upnp/1.0, portable sdk for upnp devices/1.6.6",51
+nan,jboneos-http,51
+nan,wsgiserver/0.2 cpython/3.6.8,51
+nan,allegro-software-rompager/4.30,51
+nan,mini web server 1.0 zxic corp 2005.,51
+nan,jjhttpd v0.1.0,51
+nan,jetty(i-jetty 6.0-1570509416),51
+nan,ucm6102 configuration | login,51
+nan,box,51
+nan,nginx/1.19.1,51
+nan,hp-ilo-server/1.30,51
+nan,rgos http-server/1.1,50
+nan,srs/4.0.198(leo),50
+nan,rss-webs/1.4b78p13,50
+nan,appnode/ccenter,50
+nan,serv-u/15.3.2.155,50
+nan,nbb-414,50
+nan,sposhttpd/4.8,50
+nan,ttyd/1.6.3-3b174da (libwebsockets/4.1.6-),50
+nan,sockettools/11.0,50
+nan,mini_httpd/1.1919dec2003,50
+nan,werkzeug/0.9.4 python/2.7.6,50
+nan,"linux,stunnel/1.0,dir-850lver1.06",50
+nan,lighttpd/1.4.26-devel-v14.07.2,50
+nan,ovhcloud,50
+nan,ksc/1223,50
+nan,hypercorn-h11,49
+nan,jetty(9.4.43.v20210629),49
+nan,mhttpd v1.1,49
+nan,kngx/1.10.2,49
+nan,dguard center 7.1.6.9,49
+nan,squid/4.13,49
+nan,openresty/1.15.8.1,49
+nan,ver2.4 rev0,49
+nan,boa/0.94.14rc20,49
+nan,(null),49
+nan,innbox_webserv,49
+nan,zte-webs/2.5.0 peersec-matrixssl/3.1.3-open,49
+nan,openresty/1.27.1.1,49
+nan,pastewsgiserver/0.5 python/2.7.6,49
+nan,boa/0.94.11,49
+nan,python/3.12 aiohttp/3.11.13,49
+nan,tengine/1.5.2,49
+nan,waitress,49
+nan,"hp http server; hp envy 7640 series - e4w43a; serial number: th73p4s0q0063t; built:tue may 26, 2020 07:08:30am {nsm2cn2022ar}",48
+nan,sundray,48
+nan,intelektron web server,48
+nan,lhs,48
+nan,tinyproxy/1.11.1,48
+nan,checkpointsvnfoundation,48
+nan,mikrotik httpproxy,48
+nan,os 1.0 upnp/1.0 realtek/v1.3,48
+nan,embedded http server.,48
+nan,gunicorn/20.0.4    831,48
+nan,sinforhttpd/1.0,48
+nan,twistedweb/12.0.0,48
+nan,cloudfront,48
+nan,phpiis.com,48
+nan,tengine/2.3.3,48
+nan,websockify python/3.6.9,48
+nan,thttpd/2.2426oct2003,48
+nan,micro_httpd,48
+nan,webserver-webs/2.5.0,48
+nan,convesio/2.1,48
+nan,unknown-webserver/1.0,48
+nan,mhz server,47
+nan,adb broadband http server,47
+nan,ruijie server,47
+nan,sthttpd/2.27.0 03oct2014,47
+nan,sonicwall ssl-vpn web server,47
+nan,gooryx/1.0.5,47
+nan,hikvision-webs,47
+nan,brovotech/2.0.0,47
+nan,15dbd20f-7fc0-910a-349c-94a3d569e732,47
+nan,ms-sdk-httpserver/1.0,47
+nan,"linux/4.9.84, upnp/1.0, portable sdk for upnp devices/1.14.0",47
+nan,miniserv,47
+nan,axhttpd/1.4.0,47
+nan,asterisk/1.8.9,47
+nan,poweredbyelectronicarts,47
+nan,websocket++/0.7.0,47
+nan,kerio connect 7.0.1,47
+nan,dasannetwork solution,47
+nan,k2p,47
+nan,nexus/3.19.1-01 (oss),47
+nan,alphapd/2.1.8,47
+nan,728/09824  http server version 2.0 - teldat s.a.,47
+nan,webfs/1.21,47
+nan,output-streamer/0.2,46
+nan,cross web server,46
+nan,"linux,stunnel/1.0,dir-860lver1.07",46
+nan,embedthis-appweb/3.3.1,46
+nan,twistedweb/16.2.0,46
+nan,boss/1.0 (boss),46
+nan,abyss/2.8.0.5-x2/b2-win32 abysslib/2.8.0.1,46
+nan,nxahttp/2.1.7415.0,46
+nan,jetty(6.1.x),46
+nan,workerman,46
+nan,jetty(7.6.0.v20120127),46
+nan,lwip/1.4.0 (http://savannah.nongnu.org/projects/lwip),46
+nan,tableau,46
+nan,web/0.02.07,46
+nan,xovispcseries,46
+nan,bfe/1.0.8.18,46
+nan,cougar/9.01.01.3841,46
+nan,safedog/4.0.0,46
+nan,miniwebserver1.0cmiotcorp2018.,46
+nan,winstone servlet engine v1.0.5,46
+nan,tengine/2.1.2,46
+nan,tr069 http server,46
+nan,ibm_http_server,46
+nan,hiawathav6.14,46
+nan,httpd/3.0,46
+nan,ispy,46
+nan,4fd7d672-bbd6-f059-9dff-51e02d6e25ee,46
+nan,ipc gk7101 httpserver 1.0,46
+nan,ipc/2.0.0,46
+nan,varnish,46
+nan,docker/20.10.2 (linux),46
+nan,rainloop,46
+nan,2.2.23,46
+nan,eudemon auth-http server 1.0,46
+nan,destiny,46
+nan,chan-cubox,46
+nan,wildfly 8,46
+nan,upnp/1.0 dlnadoc/1.50,46
+nan,squid/3.1.20,46
+nan,hipcam realserver/v1.0,46
+nan,ewon,46
+nan,rumpus,45
+nan,ruijie servrer,45
+nan,task-server-nas,45
+nan,cherrypy/4.0.0,45
+nan,mcdhttpd/1.2,45
+nan,nginx/1.25.1,45
+nan,akamaighost,45
+nan,nostromo 1.9.4,45
+nan,wvs,45
+nan,lps-0.1,45
+nan,srs/3.0.85(ouxuli),45
+nan,squid/4.14,45
+nan,"linux,webaccess/1.0,dir-850lver1.15",45
+nan,ms-mfc-httpsvr/1.0,45
+nan,net-os 5.xx upnp/1.0,45
+nan,"linux/4.4.180+, upnp/1.0, portable sdk for upnp devices/1.12.1",45
+nan,david-webbox/12.00a (1291) win32,45
+nan,climatix,45
+nan,blueserver/5.3.2.9,45
+nan,panweb server/ -,45
+nan,realtronwebserver1.1,45
+nan,beaver,45
+nan,uhttpd/1.0.0,45
+nan,webcache,45
+nan,arcadyan httpd 1.0,45
+nan,gws/100.0,45
+nan,i4m web,45
+nan,prometheus,45
+nan,unknown,45
+nan,unkown,45
+nan,xxxx,45
+nan,jaws/1.0jan302016,45
+nan,lighttpd/1.4.45,45
+nan,miniserv/1.990,45
+nan,vb,45
+nan,hipcam,45
+nan,jetty(i-jetty6.0-1650699557),45
+nan,ipcgk7101httpserver1.0,45
+nan,realvnc/e4,45
+nan,bitninja captcha server,45
+nan,ipcamera-web,45
+nan,windriver-webserver/4.5,45
+nan,start http-server/1.1,44
+windows,microsoft-iis/5.1,44
+nan,qualvision -httpserver,44
+nan,blueiris-http/1.1,44
+nan,qws,44
+nan,fibjs,44
+nan,"web hosting by dot enterprise co.,ltd (http://www.de.co.th/)",44
+nan,netdataembeddedhttpserverv1.32.1-37-nightly,44
+nan,lighttpd/1.4.35,44
+nan,adong,44
+nan,mbedthis-appweb/2.4.2,44
+nan,medusa/1.12,44
+nan,ecos embedded web server,44
+nan,kws-1043n-svr,44
+nan,ideawebserver/6.2.1,44
+nan,topsec,44
+nan,cimer,44
+nan,docker/19.03.9 (linux),44
+nan,virata-emweb/r6_2_1,44
+nan,aircube,44
+nan,dnvrs-webs,44
+nan,darkstat/3.0.718,44
+nan,"linux/5.10.60-qnap,upnp/1.0,portablesdkforupnpdevices/1.6.22",44
+nan,fwebserver,44
+nan,-,44
+nan,apache-coyote/1.1,44
+linux,linux/2.4 upnp/1.0 brcm400/1.0,44
+nan,basehttp/0.6python/3.8.5,44
+nan,"linux,webaccess/1.0,dir-850lver1.13",44
+nan,rg/device 10.x,44
+nan,apache/2.0.43 (win32) mod_jk/1.2.2-beta-1,44
+nan,microsoft-httpapi/2.0,44
+nan,jfinal 4.9.17,44
+nan,jetty(9.4.44.v20210927),44
+nan,saia pcd3.m5340/1.16.69,44
+nan,jetty/3.1.8 (windows 2000 5.0 x86),44
+nan,pam360,44
+nan,tsbox,44
+nan,webserver/1.0 upnp/1.0,44
+nan,geowebserver 5.0.0.0,44
+nan,rcell,44
+nan,sy8033,44
+nan,gw,44
+raspbian,apache/2.4.25 (raspbian),44
+nan,cpe file server,44
+nan,hasp lm/16.00,44
+debian,apache/2.4.56 (debian),44
+nan,lighttpd/1.4.39,44
+nan,jetty(9.3.z-snapshot),44
+nan,nws/1.0,44
+nan,sp-xml,44
+nan,gws,44
+nan,nperf/2.2.0 2019-04-02,44
+nan,jetty(6.1.26),44
+nan,squid,44
+nan,web server/1.0,44
+nan,java composer server 2.1,43
+nan,synopc,43
+nan,prtg,43
+nan,polycom soundpoint ip telephone httpd,43
+nan,couchdb/2.1.0 (erlang otp/17),43
+nan,csi web server 1.05,43
+nan,p-660hw-t1 v3,43
+nan,lighttpd/1.4.25-devel-v2.2.24-45-gc66fb0e4,43
+nan,debut/1.30,43
+nan,h264dvr 1.0,43
+nan,funshionservice1.0.5.8beta,43
+nan,fsm-webs,43
+nan,openresty/1.21.4.1,43
+nan,goahead-webs,43
+nan,miniserv/2.000,43
+nan,linux upnp/1.0 huawei-atp-igd,43
+nan,mochiweb/1.0 (any of you quaids got a smint?),43
+nan,moxahttp/2.3,43
+nan,"linux/2.6.21, upnp/1.0, portable sdk for upnp devices/1.3.1",43
+nan,soyal technology webserver 2.0,43
+nan,switch,43
+nan,niagara web server/1.1,43
+nan,resin/3.0.19,43
+nan,httpd/2.0,43
+nan,srs/4.0.177(leo),43
+nan,lexmark_web_server,43
+nan,oracle xml db/oracle database,43
+nan,oracle xml db/oracle9i enterprise edition release 9.2.0.1.0 - production,43
+nan,dosarrest,43
+nan,python/3.10 aiohttp/3.9.5,43
+nan,goahead-webs/2.5.0,43
+nan,servrer,43
+nan,cherrypy/3.1.2 wsgi server,43
+nan,vws 1.7.12,43
+nan,websphere application server/7.0,43
+nan,virtual web 0.9,43
+nan,websserver,43
+nan,thttpd/2.25b-lxc 29dec2003,43
+nan,werkzeug/0.14.1 python/3.7.3,43
+nan,tieline,43
+nan,windriver-webserver/4.7,43
+nan,wingftpserver(tonyweb),43
+nan,cherrypy/10.2.2,43
+nan,twistedweb/17.9.0,43
+nan,check point svn foundation,43
+nan,centehttpd/1.1,43
+nan,backupsystem,43
+nan,twistedweb/14.0.0,43
+nan,"zlmediakit(git hash:b4207240,branch:master,build time:nov  2 2021 11:36:02)",43
+nan,adserver,43
+nan,trend chip upnp/1.0 dms,43
+unix,apache/2.2.0 (unix) mod_ssl/2.2.0 openssl/0.9.7g php/5.1.1,43
+nan,tp-linkhttpd/1.0,43
+nan,testapp-1.0.0,43
+windows,apache/2.4.9 (win32) openssl/1.0.1g php/5.5.11,43
+nan,web-server,43
+nan,squid/3.3.8,42
+nan,httpd/1.0,42
+nan,router webs,42
+nan,miniwebserver1.0skyworthcorp2017.,42
+nan,icecast 2.4.4,42
+nan,rompager/4.37,42
+nan,ats/7.0.0,42
+nan,microsoft-azure-application-gateway/v2,42
+nan,aeserver,42
+nan,lighttpd/1.4.19,42
+nan,cherrypy/3.2.2,42
+nan,mbedthis-appweb/0.0.0,42
+nan,ecos,42
+nan,uc-httpd/1.0.0,42
+nan,wcy_webserver/2.0,42
+nan,udpxy 1.0-23.10 (prod) standard [linux 3.18.67 x86_64],42
+nan,h3c-cvm,42
+nan,barracudahttp 4.0,42
+nan,cowboy,42
+nan,jaws/1.0 aug 26 2015,42
+nan,hfs 2.1 beta17,42
+nan,lighttpd/1.4.28-devel-9217,42
+nan,infosec/1.0.0,42
+nan,webswing.org,42
+nan,jexus/5.8.2.21 linux,42
+nan,stoneoim,42
+nan,xovis pc series,42
+nan,lte router,42
+nan,4d/18.3.0,42
+nan,jetty/5.1.10 (windows server 2008/6.1 amd64 java/1.6.0_07,42
+nan,nginx/1.21.3,42
+nan,d7b452-d70-1255-4515-9b56f13a6dab,42
+nan,coruscant,42
+nan,swoole-http-server,42
+nan,minio console,42
+nan,webio embedded server v1.0,42
+nan,"linux,stunnel/1.0,dir-850lver1.13",42
+nan,mormot (windows) microsoft-httpapi/2.0,42
+nan,srs/5.0.98(bee),42
+nan,kerio connect 9.2.8 patch 1,42
+nan,mongo/2.0,42
+nan,toshiba tec corporation,42
+nan,miniwebserver1.0zxiccorp2005.,42
+nan,resin/3.1.8,41
+nan,henry/1.1,41
+nan,resin/4.0.40,41
+nan,o2switch-powerboost-v3,41
+nan,728/09824httpserverversion2.0-teldats.a.,41
+nan,evernote/1.0,41
+nan,sslvpn 1.0,41
+nan,jaws/1.0 sep 18 2018,41
+nan,basehttp/0.3 python/2.7.17,41
+nan,cassini/5.0.4.0,41
+nan,tp-link router,41
+nan,satrack,41
+nan,alphapd,41
+nan,boa/0.94.14rc19,41
+nan,boa/0.94.14rc21,41
+windows,microsoft-iis/8.0,41
+nan,gerenciado por storehosting.com.br,41
+nan,nexus/3.9.0-01 (oss),41
+nan,live555 streaming media v2020.04.24,41
+nan,linux/3.10.0_s40 upnp/1.0 portable sdk for upnp devices/1.6.12,41
+nan,"linux/2.x.x, upnp/1.0, pvconnect upnp sdk/1.0, twonky upnp sdk/1.1",41
+nan,"linux/2.6.36, upnp/1.0, portable sdk for upnp devices/1.3.1",41
+nan,grandstream/1.10,41
+nan,none,41
+nan,jetty(7.6.13.v20130916),41
+nan,squid/3.1.23,41
+nan,hidden,41
+nan,mginx,41
+nan,beegoserver:1.11.1,41
+nan,gunicorn/19.9.0,41
+nan,wsgiserver/0.2cpython/3.7.0,41
+nan,miips-2,41
+nan,web server 1.1,41
+nan,python/3.7 websockets/10.1,41
+nan,e7fd6736-5b0f-4af1-54a0-c95a00f208b,41
+nan,wintendo,41
+nan,httpd_ac1.0,41
+nan,httpd_four-faith,41
+nan,supernode server/2.3.47,41
+nan,titan,41
+nan,ar,41
+nan,lighttpd/1.4.32,41
+nan,app07,41
+nan,openresty/1.9.15.1,41
+nan,cisco-ios,41
+nan,clayster.library.internet/1.1,41
+nan,webserver(ipcamera),41
+nan,jaws/1.0 apr  8 2014,41
+nan,thunderdcdn,41
+nan,werkzeug/0.12.2 python/3.6.2,41
+nan,e2ee websocket server/0.7.0,41
+nan,miniserv/1.610,41
+nan,vdnserver/2017,41
+nan,cvm,41
+nan,embedthis-appweb/3.4.2,41
+nan,python/3.10 aiohttp/3.10.10,41
+nan,embedthis-http/4.0.0,41
+nan,cradlepointhttpservice/1.0.0,41
+nan,twistedweb/8.2.0,41
+nan,mini_httpd/1.21 18oct2014,41
+nan,mini web server 1.0 zte corp 2005.,41
+nan,boa/0.94.14,41
+nan,mini_httpd/1.27 07mar2017,41
+nan,easy-html,41
+nan,hmhttpd/1.24-20160808,41
+nan,glassfish server open source edition  4.1.2,40
+nan,k1,40
+nan,wts/1.2,40
+nan,anytermd,40
+nan,intel(r) active management technology 9.1.30,40
+nan,gen5th/1.33.00,40
+nan,localhost,40
+nan,kangle/3.5.19,40
+nan,jetty(winstone-2.9),40
+nan,kangle/3.5.8.2,40
+nan,ipcamera-webs/2.5.0 peersec-matrixssl/3.1.3-open,40
+nan,plkwebserver,40
+nan,webserver/0.0.0,40
+nan,xfinity broadband router server,40
+nan,"linux,webaccess/1.0,dir-850lver1.06",40
+nan,goahead-webs/2.5.0peersec-matrixssl/3.1.3-open,40
+nan,indy/9.0.50,40
+nan,axelwebserver-1.0,40
+nan,wsgiserver/0.2 cpython/3.7.7,40
+nan,reposify,40
+nan,hfs 2.2e,40
+nan,twistedweb/20.3.0,40
+nan,rest-webs,40
+nan,hanlong unicron v1.0,40
+nan,asterisk/13.13.1,40
+nan,lighttpd/1.4.37,40
+nan,twistedweb/13.2.0,40
+nan,gunicorn/19.4.5,40
+nan,jaws/1.0 sep 30 2016,40
+nan,apache (red hat linux),40
+nan,lighttpd (slitaz gnu/linux),40
+nan,werkzeug/0.8.3 python/2.6.3,40
+nan,werkzeug/0.16.1 python/3.8.10,40
+nan,ngnix,40
+nan,python/3.10 aiohttp/3.10.5,40
+nan,iplanet-web-proxy-server/3.6,40
+nan,shield,40
+nan,streamsystem,40
+nan,cloud,40
+nan,mhttp 0.1.6296.32466,40
+nan,ag [47],40
+nan,"zlmediakit(git hash:1292ec6,branch:master,build time:sep 29 2021 18:28:24)",40
+unix,apache/2.4.46 (unix) openssl/1.1.1j,40
+nan,mathopd/1.5p6,40
+nan,srs/4.0.161(leo),40
+nan,thttpd,40
+nan,fc03-https,40
+nan,srs/5.0.12(leo),40
+nan,ezproxy,40
+nan,mini web server 1.0 skyworth corp 2017.,40
+nan,squid/3.5.20,40
+nan,miniserv/1.970,40
+nan,mongoose/6.6,40
+nan,cisco-cucm11.5,40
+nan,demo-webs,40
+nan,netwave ip camera,40
+nan,docker/17.03.0-ce (linux),40
+nan,defaultipplatform,40
+nan,screenconnect/21.14.5924.8013-1372366428 microsoft-httpapi/2.0,40
+nan,sanoil bayi portal,40
+nan,openresty/1.11.2.1,39
+nan,flowweb/1.4.28,39
+nan,oracle-application-server-11g,39
+nan,websockify python/2.7.12,39
+nan,squid/3.5.27,39
+nan,apn httpd v1.4,39
+nan,web,39
+nan,abyss/2.7.0.0-x1-win32 abysslib/2.7.0.0,39
+nan,httpd 1.1,39
+nan,openresty/1.17.8.2,39
+nan,resin/3.1.6,39
+nan,whoami,39
+nan,ipoffice/,39
+nan,iplanet-web-proxy-server/3.6-sp5,39
+nan,titansdk/1.6.11,39
+nan,webserver/2.0,39
+nan,mini_httpd,39
+nan,nexus/3.0.0-03 (oss),39
+nan,reecamipcamera,39
+nan,twistedweb/19.7.0,39
+nan,streamsystem 4.0,39
+nan,jetty(9.4.9.v20180320),39
+nan,instafogging/1.21.4.1,39
+nan,neobox web server,39
+nan,"sierra wireless inc, embedded server",39
+nan,fuckyou,39
+nan,alpha_webserv,39
+nan,"linux/3.18.20, upnp/1.0, portable sdk for upnp devices/1.6.21",39
+nan,"linux/2.6.5-it0, upnp/1.0, intel sdk for upnp devices /1.2",39
+nan,splunkd,38
+nan,saia pcd2m5540/1.10.16,38
+nan,sepm,38
+nan,rapid logic/1.1,38
+nan,openresty/1.15.8.3,38
+nan,autobahnpython/21.3.1,38
+nan,topwebserver,38
+nan,jaws/1.0may132013,38
+unix,apache/1.3.28 (unix) mod_ssl/2.8.15 openssl/0.9.8d,38
+nan,prtg/13.1.2.1462,38
+nan,dvrdvs-webs,38
+nan,rtkweb0.9,38
+nan,fn-httpd 1.0 [http/1.1],38
+nan,avtech/1.0,38
+nan,streamserver,38
+nan,"linux,webaccess/1.0,dir-860lver1.07",38
+nan,aterm(ht)/1.0.0,38
+nan,powered by electronic arts,38
+nan,keil-eweb/2.0,38
+unix,apache/1.3.31 (unix),38
+nan,cjserver/1.1,38
+nan,mongoose/6.11,38
+nan,boa/0.93.15,38
+nan,kx-ns1000,38
+nan,lancom,38
+nan,moxahttp/1.0,38
+nan,opnsense,38
+nan,intoto http server v1.0,38
+nan,iologik web server/1.0,38
+nan,funshionservice1.0.1.104beta,38
+nan,tr069 client tcp connection request server,38
+nan,lte router operation and management,38
+nan,appwebs/,38
+nan,docker/20.10.6 (linux),38
+nan,httpd_gw 1.0,38
+nan,pve-api-daemon/3.0,38
+nan,dr.com server,38
+nan,xavante 2.2.0 embeded,38
+nan,los http server 1.0,38
+nan,websockifypython/2.7.5,38
+nan,"cutebi network tunnel, (%>w<%)",38
+nan,goaheadwebs,38
+nan,openresty/1.11.2.5,38
+nan,zqwl-webserver-v1.0,38
+nan,wsgiserver/0.2 cpython/3.9.6,38
+nan,wanduck,38
+nan,"linux/2.6.37, upnp/1.0, portable sdk for upnp devices/1.4.7",38
+nan,roku/10.0.0 upnp/1.0 roku/10.0.0,38
+nan,sitescope/9.0 04:38:55 2007-08-19 build 911,38
+nan,goahead-webs/2.5.0 peersec-matrixssl/3.1.3-open,38
+nan,gunicorn/18.0,38
+nan,zte web server 1.0 zte corp 2015.,38
+nan,cdyc_web_svr1.0,38
+nan,ce_e,38
+nan,squid/4.11,38
+nan,caddy v0.11.1,38
+nan,"linux/2.6.30.9-cig-4, upnp/1.0, portable sdk for upnp devices/1.6.18",38
+nan,ttyd/1.6.3 (libwebsockets/4.3.2-419f7c7),38
+nan,calibre 7.14.0,38
+nan,yealink embed httpd,38
+nan,beegoserver:2.0.0,37
+nan,iis8.0,37
+nan,oracle-iplanet-web-server/7.0,37
+nan,lswebserver/1.0.0,37
+nan,squid/4.10,37
+nan,funshionservice1.0.1.63beta,37
+nan,indy/9.00.10,37
+nan,docker/1.11.1 (linux),37
+nan,tengine/2.3.2,37
+nan,python/3.8 aiohttp/4.0.0a1,37
+nan,jetty(8.y.z-snapshot),37
+nan,keil-eweb/2.1,37
+nan,comfilehmi runtime,37
+nan,netdataembeddedhttpserver20200416-1574-g011c015a6,37
+nan,werkzeug/2.0.1 python/3.6.9,37
+nan,ttyd/1.6.3(libwebsockets/4.3.2-419f7c7),37
+nan,jaws/1.0 aug 21 2013,37
+nan,apache/2.2.9 (win32) dav/2 mod_ssl/2.2.9 openssl/0.9.8i mod_autoindex_color php/5.2.6,37
+nan,cpanel,37
+nan,miniwebserver1.0ztecorp2005.,37
+nan,jetty/5.1.x(linux/2.6.26-2-686i386java/1.6.0_22,37
+unix,apache/2.4.27 (unix) openssl/1.0.2k,37
+linux,linux/2.x upnp/1.0 avtech/1.0,37
+nan,icecast 2.4.2,37
+nan,web-router,37
+nan,swift1.0,37
+nan,hfs 2.3c,37
+nan,wildfly/10,37
+nan,python/3.10 aiohttp/3.8.4,37
+nan,oatpp/1.2.5,37
+nan,glassfish server open source edition  4.0,37
+nan,hid-web,37
+nan,58f5b853-36b6-597e-16c6-4610e7fd83a4,37
+nan,mobilesmarts/5.2.46.14758 microsoft-httpapi/2.0,37
+nan,bks400,37
+nan,w3httpd/1.0,37
+nan,srs/4.0.201(leo),37
+nan,openresty/1.11.2.2,37
+nan,gf-app,37
+nan,nexus/3.13.0-01 (oss),37
+nan,ttyd/1.6.3(libwebsockets/3.1.0),37
+nan,tp-link httpd/1.0,37
+nan,cisco-ccspcwmptcpcr/1.0,37
+nan,reecam ip camera,37
+nan,wmi http server,37
+nan,astra,37
+nan,gunicorn/20.0.4,37
+nan,cups/1.7 ipp/2.1,37
+nan,sunny webbox,37
+nan,flowproxy,37
+nan,e2ee server 2.0,37
+nan,httpd  1.0,37
+nan,t1-httpd/1.4.43,36
+nan,virtualweb0.9,36
+nan,virata-emweb/r6_0_1,36
+nan,thttpd/2.25b php/20030920,36
+nan,cpe-server/1.0 supports only get,36
+nan,crushftp http server,36
+nan,ipc@chip,36
+nan,ms-mfc-321-1/1.1,36
+nan,teleeye/1.1,36
+nan,webs/,36
+nan,viaweb system/1.0.0 (http://www.viawebsystem.com.br),36
+nan,electrex httpserver,36
+nan,orientdb server v.2.2.22 (build fb2b7d321ea8a5a5b18a82237049804aace9e3de),36
+nan,cam-webs,36
+nan,octopus deploy/ microsoft-httpapi/2.0,36
+nan,b&r web server  ver. {2-250416-25},36
+nan,h3c-miniware-webs,36
+nan,wsgiserver/0.2 cpython/3.8.5,36
+nan,restlet-framework/3.0m1,36
+nan,wso2 carbon server,36
+nan,cambium http server,36
+nan,gs-webs,36
+nan,router,36
+nan,indy/9.0.11,36
+nan,bigip,36
+nan,brcm http server,36
+nan,zk web server,36
+nan,simplehttp/0.6 python/2.7.16,36
+nan,www server/1.1,36
+nan,gem ver1,36
+nan,gaaa,36
+nan,xcdn,36
+nan,nginx/1.21.6,36
+nan,hfs 2.4.0 rc6,36
+nan,hfs 2.4.0 rc7,36
+nan,starthttp-server/1.1,36
+nan,citrix web pn server,36
+nan,python/3.11 aiohttp/3.11.13,36
+nan,va web server,36
+nan,openresty/1.9.3.1,36
+nan,sw-cp-server,36
+nan,werkzeug/2.2.3 python/3.10.11,36
+nan,tcgo-server/0.25.3,36
+nan,webbox-20,36
+nan,supersign,36
+nan,ds67x0,36
+nan,mini_httpd/1.30 26oct2018,36
+nan,cherrypy/3.2.5,36
+nan,wintendo1.3.3.7,36
+nan,jetty(9.2.14.v20151106),36
+nan,"hp http server; hp hp officejet pro 8720 - d9l19a; serial number: cn81hc6060; built:wed jan 27, 2021 02:31:26pm {wmp1cn2105ar}",36
+nan,avigilongateway/1.0 microsoft-httpapi/2.0,36
+nan,microsoft-wince/6.00,36
+nan,jetty(9.4.z-snapshot),36
+nan,yamaha-rt,35
+nan,payara micro #badassfish,35
+nan,"linux, http/1.1, dir-850l ver 1.13",35
+nan,lte router webs,35
+nan,niagara web server/3.8.111,35
+nan,nvr ext server,35
+nan,linux/2.6.28 si cloud camera,35
+nan,opencms/11.0.2,35
+nan,3s_webserver,35
+nan,wsgiserver/0.1 python/2.7.12,35
+nan,lighttpd/1.4.55,35
+nan,k3,35
+nan,lighttpd/1.4.32-devel-20015m,35
+nan,miniserv/1.941,35
+nan,lighttpd/1.4.20,35
+nan,miniupnpd/1.0 upnp/1.0,35
+nan,orbis,35
+nan,kerio connect 8.3.1,35
+nan,mqcache/2.1.0,35
+nan,"linux/3.0.8, upnp/1.0, portable sdk for upnp devices/1.6.19",35
+nan,nexus/3.7.1-02 (oss),35
+nan,pravis/1.0,35
+nan,dws,35
+nan,thttpd/2.25b29dec2003,35
+nan,ipcamera-webs/2.5.0,35
+nan,demce.tk,35
+nan,hcmsactivex viewer,35
+nan,hfs 2.4rc2,35
+nan,ver2.4rev0,35
+nan,dptechserver,35
+nan,crestron webserver,35
+nan,squid/3.5.12,35
+nan,gunicorn/19.7.0,35
+nan,infra911,35
+nan,basehttp/0.3 python/2.7.10,35
+nan,goahead-webs/2.5.0 peersec-matrixssl/3.4.2-open,35
+nan,httpd1.0,35
+nan,rompager/4.07 upnp/1.0,35
+nan,werkzeug/1.0.1 python/3.8.2,34
+nan,yawcam/0.6.0,34
+nan,love,34
+nan,airtunes/377.30.01,34
+nan,xxxxxxxx-xxxxx,34
+nan,httpd 1.0,34
+nan,miniserv/0.01,34
+nan,k2,34
+nan,mini_httpd/1.3026oct2018,34
+unix,cherokee/0.99.9 (unix),34
+nan,server version 11.0,34
+nan,trmb/1.2,34
+nan,werkzeug/0.10.4 python/2.7.1,34
+nan,glassfish server open source edition  4.1.1,34
+nan,goahead/2.5.0 peersec-matrixssl/3.2.1-open,34
+nan,ross web server,34
+nan,secure,34
+nan,yuntuc,34
+nan,magi 1.0,34
+nan,wildfly/8,34
+nan,teamspeak server 3.13.2,34
+nan,jetty(8.2.0.v20160908),34
+nan,mpd web server,34
+nan,fastcgi,34
+nan,fasthttp,34
+nan,jetty(9.4.33.v20201020),34
+nan,wstl cpe 1.0,34
+nan,cc-web/1.6.3,34
+nan,lighttpd/1.4.28-devel-10177,34
+nan,jetty(6.1.26.hwx),34
+nan,darkhttpd/1.12,34
+nan,web server/2.1.0 peersec-matrixssl/3.1.3-open,34
+nan,squid/3.5.25,34
+nan,prtg/19.4.52.3515,34
+nan,mini-rompager/4.34,34
+nan,werkzeug/2.0.1 python/3.7.11,34
+nan,payara server  4.1.1.164 #badassfish,34
+nan,jetty(6.1.14),34
+nan,h3c-cvm    5049,34
+nan,h2o/2.3.0-dev@1d12c355,34
+nan,httpd_gargoyle/1.0 14mar2008,34
+nan,lighttpd/1.4.54,33
+nan,lighttpd/1.4.28-devel-135:137m,33
+nan,beegoserver:1.12.0,33
+nan,lighttpd/1.4.28-devel-171:172m,33
+nan,gunicorn/19.8.1,33
+nan,basehttp/0.3 python/2.7.5,33
+nan,axhttpd/1.5.3,33
+nan,rompager/4.51 upnp/1.0,33
+nan,cherrypy/8.6.0,33
+nan,streamer 21.10,33
+nan,nexus/3.18.0-01 (oss),33
+nan,cdmsserver,33
+nan,jaws/1.0 mar  6 2017,33
+nan,wcy_webserver/1.0,33
+nan,google web,33
+nan,ist ois,33
+nan,contiki/2.4 http://www.sics.se/contiki/,33
+nan,web cache,33
+nan,nginx/1.23.2,33
+nan,simplehttpwithupload/0.1 python/2.7.5,33
+nan,mapbarserver,33
+nan,websocket-sharp/1.0,33
+nan,safedog waf,33
+nan,tr069 agent,33
+nan,streamd,33
+nan,tornadoserver/4.4.2,33
+nan,wsgiserver/0.1python/2.7.12,32
+nan,rapidlogic/1.1,32
+nan,sy8045,32
+nan,nhttpd/3.4.0 (yhttpd_core/1.3.2),32
+nan,squid/4.13-vcs,32
+nan,resin/4.0.58,32
+nan,squid/2.7.stable9,32
+nan,tos/1.12.1,32
+nan,restlet-framework/2.0.13,32
+nan,sanechips-webs,32
+nan,glassfish server open source edition  4.1,32
+nan,docker/17.03.3-ce (linux),32
+nan,jetty(6.1.11),32
+nan,mikrotikhttpproxy,32
+nan,moxahttp/2.2,32
+nan,werkzeug/0.14.1python/3.7.3,32
+nan,jetty(i-jetty 3.8),32
+windows,apache/2.4.23 (win32) openssl/1.0.2h php/5.6.24,32
+nan,nginx-rc,32
+nan,netis/1.0.1,32
+nan,docker/18.09.4 (linux),31
+nan,tengine/2.3.0,31
+nan,nperf/2.2.6 2021-05-08,31
+nan,icewarp/12.0.2.0 x64,31
+nan,dir-825 web server/v1.00,31
+nan,gnway web server,31
+nan,gnu rsp/1.0,31
+nan,************,31
+nan,blueserver/4.8.6.3,31
+nan,netdata embedded http server 20200416-1574-g011c015a6,31
+nan,simplehttp/0.6 python/3.5.3,31
+nan,webserver2,31
+nan,cwpsrv,31
+nan,jetty/5.1.10 (windows server 2008 r2/6.1 amd64 java/1.6.0_31,31
+nan,is2 web server 1.36,31
+windows,microsoft-iis/7.0,31
+nan,pdr-jseries,31
+nan,contiki,31
+nan,jaws/1.0mar172016,31
+nan,web switch,31
+nan,mini web server 1.0 cmiot corp 2018.,31
+nan,web server/2.1.0 peersec-matrixssl/3.9.5-open,31
+nan,nvr web server,31
+nan,wmsserver/2.0.1.0,31
+nan,uc-httpd 1.0.0,31
+nan,huohuo,31
+nan,thttpd/2.29 23may2018,31
+nan,lighttpd/1.4.61,31
+nan,dcs-lig-httpd,31
+nan,ulwsd/1.0.1-20140331,31
+nan,webserver/1.0.0,30
+nan,mbedthis-appweb/2.2.2,30
+nan,embedthis-appweb/3.2.3,30
+nan,indy/10.0.52,30
+nan,cpefileserver,30
+nan,hfs 2.3 beta,30
+nan,rtk web 0.9,30
+nan,blueserver/5.1.0.4,30
+nan,nginx/1.19.4,30
+nan,mini web server 2.0 cdata corp 2017.,30
+nan,websphere application server/6.1,30
+nan,ivms-web,30
+nan,gsoap/2.7,30
+nan,astrasm,30
+nan,twistedweb/18.4.0,30
+nan,snorkel/02.03.00.04,30
+nan,remobjects sdk for .net http server/5.0,29
+nan,geohttpserver,29
+nan,mini_httpd/1.24 10may2016,29
+nan,airdroid 2.0,29
+nan,websocket++/0.8.1,29
+nan,linux/#33 smp preempt mon mar 21 11:19:42 cst 2022 upnp/1.0 broadcom upnp/0.9,29
+nan,mxhttpd/2.19-mx jun 16 2020,29
+debian,apache/2.2.22 (debian),29
+nan,thttpd/2.25b 29dec2003,29
+nan,htnanohttpd,29
+nan,python/3.12 aiohttp/3.11.12,29
+nan,l7engine,29
+nan,seeyon-server/1.0,29
+nan,ttyd/1.6.3(libwebsockets/4.3.2-20221001-705-gae12d2f77),29
+windows,apache/2.4.12 (win32) openssl/1.0.1l php/5.6.8,28
+nan,payara server  5.2021.7 #badassfish,28
+nan,railway-edge,28
+nan,lighttpd/1.4.51,28
+nan,tengine/2.2.3,28
+nan,resin/3.1.12,28
+nan,wintendo 1.3.3.7,28
+nan,gsoap/2.8,28
+nan,nexus/3.0.1-01 (oss),28
+nan,nginx/1.23.1,28
+unix,apache/2.4.43 (unix) openssl/1.1.1g,28
+nan,pepyaka,28
+nan,c01.sfy.nod,27
+nan,python/3.10 aiohttp/3.11.12,27
+nan,daphne,27
+nan,sdk 4.2.0.0 upnp/1.0 miniupnpd/1.6,27
+nan,transmission,27
+nan,python/3.11 aiohttp/3.9.5,27
+nan,apache 2.2,27
+nan,ideawebserver/0.83.415,27
+nan,a8000,27
+nan,resin/4.0.36,26
+nan,goahead-http,26
+nan,uc-httpd1.0.0,26
+nan,hts_server,26
+nan,uploadserver,26
+nan,zlmediakit-5.0(build in apr  8 2021 03:17:35),26
+nan,router webserver,26
+nan,python/3.12 aiohttp/3.10.10,25
+nan,tornadoserver/4.3,25
+nan,jetty(9.3.5.v20151012),25
+nan,aruba-proxy,25
+nan,python/3.12 aiohttp/3.11.10,24
+nan,mini_httpd/1.19 19dec2003,24
+nan,docker/1.10.3 (linux),24
+nan,apache/2.4.37 (alibaba cloud linux) openssl/1.1.1g mod_perl/2.0.11 perl/v5.26.3,24
+unix,apache/2.4.56 (unix) openssl/1.1.1t php/8.2.4 mod_perl/2.0.12 perl/v5.34.1,24
+nan,python/3.11 aiohttp/3.8.5,24
+nan,waf,23
+nan,zxvevmc01,23
+nan,elb,23
+nan,nginx/1.19.2,22
+nan,nginx-upupw/1.8.0,22
+nan,apache/2.4.63,22
+nan,clb/no-cache,21
+ubuntu,apache/2.4.7 (ubuntu),21
+nan,python/3.11 aiohttp/3.11.11,21
+nan,python/3.11 aiohttp/3.11.12,21
+nan,nginx/1.16.0,20
+nan,nginx/0.7.64,20
+nan,nginx/1.10.2,19
+nan,deno/gcp-us-west2,19
+nan,tencent-cos,19
+nan,nginx/1.6.2,18
+ubuntu,apache/1,18
+nan,cloudflare-nginx,18
+nan,nginx/1.25.0,17
+nan,python/3.10 aiohttp/3.11.10,17
+nan,nginx-reuseport/1.13.4,17
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/7.4.33,17
+nan,wts/1.7.4,17
+nan,angie,17
+nan,starxn/starxn.com,17
+nan,byte-nginx,17
+nan,nginx/1.9.9,16
+nan,tornadoserver/4.4.1,16
+nan,nginx/1.17.10,16
+nan,nginx-more,16
+ubuntu,apache/2.4.63 (ubuntu),16
+nan,ddos-guard,16
+nan,python/3.10 aiohttp/3.8.5,16
+nan,sucuri/cloudproxy,16
+nan,apache/2.4.62 (almalinux) openssl/3.2.2 mod_wsgi/4.7.1 python/3.9,15
+nan,nginx/1.21.4,15
+nan,python/3.12 aiohttp/3.10.5,15
+nan,python/3.11 aiohttp/3.10.5,15
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/8.2.20,15
+nan,python/3.10 aiohttp/3.11.8,15
+nan,nginx/1.17.6,15
+nan,apache/2.4.62 (almalinux) openssl/3.2.2 mod_fcgid/2.3.9,14
+nan,python/3.12 aiohttp/3.10.11,14
+debian,apache/2.4.54 (debian),14
+nan,nginx/1.9.11,14
+nan,openbsd httpd,14
+nan,python/3.11 aiohttp/3.9.3,14
+nan,openresty/1.25.3.2,14
+nan,360 web server,14
+nan,nginx-v-ddos,13
+nan,nginx/1.18.0 + phusion passenger(r) 6.0.23,13
+nan,tornadoserver/4.2.1,13
+nan,python/3.10 aiohttp/3.10.11,13
+nan,nginx/1.13.3,13
+nan,python/3.10 aiohttp/3.9.3,12
+nan,apache/2.4.6 (centos) openssl/1.0.2k-fips mod_fcgid/2.3.9 php/5.5.35 mod_python/3.5.0- python/2.7.5,12
+nan,american sitebuilder,12
+nan,portfoliobox (www.portfoliobox.net),12
+nan,xtweb-proxy/0.16.1,12
+windows,apache/2.4.39 (win64) openssl/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02,12
+ubuntu,nginx/1.4.6 (ubuntu),11
+nan,f-web,11
+nan,python/3.11 aiohttp/3.10.10,11
+nan,kazaaclient,11
+nan,nginx/1.0.15,11
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.4.16,11
+ubuntu,nginx/1.17.10 (ubuntu),11
+nan,lighttpd/1.4.59,11
+nan,nginx/1.19.3,11
+nan,nginx/1.19.6,11
+nan,ylb,11
+nan,nginx/1.27.5,11
+nan,tencentedgeone,10
+nan,noindex,10
+nan,apisix/2.10.0,10
+nan,debian/4.0 upnp/1.0 miniupnpd/1.0,10
+debian,apache/2.4.57 (debian),10
+nan,python/3.11 aiohttp/3.11.10,10
+ubuntu,nginx,10
+nan,nginx/1.21.1,10
+nan,website-pro/9.1.3,10
+nan,marco/3.2,10
+nan,python/3.10 aiohttp/3.8.6,9
+nan,volt-adc,9
+nan,nginx/1.19.10,9
+nan,wsgiserver/0.2 cpython/3.12.3,9
+nan,python/3.11 aiohttp/3.10.9,9
+nan,rushhour,9
+nan,nginx/1.15.8,9
+debian,apache/2.4.61 (debian),9
+nan,uos,9
+nan,python/3.12 aiohttp/3.11.9,9
+nan,wsgiserver/0.2 cpython/3.8.10,9
+nan,jetty(9.4.26.v20200117),8
+nan,wsgiserver/0.2 cpython/3.11.6,8
+ubuntu,nginx/1.16.1 (ubuntu),8
+nan,apache/2.4.55 () openssl/1.0.2k-fips php/7.4.33,8
+nan,ipos/7.0 upnp/1.0 tl-wr941n/2.0,8
+nan,esf,8
+windows,apache/2.4.58 (win64) openssl/3.1.3 php/8.2.12,8
+ubuntu,apache/2.4.62 (ubuntu),8
+nan,nginx-reuseport/1.21.1,8
+nan,tornadoserver/6.0.1,8
+nan,python/3.10 aiohttp/3.10.0,8
+nan,apache/2.4,8
+nan,cw,8
+nan,nginx/1.15.11,8
+nan,tornadoserver/5.0.1,8
+nan,python/3.11 aiohttp/3.10.11,7
+nan,wpx cloud/msk01,7
+nan,twistedweb/16.4.0,7
+unix,apache/2.4.62 (unix) openssl/1.1.1k,7
+nan,rchttpd/1.0,7
+nan,openresty/1.21.4.2,7
+nan,qianxin web server,7
+nan,python/3.11 aiohttp/3.11.8,7
+nan,nginx/1.17.8,7
+windows,microsoft-iis/9.0,7
+nan,apache/2.4.6 (cloudlinux) openssl/1.0.2k-fips mod_fcgid/2.3.9 phusion_passenger/6.0.20,7
+nan,microsoft wince fidelix v11.50.29,7
+nan,bohannas,7
+nan,apache/2.4.62 (almalinux) openssl/3.2.2,7
+nan,my-server,7
+nan,essentia/2.1,7
+nan,microplex emhttpd/1.0,7
+nan,weblogic weblogic server 6.1 sp4  11/08/2002 21:50:43 #221641,6
+raspbian,apache/2.4.59 (raspbian),6
+nan,wts/1.7.0,6
+nan,netapp//8.1rc2,6
+nan,linux mips 2.4.20 upnp/1.0 miniupnpd/1.2,6
+nan,python/3.10 aiohttp/3.9.1,6
+nan,apache/2.4.37 (centos) openssl/1.1.1k,6
+nan,vcs-vidos-nvr,6
+nan,ipl/2.2,6
+nan,openresty/1.21.4.4,6
+nan,aliyunoss,6
+nan,ipos/7.0 upnp/1.0 tl-wr841n/8.0,6
+nan,python/3.12 aiohttp/3.11.6,6
+nan,apache/2.4.62 (amazon linux) openssl/3.0.8,6
+nan,nginx/1.6.3 + phusion passenger 5.0.6,6
+nan,nginx/1.8.1,6
+nan,volcclb,6
+nan,nginx/1.17.4,6
+nan,ubuntu/precise upnp/1.0 miniupnpd/1.4,6
+nan,python/3.10 aiohttp/3.10.1,6
+nan,bbc 06.00.083; ovbbccb 06.00.083,6
+nan,wsgiserver/0.2 cpython/3.11.9,6
+nan,nginx + phusion passenger(r) 6.0.23,6
+nan,bluecoat-security-appliance,6
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.6.40,6
+windows,apache/2.4.55 (win64) openssl/1.1.1s mod_fcgid/2.3.9a,6
+nan,mod_security/1.71,6
+nan,mbedthis-appweb/2.4.0,6
+nan,fedoracore/6 upnp/1.0 miniupnpd/1.0,6
+nan,stronghold/3.0 apache/1.3.19 redhat/3014c,5
+nan,lotus-domino/release,5
+nan,python/3.11 aiohttp/3.11.9,5
+ubuntu,nginx/1.15.9 (ubuntu),5
+nan,jetadmin,5
+nan,twistedweb/16.5.0rc2,5
+nan,weblogic server 7.0 sp4 tue aug 12 11:22:26 pdt 2003,5
+nan,kangle/3.5,5
+nan,oracle http server powered by apache/1.3.12 (unix) apachejserv/1.1 mod_ssl/2.6.4 openssl/0.9.5a,5
+nan,"oracle-application-server-10g/10.1.2.2.0 oracle-http-server oracleas-web-cache-10g/10.1.2.2.0 (n;ecid=153541209221,0)",5
+nan,website-pro/9.1.6,5
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.20",5
+nan,pws,5
+nan,isos/9.0 upnp/1.0 conexant-emweb/r6_1_0,5
+nan,sun-java-system/application-server,5
+nan,draytek/vigor2130 upnp/1.0 miniupnpd/1.0,5
+nan,nginx/1.17.3,5
+ubuntu,thttpd/2.23beta1 26may2002,5
+nan,php/4.0.5,5
+unix,apache/2.4.54 (unix) openssl/1.1.1s php/7.4.33 mod_perl/2.0.12 perl/v5.34.1,5
+nan,77yyds,5
+nan,openresty edge,5
+suse,apache/2.4.58 (linux/suse),5
+nan,simplehttp/0.6 python/3.10.12,5
+nan,zyxel,5
+nan,agranat-emweb/r5_1_2,5
+nan,2wire gateway,5
+nan,"linux/2.6.32-220.7.1.el6.x86_64, upnp/1.0, portable sdk for upnp devices/1.6.14",5
+nan,nginx/1.9.12,5
+nan,enterpriseweb,5
+nan,nginx-n.wtf/1.23.0,5
+nan,qtss/5.0.3.3 (build/452.22.4; platform/macosx; release/panther; update/security; ),5
+nan,apisix/3.2.0,5
+nan,ups_server/1,5
+nan,fly/fbf74ca1c (2024-12-13),5
+nan,av-tech av787 video web server,5
+nan,amazon simpledb,5
+nan,frontpage,5
+nan,fly/fd243e55f (2025-02-20),5
+nan,nginx/1.15.5,5
+nan,nginx/1.15.3,5
+nan,resin/1,5
+unix,apache/2.4.58 (unix),5
+nan,ibm_http_server/1.3.28.1-pk16139  apache/1.3.28 (unix),5
+nan,apachejserv/1.0.1,5
+nan,apisix,5
+nan,cobalt,4
+nan,jetty/5.1.10 (linux/2.6.12 i386 java/1.5.0_05),4
+nan,payara server  5.2022.5 #badassfish,4
+nan,wsgiserver/0.2 cpython/3.11.11,4
+nan,jetty/4.2.23 (sunos/5.9 sparc java/1.4.2_04),4
+nan,kong/3.8.0,4
+nan,os2httpd,4
+nan,"linux-i386-2.6.33.2, upnp/1.0, pms/1.21.1",4
+nan,framer/00c4d89,4
+nan,couchdb/2.1.1 (erlang otp/20),4
+nan,ydws,4
+nan,wsgiserver/0.2 cpython/3.9.21,4
+nan,allegro-software-rompager,4
+nan,allegro-software-rompager/4.30b3,4
+nan,php/4.0.3,4
+nan,amazon-cloud-drive,4
+nan,squid/4.4,4
+nan,ipos/7.0 upnp/1.0 tl-wr740n/1.0/2.0,4
+nan,sentinelkeysserver/1,4
+nan,unknown/0.0 upnp/1.0 conexant-emweb/r6_1_0,4
+nan,apache/2.4.62 (),4
+nan,python/3.12 aiohttp/3.9.5,4
+nan,apache/2.4.62 (fedora linux) openssl/3.2.2 mod_qos/11.74 mod_perl/2.0.13 perl/v5.38.2,4
+nan,cagw,4
+nan,uuwaf,4
+nan,gfe/1,4
+nan,qpwafinner,4
+nan,apisix/3.6.0,4
+nan,http/server,4
+nan,php/7.1,4
+nan,rapid logic/1,4
+nan,goframe http server,4
+nan,blogcdn.net,4
+nan,blazix/1.2.1,4
+nan,ubuntu/7.10 upnp/1.0 miniupnpd/1.0,4
+nan,hellbent java webserver v0.1,4
+nan,gunicorn/19.7.1,4
+nan,twistedweb/2.5.0,4
+nan,apache/2.4.6 () openssl/1.0.2k-fips,4
+nan,apache/2.4.6,4
+nan,apache/2.4.59 (fedora linux) openssl/3.2.1,4
+nan,ibm_http_server/6.1 apache/2.0.47 (win32) php/5.1.1,4
+nan,phttpd,4
+nan,security console,4
+nan,jc-httpd/1.11.14,4
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.72.0",4
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.50.1",4
+nan,thttpd/2.20b,4
+nan,thttpd/2.23beta1 26may2002,4
+nan,python/3.10 aiohttp/3.10.3,4
+nan,python/3.10 aiohttp/3.10.9,4
+nan,python/3.10 aiohttp/3.11.16,4
+nan,python/3.10 aiohttp/3.11.2,4
+nan,chaiserver,4
+nan,apache/2.4.37 (centos) openssl/1.1.1c,4
+nan,python/3.11 aiohttp/3.10.3,4
+nan,apache/2.4.57 (codeit) openssl/3.0.10+quic mod_perl/2.0.11 perl/v5.16.3,4
+nan,webrick/1.3.1 (ruby/1.9.3/2013-02-22),4
+nan,python/3.11 aiohttp/3.11.7,4
+raspbian,apache/2.4.56 (raspbian),4
+nan,compaqhttpserver/9.9 hp system management homepage,4
+nan,avirt,4
+windows,apache/2.2.4 (win32) php/5.2.3,4
+nan,fly/a3675627f (2025-04-16),4
+unix,apache/2.4.62 (unix) openssl/3.4.1 mod_fcgid/2.3.9,4
+nan,nginx/1.13.6,4
+unix,apache/2.4.62 (unix) openssl/3.4.0,4
+unix,apache/2.4.62 (unix) openssl/3.0.9,4
+cpanel,apache/2.4.53 (cpanel) openssl/1.1.1n mod_bwlimited/1.4,4
+unix,apache/2.4.56 (unix),4
+unix,apache/2.4.52 (unix) openssl/1.1.1n,4
+nan,embedthis-http,4
+nan,fly/c119e7cff (2025-03-13),4
+unix,apache/2.4.39 (unix) openssl/1.1.1b,4
+ubuntu,netpresenz,4
+freebsd,apache/2.4.41 (freebsd) openssl/1.0.2u mod_fcgid/2.3.9,4
+unix,apache/2.2.34 (unix) mod_ssl/2.2.34 openssl/1.0.2k dav/2,4
+nan,nginx/1.19.0,4
+nan,mt-daapd/0.2.4.1,4
+nan,fly/d5165e6e2 (2024-12-18),4
+nan,nginx/1.23.0,4
+nan,fly/dcbfc673f (2025-03-07),4
+nan,nginx/1.19.5,4
+nan,eco-webserver,4
+nan,nginx/1.19.7,4
+nan,snow_adc,4
+nan,linux/2.6.36+ dlnadoc/1.50 upnp/1.0 minidlna/1.0,4
+nan,sun java system application server platform edition 9.0_01,4
+nan,nginx-n.wtf/1.27.2,4
+nan,fly/6dbc66600 (2025-03-04),4
+nan,netcloak,4
+ubuntu,apache/2.4.46 (ubuntu),4
+nan,netscape-enterprise/6.0,4
+nan,nullhttpd/0.5.1,4
+nan,"linux/2.6.32-279.1.1.el6.x86_64, upnp/1.0, portable sdk for upnp devices/1.6.13",4
+nan,netscape-enterprise/3.5.1,4
+nan,ews-nic3/6.31,4
+windows,microsoft-iis,4
+nan,netcache appliance (netapp/5.3.1r3),4
+nan,sophos email appliance,3
+nan,netcache appliance (netapp/6.0.4),3
+unix,apache/2.4.46 (unix) openssl/1.1.1d php/7.4.29,3
+nan,atphttpd,3
+nan,tornadoserver/5.0,3
+nan,apache/2.4.37 (cloudlinux) openssl/1.1.1k,3
+nan,intel(r) active management technology,3
+nan,apache/2.4.51,3
+nan,hp web jetadmin 10.3.91358 (10.3 sr5),3
+nan,ipg8000,3
+nan,ipcamera login,3
+nan,intel(r) standard manageability 9.0.3,3
+nan,freebsd/8.2-release-p4 dlnadoc/1.50 upnp/1.0 minidlna/1.0.24,3
+nan,ews-nic4/13.39,3
+nan,netapp/7.3.4p1,3
+nan,ehttp v2.0,3
+nan,weblogic server 8.1 sp3 tue jun 29 23:11:19 pdt 2004 404973,3
+nan,savant/3.1,3
+red hat enterprise linux,apache/2.4.6 (red hat enterprise linux) openssl/1.0.2k-fips mod_fcgid/2.3.9 php/5.6.34,3
+nan,apache/2.4.10,3
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips,3
+nan,tomcat web server/3.2.2 (jsp 1.1; servlet 2.2; java 1.3.1; windows 2000 5.0 x86; java.vendor=sun microsystems inc.),3
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips mod_wsgi/4.7.1 python/3.4,3
+nan,ipos/7.0 upnp/1.0 tl-wr841n/6.0/7.0,3
+nan,tomcat/2.1,3
+nan,heitel gmbh web server [v1.15/v1.14/v1.3],3
+nan,heitel gmbh web server [v1.26/v1.15/v1.7],3
+nan,tornadoserver/4.2,3
+nan,apache/2.4.29,3
+nan,apache/2.4.37 (alibaba cloud linux) openssl/1.1.1k mod_perl/2.0.12 perl/v5.26.3,3
+nan,apache/2.4.37 (almalinux) openssl/1.1.1k,3
+nan,helix server version 9.0.4.960 (linux-2.2-libc6-i586-server) (realserver compatible),3
+nan,python/3.10 aiohttp/3.11.9,3
+nan,cherrypy/18.5.0,3
+nan,fly/be638e99b (2025-03-12),3
+nan,apache/2.4.57 (rocky linux) openssl/3.0.7,3
+nan,splendid,3
+nan,squid/2.3.stable1,3
+nan,ibm http server/v5r3m0,3
+nan,virata-emweb/r5_3_0,3
+nan,neowebscript,3
+nan,net-dk/1.0,3
+nan,varnish-cache,3
+nan,apisix/2.15.3,3
+nan,arvancloud,3
+centos,apache/2.4.62 (centos),3
+nan,apache/2.4.62 (fedora linux) openssl/3.2.2,3
+nan,netcache appliance (netapp/5.4r2d2),3
+nan,apisix/3.2.2,3
+nan,nginx/1.12.0,3
+nan,qrator,3
+nan,bsrapture,3
+nan,ultraseek,3
+windows,apache/2.4.54 (win64) openssl/1.1.1p mod_fcgid/2.3.9a,3
+nan,boa/0.94.14rc18-ipcam,3
+nan,fly/a3e18ae92 (2025-01-16),3
+nan,brickserver modifications,3
+nan,nginx/1.15.7,3
+nan,apache/2.4.59,3
+nan,web-server/3.0,3
+nan,asp.net,3
+nan,ibm_http_server/6.0.2 apache/2.0.47 (unix),3
+nan,mwm.moe,3
+cpanel,apache/2.4.59 (cpanel) openssl/1.1.1w mod_bwlimited/1.4 php/5.6.40,3
+nan,cargo-router,3
+nan,mycio,3
+nan,volcalb,3
+nan,python/3.12 aiohttp/3.10.9,3
+nan,ibm_http_server/2.0.47.1 apache/2.0.47 (unix) dav/2 php/4.3.8,3
+unix,apache/2.4.57 (unix) openssl/1.0.2k-fips,3
+nan,cisco-ios/12.1 http-server/1.0(1),3
+nan,mywebserver/1.01,3
+nan,python/3.12 aiohttp/3.11.7,3
+nan,vqserver,3
+unix,apache/2.4.58 (unix) openssl/1.1.1w php/8.2.12 mod_perl/2.0.12 perl/v5.34.1,3
+red hat enterprise linux,apache/2.4.37 (red hat enterprise linux) openssl/1.1.1k,3
+nan,dwhttpd,3
+nan,domainesia,3
+nan,$projectrevision: 4.0.2.38 $,3
+nan,simplehttp/0.6 python/3.12.3,3
+nan,amt,3
+nan,www.pantd.com,3
+nan,angie/1.7.0,3
+nan,simplehttp/0.6 python/3.12.8,3
+nan,swift-engines 24.06.2,3
+nan,apache (custom),3
+nan,compaqhttpserver/4.1,3
+nan,wsgiserver/0.2 cpython/3.9.19,3
+nan,commerce-builder,3
+nan,wsgiserver/0.2 cpython/3.8.6,3
+nan,fnord,3
+nan,mini_httpd/1.14 23jun2000,3
+nan,oracle-application-server-10g/9.0.4.1.0 oracle-http-server,3
+nan,lasso/3.6.5,3
+nan,apache tomcat,3
+nan,oracle9ias/9.0.3.1 oracle http server oracle9ias-web-cache/9.0.3.1.0 (n),3
+nan,apache tomcat/4.1.10,3
+nan,lotus,3
+nan,lego server,3
+nan,allegro-software-rompager/ 2.10,3
+nan,"linux/2.6.32-279.14.1.el6.x86_64, upnp/1.0, portable sdk for upnp devices/1.6.15",3
+nan,alibaba,3
+redhat,apache/2.4.34 (red hat),3
+nan,"linux/2.6.28-11-server, upnp/1.0, portable sdk for upnp devices/1.6.6",3
+nan,"linux/2.6.28.1-xxxx-std-ipv4-32, upnp/1.0, portable sdk for upnp devices/1.4.3",3
+nan,open-market-secure-webserver,3
+nan,"linux/2.6.12.6-arm1-040, upnp/1.0, portable sdk for upnp devices/1.6.5.2",3
+nan,"linux/2.6.12-5.1-brcmstb-dm800, upnp/1.0, portable sdk for upnp devices/1.6.0",3
+nan,cpsrvd/11.44.3.0,3
+nan,acme.serve/v1.7 of 13nov96,3
+nan,adas/1.0.201,3
+ubuntu,apache tomcat/4.1.27-le-jdk14 (http/1.1 connector),3
+nan,agranat-emweb,3
+nan,"linux-amd64-2.6.18-238.9.1.el5, upnp/1.0, pms/1.52.1",3
+nan,"linux, upnp/1.0, intel sdk for upnp devices /1.2",3
+nan,linux upnp/1.0 sonos/36.4-41270 (wd100),3
+nan,zgs,3
+nan,agranat-emweb/r5_2_6,3
+nan,openresty/1.21.4.3,3
+nan,simplehttp/0.6 python/3.11.2,3
+nan,akilight cdn,3
+nan,khttpd 0.1.6,3
+nan,nginx/1.19.8,3
+ubuntu,ibm_http_server/1.3.12 apache/1.3.12 (unix),3
+nan,smoothwall express/3.0 upnp/1.0 miniupnpd/1.0,3
+nan,slt-mid,3
+nan,thin 1 codename flaming astroboy,3
+nan,sentinelkeysserver/1.0,3
+nan,javawebserver,3
+nan,jetty(7.6.9.v20130131),3
+ubuntu,monkey/0.6.2,3
+nan,microsoft-wince/4.20,3
+nan,apache/1.2.42 (palmos),3
+nan,jetty(10.0.13),3
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.70.1",3
+nan,microplex emhttpd/1.1,3
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.71.0",3
+nan,microsoft-wince/4.10,3
+nan,pi3web/2.0,3
+nan,plexus,3
+freebsd,apache/2.4.41 (freebsd) openssl/1.0.2s mod_fcgid/2.3.9,3
+debian,apache/2.4.52 (debian),3
+nan,windriver-webserver/4.4,3
+ubuntu,"linux-i386-2.6.33.2, upnp/1.0, pms/1.21.1",3
+nan,wsgiserver/0.2 cpython/3.11.10,3
+nan,fly/f1a3a3ab (2025-02-26),3
+nan,jetty/5.1.4 (windows server 2008 r2/6.1 x86 java/1.5.0_22,3
+nan,lotus-domino/5.0.8,3
+nan,nginx/1.21.0,3
+nan,wsgiserver/0.2 cpython/3.12.2,3
+nan,wsgiserver/0.2 cpython/3.11.4,3
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.10.51",3
+nan,sun-java-system-web-proxy-server/4.0.2,3
+nan,sun-java-system-web-proxy-server/4.0,3
+nan,microsoft-wince/5.0,3
+nan,boa/0.92p os-9 version,2
+nan,cisco aware 2.0,2
+nan,synology,2
+nan,synology/dsm/192.168.1.100,2
+nan,"darwin/10.2.0, upnp/1.0, portable sdk for upnp devices/1.6.6",2
+nan,faysal,2
+nan,blb/23.08.0.7,2
+nan,cloudwaf,2
+nan,bbc 11.00.044; ovbbcrcp 11.00.044,2
+nan,cxedge,2
+nan,sun-ilom-web-server/1.0,2
+nan,bbc 05.20.050; coda 10.00.123,2
+nan,bbc 2.6.0.7; com.hp.openview.coda 0.0.1,2
+nan,thttpd/2.21b php/20030920,2
+nan,bbc 2.6.0.7; com.hp.openview.bbc.llbserver 2.6.0.7,2
+nan,thin 1.2.4 codename flaming astroboy,2
+nan,cosmos,2
+nan,computers,2
+nan,sun-java-system-web-server/7.0,2
+nan,com.hp.openview.coda 0.0.1,2
+nan,sun-one-web-proxy-server/3.6-sp4,2
+nan,compaqhttpserver,2
+nan,energyict rtu 101-f25ce1-1524,2
+nan,carbonmade,2
+nan,stronghold/4.0 apache/1.3.22 (unix) mod_ssl/2.8.7 openssl/0.9.6c mod_perl/1.26,2
+nan,tengine/2.0.0,2
+nan,cbrgw,2
+nan,tengine/3.0.0,2
+nan,cantor,2
+nan,support@arraynetworks.net,2
+nan,cn-micc-nginx,2
+nan,chainpoint-node,2
+nan,compaqhttpserver/9.9 hp system management homepage/2.1.5.146,2
+nan,debian/wheezy/sid upnp/1.1 miniupnpd/1.8,2
+nan,compaqhttpserver/9.9 hp system management homepage/3.0.1.73 httpd/2.2.6+,2
+nan,bunnycdn-la1-1108,2
+nan,compaqhttpserver/9.9 hp system management homepage/6.0.0.96 httpd/2.2.6+,2
+nan,emwac,2
+nan,ehttp/1.1,2
+nan,debian/4.0r8 dlnadoc/1.50 upnp/1.0 minidlna/1.0,2
+nan,eth.limo,2
+nan,classin-web,2
+nan,cherrypy/3.1.2,2
+nan,avaya cmbe/2,2
+ubuntu,avaya cmbe/2.0.0,2
+ubuntu,microsoft-iis/5.1,2
+ubuntu,mbedthis-appweb/2.4.2,2
+ubuntu,mbedthis-appweb/2.4.0,2
+ubuntu,isos/9.0 upnp/1.0 conexant-emweb/r6_1_0,2
+ubuntu,iplanet-web-proxy-server/3.6-sp5,2
+ubuntu,ibm_http_server/2.0.47.1-pk01070 apache/2.0.47 (win32) php/5.0.4,2
+ubuntu,fnord,2
+ubuntu,crushftp http server,2
+ubuntu,compaqhttpserver/9.9 hp system management homepage/2.1.5.146,2
+ubuntu,compaqhttpserver,2
+ubuntu,cl-http,2
+ubuntu,big-ip,2
+ubuntu,atphttpd,2
+nan,airtunes/220.68,2
+linux,linux/2.4.21 upnp/1.0 miniupnpd/1.0,2
+ubuntu,apache/2.4.57 (ubuntu),2
+ubuntu,apache/2.4.54 (ubuntu),2
+nan,4d_webstar_s/5.102.1,2
+ubuntu,apache,2
+suse,apache/2.4.33 (linux/suse),2
+raspbian,apache/2.4.54 (raspbian),2
+nan,"6.2.8400 2/, upnp/1.0, tversity media server",2
+nan,“glados”,2
+nan,abyss/2.0.0.20-x1-win32 abysslib/2.0.0.20,2
+nan,abyss/2.14-x1-win32 abysslib/2.14,2
+nan,zimafardacdn,2
+freebsd,apache/2.4.57 (freebsd) openssl/1.0.2u mod_fcgid/2.3.9,2
+fedora,apache/2.4.46 (fedora) openssl/1.1.1i mod_perl/2.0.11 perl/v5.32.0,2
+ubuntu,nsc/0.6.4 (jvm),2
+ubuntu,php/5.3.14 zendserver/5.0,2
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.4.16 mod_perl/2.0.11 perl/v5.16.3,2
+windows,microsoft-iis/5.0,2
+windows,microsoft-iis/4.0,2
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.6.38,2
+windows,apache/2.4.56 (win64) openssl/3.0.8 mod_fcgid/2.3.9a mod_log_rotate/1.02,2
+windows,apache/2.4.54 (win64) openssl/1.1.1p php/8.1.10,2
+windows,apache/2.4.54 (win64) openssl/1.1.1p php/7.4.33,2
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/8.0.30,2
+unix,ibm_http_server/7.0.0.9 (unix),2
+unix,apache/2.4.63 (unix) openssl/3.4.1 php/8.4.4,2
+unix,apache/2.4.62 (unix) openssl/1.1.1zb php/8.1.30,2
+unix,apache/2.4.59 (unix) openssl/3.3.0 php/8.3.7,2
+cpanel,apache/2.4.62 (cpanel) openssl/1.1.1w mod_bwlimited/1.4,2
+unix,apache/2.4.52 (unix) openssl/1.1.1d,2
+unix,apache/2.4.51 (unix) openssl/1.1.1n,2
+unix,apache/2.4.51 (unix) openssl/1.1.1d svn/1.14.1 phusion_passenger/6.0.12 mod_perl/2.0.11 perl/v5.28.1,2
+unix,apache/2.4.51 (unix) openssl/1.1.1d,2
+cpanel,apache/2.4.63 (cpanel) openssl/1.1.1w mod_bwlimited/1.4,2
+debian,apache/2.2.16 (debian),2
+unix,apache/2.4.37 (unix) openssl/1.0.2k php/7.2.12,2
+unix,apache/2.2.26 (unix) dav/2 mod_ssl/2.2.26 openssl/0.9.8y,2
+debian,apache/2.4.37 (debian),2
+debian,apache/2.4.51 (debian),2
+ubuntu,thttpd/2.04 10aug98,2
+ubuntu,polycom soundpoint ip telephone httpd,2
+nan,youcan.private.dc/2.0,2
+nan,allegro-software,2
+nan,tws,2
+nan,apisix/3.5.0,2
+nan,websphere application server/5.0,2
+nan,apache/2.4.41 (unix),2
+nan,apache/2.4.46 (freebsd) openssl/1.1.1h-freebsd php/7.4.16,2
+nan,apache/2.4.54,2
+nan,apache/2.4.54 (unix) openssl/1.0.2u php/7.4.33 mod_wsgi/3.5 python/2.7.18 mod_fastcgi/mod_fastcgi-snap-0910052141 mod_perl/2.0.11 perl/v5.30.1,2
+nan,apache/2.4.6 () openssl/1.0.2k-fips php/7.3.33,2
+nan,apache/2.4.6 () openssl/1.0.2k-fips php/8.1.29,2
+nan,apache/2.4.62 (centos stream) openssl/3.2.2,2
+nan,virata-emweb/r6_1_0,2
+nan,apache/2.4.62 (freebsd) openssl/1.1.1w-freebsd php/8.2.20,2
+nan,ups_server/1.0,2
+nan,"upnp/1.0, dlnadoc/1.50, platinum/0.5.1",2
+nan,unknown/0.0 upnp/1.0 virata-emweb/r6_1_0,2
+nan,xitami,2
+nan,unbekannt,2
+nan,aserve,2
+nan,ud webspace 3.1,2
+nan,ud forwarding 3.1,2
+nan,aspen/0.8,2
+nan,at your service,2
+nan,ubuntu/yakkety upnp/1.0 miniupnpd/1.4,2
+nan,ubuntu/xenial upnp/1.0 miniupnpd/1.4,2
+nan,ubuntu/utopic upnp/1.0 miniupnpd/1.4,2
+nan,ubuntu/natty upnp/1.0 miniupnpd/1.4,2
+nan,ubuntu/maverick upnp/1.0 miniupnpd/1.4,2
+nan,ubuntu/9.04 upnp/1.0 miniupnpd/1.0,2
+nan,apache/2.4.37 (almalinux) openssl/1.1.1k mod_fcgid/2.3.9,2
+nan,apache/2.4.25 (raspbian),2
+nan,apache/2.4.25,2
+nan,apache/2.4.18,2
+nan,angie/1.8.1,2
+nan,aolserver,2
+nan,apache 2.x,2
+nan,wsgiserver/0.2 cpython/3.9.20,2
+nan,apache mod_bwlimited/1.4 phusion_passenger/6.0.23,2
+nan,wsgiserver/0.2 cpython/3.8.18,2
+nan,apache tomcat/4.0.3,2
+nan,wsgiserver/0.2 cpython/3.12.4,2
+nan,apache tomcat/4.1.12 (http/1.1 connector),2
+nan,wsgiserver/0.2 cpython/3.10.16,2
+nan,wsgiserver/0.2 cpython/3.10.12,2
+nan,wowzastreamingengine/4.8.17+1,2
+nan,wowzastreamingengine/4.7.7,2
+nan,apache-advancedextranetserver/2.0.48 (mandrake linux/6mdk) php/4.3.4,2
+nan,apache/0.6.5,2
+nan,apache/1.3.27,2
+nan,"windows_xp-amd64-5.2, upnp/1.0, pms/1.54.0",2
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.52.0",2
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.40.0",2
+nan,fly/01acac8f2 (2025-02-24),2
+nan,apache/2.0.43,2
+nan,werkzeug/3.1.3 python/3.12.9,2
+nan,werkzeug/2.3.6 python/3.10.12,2
+nan,apache/2.2.21/web20,2
+nan,werkzeug/2.2.2 python/3.8.10,2
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.22.0",2
+centos,apache/2.2.15 (centos),2
+nan,oracle http server powered by apache/1.3.19 (unix) mod_plsql/3.0.9.8.3b php/4.3.10 mod_fastcgi/2.2.10 mod_perl/1.25 mod_oprocmgr/1.0,2
+nan,rustle,2
+nan,gamma,2
+nan,python/3.10 aiohttp/3.10.6,2
+nan,python/3.10 aiohttp/3.10.8,2
+nan,linux/2.6.29.6-217.2.3.fc11.i686.pae upnp/1.0 miniupnpd/1.0,2
+nan,ipswitch-imail/7.07,2
+nan,"linux/2.6.32-24-generic, upnp/1.0, portable sdk for upnp devices/1.6.6",2
+nan,routeros/6.43upnp/1.0 mikrotik upnp/1.0,2
+nan,nginx/1.20.0,2
+nan,gordian embedded,2
+nan,gosite,2
+nan,linux/cross_compiled upnp/1.0 miniupnpd/1.0,2
+nan,ipos/7.0 upnp/1.0 tl-wr740n/4.0,2
+nan,nginx/1.21.3.1 whitehorse,2
+nan,gunicorn/19.10.0,2
+nan,rocket,2
+nan,rums/b,2
+nan,nsc/0.6.4 (jvm),2
+nan,gunicorn/20.0.0,2
+nan,mongrel 1.1.5,2
+nan,nginx/1.18.0 + phusion passenger(r) 6.0.15,2
+nan,sentinelkeysserver/1.3.1,2
+nan,process,2
+nan,mu-th-ur 182 model 2.1 terabyte ai mainframe,2
+nan,mt-daapd/svn-999,2
+nan,"ms .net remoting, ms .net clr 2.0.50727.42",2
+nan,proximus,2
+nan,oc(1.0),2
+nan,scdn-su,2
+nan,"linux/2.6.13, upnp/1.0, portable sdk for upnp devices/1.6.0",2
+nan,scdn-server,2
+nan,framer/854d0ea,2
+nan,ipswitch-imail/8.05,2
+nan,linux/2.6.23.17_stm23_0125dorade00 upnp/1.0 dlnadoc/1.50 portable sdk for upnp devices/1.4.6-5,2
+nan,framer/e6d6447,2
+nan,nginx/1.8.0,2
+nan,microsoft-pws/4.0,2
+nan,sentinelprotectionserver/7.3,2
+nan,httpd/3000,2
+nan,python/3.11 aiohttp/3.9.1,2
+nan,quarxconnect.de httpd,2
+nan,qtss/6.1.0 (build/532; platform/macosx; release/mac os x server; ),2
+nan,ibm_http_server/6.0 apache/2.0.47 (unix) dav/2,2
+nan,python/3.12 aiohttp/3.10.2,2
+nan,pyxsoft pxshield,2
+nan,python/3.9 aiohttp/3.11.7,2
+nan,python/3.9 aiohttp/3.11.11,2
+nan,ibm_http_server/2.0.42.2-pk25355 apache/2.0.47 (unix) dav/2,2
+nan,ibm_http_server/1.3.19.2  apache/1.3.20 (win32),2
+nan,lotus expeditor web container/6,2
+nan,python/3.12 aiohttp/3.11.8,2
+nan,python/3.8 aiohttp/3.10.5,2
+nan,ibm-http-server/1.0,2
+nan,python/3.13 aiohttp/3.11.13,2
+nan,"mac_os_x-x86_64-10.5.8, upnp/1.0, pms/1.20",2
+nan,hpsmh,2
+nan,microplex emhttpd/1,2
+nan,rapidlogic,2
+nan,harmonyos10.0,2
+nan,helix server version 9.0.4.960 (win32) (realserver compatible),2
+nan,python/3.11 aiohttp/3.10.6,2
+nan,resin/2.1.s030827,2
+nan,intel(r) active management technology 7.1.86,2
+nan,python/3.11 aiohttp/3.11.0,2
+nan,infinytum gate,2
+nan,litespeed/5.2.8 enterprise,2
+nan,hp web jetadmin 10.3.85669,2
+nan,python/3.11 aiohttp/3.11.16,2
+nan,nginx/1.4.7,2
+nan,iis,2
+nan,hp-chaiserver/2.2,2
+nan,"raptor simple, secure web server 1.0",2
+nan,python/3.11 aiohttp/3.9.0,2
+nan,sentinelprotectionserver/7.1,2
+nan,ns_6.1,2
+nan,fly/eb1a25638 (2025-02-13),2
+nan,oracle9ias/9.0.2.3.0 oracle http server oracle9ias-web-cache/9.0.2.3.0 (n),2
+nan,my very own server,2
+nan,netcache appliance (netapp/6.0.2p1),2
+nan,linux upnp/1.0 sonos/47.2-59120 (br100),2
+nan,jino.ru/mod_pizza,2
+nan,simplehttp/0.6 python/3.4.0,2
+nan,nginx/1.15.1,2
+nan,opentv/5.40,2
+nan,php/4.4.2-1build1,2
+nan,linqhost hpw,2
+nan,openresty/1.21.4.3 by zhuyanchao@cetcwl.com,2
+nan,jsp3/2.0.14,2
+nan,ks3,2
+nan,jetty/4.2.x (vxworks/wind version 2.9 ppc java/1.1-rr-std-b12),2
+nan,lighttpd/1.4.74,2
+nan,simplehttp/0.6 python/3.11.9,2
+nan,fly/60c773e9c (2025-04-01),2
+nan,squid/3.2.9-bzr,2
+nan,nginx/1.11.1,2
+nan,openvpn-as,2
+nan,nginx/1.1.19,2
+nan,jetty(8.1.10.v20130312),2
+nan,lilhttp/2.1,2
+nan,fly/bce90e867 (2025-03-28),2
+nan,jetty(9.4.54.v20240208),2
+nan,openwrt/kamikaze upnp/1.0 miniupnpd/1.2,2
+nan,nginx/1.0.11,2
+nan,ncsa,2
+nan,lighttpd/1.4.77,2
+nan,omnihttpd,2
+nan,servlet 2.4; tomcat-5.0.28/jboss-4.0.1sp1 (build: cvstag=jboss_4_0_1_sp1 date=200502160314),2
+nan,serv-u/15.1.6.31,2
+nan,fly/1ec282e18 (2025-01-23),2
+nan,nginx/1.17.7,2
+nan,fly/db4623a08 (2025-04-04),2
+nan,openresty/1.27.1.2,2
+nan,simplehttp/0.6 python/3.9.2,2
+nan,nginx/1.11.5,2
+nan,"oracle application server/10g (10.1.2) apache/1.3.34 (unix) mod_perl/1.29 mod_jk/1.2.14 oracleas-web-cache-10g/10.1.2.0.2 (n;ecid=119642322340,0)",2
+nan,jfe,2
+nan,nginx/1.17.5,2
+nan,servlet 2.4; jboss-4.0.4.ga (build: cvstag=jboss_4_0_4_ga date=200605151000)/tomcat-5.5,2
+nan,netgear/1.0 upnp/1.0 miniupnpd/1.0,2
+nan,"linux/2.4.20-46.7asp, upnp/1.0, portable sdk for upnp devices/1.6.17",2
+nan,php/5.3.14 zendserver/5.0,2
+nan,linux upnp/1.0 sonos/47.2-59120 (zps3),2
+nan,nginx/1.13.1,2
+nan,openresty/1.13.6.1,2
+nan,oracle application server containers for j2ee 10g (9.0.4.0.0),2
+nan,openresty/1.25.3.2 by zdxl@cetcisx.com,2
+nan,sfchttpd,2
+nan,lighttpd/1.3.7 (mar 23 2007/16:00:15),2
+ubuntu,cisco-ios/12.1 http-server/1.0(1),1
+nan,allegro-software-rompager/4.01,1
+nan,nginx/1.6.3,1
+ubuntu,cloudfront,1
+ubuntu,cleo harmony/5.7.0.8 (linux),1
+nan,llm/server,1
+ubuntu,cloudflare,1
+ubuntu,cross web server,1
+ubuntu,compaqhttpserver/9.9 hp system management homepage,1
+nan,omcnet webserver,1
+ubuntu,debian/wheezy/sid upnp/1.1 miniupnpd/1.8,1
+nan,oracle api gateway,1
+nan,oracle http server powered by apache,1
+ubuntu,ibm_http_server/2.0.42.2-pk25355 apache/2.0.47 (unix) dav/2,1
+ubuntu,ibm_http_server/1.3.19.2  apache/1.3.20 (win32),1
+nan,oracle applications one-hour install,1
+nan,anvil,1
+ubuntu,ibm_http_server,1
+ubuntu,hp-chaiserver/2.2,1
+ubuntu,hp web jetadmin 10.3.85669,1
+ubuntu,homedoor,1
+ubuntu,gunicorn/19.7.1,1
+ubuntu,gsoap/2.7,1
+ubuntu,goserve,1
+ubuntu,goahead-webs/2.5.0 peersec-matrixssl/3.4.2-open,1
+nan,openwrt/kamikaze upnp/1.0 miniupnpd/1.4,1
+ubuntu,goahead-webs/2.5.0,1
+ubuntu,goahead-webs,1
+ubuntu,gfe/1,1
+ubuntu,folkweb,1
+nan,localcan,1
+ubuntu,fedora/10 upnp/1.0 miniupnpd/1.4,1
+nan,leadpages,1
+nan,amazonsnowball,1
+ubuntu,embedthis-http,1
+ubuntu,embedded http server,1
+ubuntu,draytek/vigor2130 upnp/1.0 miniupnpd/1.0,1
+ubuntu,delegate/7.7.0,1
+ubuntu,ews-nic3/6.31,1
+ubuntu,avenida,1
+ubuntu,cherokee/0.2.7,1
+ubuntu,apache/2,1
+nan,"6.0.6000 2/, upnp/1.0, tversity media server",1
+ubuntu,apache-coyote/1.1,1
+ubuntu,ibm_http_server/6.0 apache/2.0.47 (unix) dav/2,1
+ubuntu,american sitebuilder,1
+ubuntu,allegro-software-rompager,1
+ubuntu,alibaba,1
+ubuntu,agranat-emweb/r5_1_2,1
+ubuntu,agranat-emweb,1
+ubuntu,"5.2.3790 2/service pack 1, upnp/1.0, tversity media server",1
+nan,nsl,1
+nan,"linux/2.6.28, upnp/1.0, portable sdk for upnp devices/1.6.10",1
+suse,apache/2.4.10 (linux/suse),1
+redhat,apache/2.2.3 (red hat),1
+red hat enterprise linux,apache/2.4.62 (red hat enterprise linux) openssl/3.2.2 mod_wsgi/4.7.1 python/3.9,1
+red hat enterprise linux,apache/2.4.62 (red hat enterprise linux),1
+nan,"linux/2.6.18_pro500-davinci_n03a_ipcam_1.0-g5c649288-dirty, upnp/1.0, portable sdk for upnp devices/1.6.6",1
+red hat enterprise linux,apache/2.4.37 (red hat enterprise linux) openssl/1.1.1k mod_fcgid/2.3.9,1
+nan,"linux/2.4.18_mvl30-ixdp425, upnp/1.0, intel sdk for upnp devices/1.3.1",1
+nan,obs,1
+nan,"linux/2.6.10_dev-malta-mips2_fp_le, upnp/1.0, intel sdk for upnp devices /1.2",1
+nan,"linux/2.6.12.6-venus, upnp/1.0, portable sdk for upnp devices/1.6.10",1
+raspbian,apache/2.4.38 (raspbian),1
+nan,odoo.sh,1
+nan,"6.2.9200 2/, upnp/1.0, tversity media server",1
+nan,one degree cdn,1
+nan,abyss/1.0.3,1
+nan,off,1
+ubuntu,apache/1.3.9,1
+nan,zenzga/1.13,1
+ubuntu,chainpoint-node,1
+nan,zen,1
+ubuntu,boa/0.92p os-9 version,1
+ubuntu,bkhttp/0.3,1
+nan,lighttpd/1.4.16,1
+ubuntu,bigip,1
+nan,xxxxxx,1
+nan,lighttpd/1.4.63,1
+ubuntu,avocent dsview 3/3.7.0.71,1
+nan,ycalb,1
+nan,listmanagerweb/8.8a (based on tcl-webserver/3.4.2),1
+nan,nginx/1.9.5,1
+ubuntu,asp.net,1
+nan,lighttpd/1.4.76,1
+nan,linux/3.0.8 upnp/1.0 dlnadoc/1.50 portable sdk for upnp devices/1.6.6,1
+nan,***,1
+nan,ai ftmfw,1
+nan,*****,1
+nan,"linux/2.6.32-279.14.1.el6.x86_64, upnp/1.0, portable sdk for upnp devices/1.6.14",1
+ubuntu,apache/2.4.55 (ubuntu),1
+nan,"linux/2.6.32-279.11.1.el6.x86_64, upnp/1.0, portable sdk for upnp devices/1.6.14",1
+nan,22slides v1,1
+ubuntu,apache/2.4.43 (ubuntu),1
+ubuntu,apache/2.4.38 (ubuntu),1
+nan,4d_webstar_s/5.0,1
+nan,ns-1,1
+ubuntu,apache/2.2.8 (ubuntu) mod_python/3.3.1 python/2.5.2 php/5.2.4-2ubuntu5.7 with suhosin-patch mod_ssl/2.2.8 openssl/0.9.8g,1
+ubuntu,apache/2.2.4 (win32) php/5.2.2,1
+nan,"5.2.3790 2/service pack 1, upnp/1.0, tversity media server",1
+nan,lotus expeditor web container/6.1,1
+nan,fly/12401d8b4 (2025-02-12),1
+ubuntu,ibm_http_server/7.0.0.9 (unix),1
+ubuntu,sonicwall sslvpn web server,1
+nan,monkey/0.6.2,1
+debian,apache/2.4.48 (debian),1
+nan,nginx/1.18.0 + phusion passenger(r) 6.0.26,1
+debian,apache/2.4.25 (debian) openssl/1.0.2u,1
+nan,nginx/1.18.0 + phusion passenger(r) 6.0.24,1
+unix,apache/2.4.37 (unix) openssl/1.1.1k php/7.2.8,1
+nan,nginx/1.18.0 + phusion passenger(r) 6.0.22,1
+nan,mw-web.eqiad.main-555876f75f-krmmd,1
+unix,apache/2.4.48 (unix) openssl/1.1.1k,1
+nan,mw-web.eqiad.main-bdfc96b6b-hphjt,1
+nan,mw1372.eqiad.wmnet,1
+unix,apache/2.4.51 (unix) openssl/1.1.1n svn/1.14.1 phusion_passenger/6.0.12 mod_perl/2.0.11 perl/v5.28.1,1
+nan,mw1452.eqiad.wmnet,1
+unix,apache/2.4.54 (unix) openssl/1.0.2k-fips,1
+nan,nginx/1.17.2,1
+unix,apache/2.4.55 (unix),1
+nan,mw1454.eqiad.wmnet,1
+unix,apache/1.3.28 (unix) mod_auth_pam/1.1.1,1
+unix,apache/1.3.28 (unix),1
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.52.1",1
+ubuntu,ubuntu/saucy upnp/1.0 miniupnpd/1.4,1
+ubuntu,squid/2.3.stable1,1
+ubuntu,sun-java-system-web-server/7.0,1
+nan,mongrel 1,1
+ubuntu,thttpd/2.19-mx jan 24 2006,1
+ubuntu,tomcat web server/3.3.1 final ( jsp 1.1; servlet 2.2 ),1
+ubuntu,ubuntu/9.04 upnp/1.0 miniupnpd/1.0,1
+ubuntu,ubuntu/precise upnp/1.0 miniupnpd/1.4,1
+ubuntu,ubuntu/xenial upnp/1.0 miniupnpd/1.4,1
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.40.0",1
+ubuntu,varnish-cache,1
+ubuntu,virata-emweb/r6_2_0,1
+ubuntu,vqserver,1
+ubuntu,weblogic server 8.1 sp3 tue jun 29 23:11:19 pdt 2004 404973,1
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.20",1
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.20.412",1
+ubuntu,"windows_7-x86-6.1, upnp/1.0, pms/1.25.1",1
+nan,mw1488.eqiad.wmnet,1
+nan,nginx/1.15.10,1
+unix,apache/2.4.58 (unix) openssl/1.1.1p php/8.1.24,1
+nan,nginx/0.8.53,1
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/7.2.34,1
+windows,apache/2.4.43 (win64) openssl/1.1.1g php/7.4.4,1
+nan,nginx/1.11.10,1
+nan,netapp/7.2.1.1,1
+windows,apache/2.4.57 (win64) openssl/3.1.2,1
+nan,nginx/0.8.53 + phusion passenger 3.0.0 (mod_rails/mod_rack),1
+windows,apache/2.4.62 (win64),1
+nan,netcache appliance (netapp/5.6.1d22),1
+windows,apache/2.4.23 (win32) openssl/1.0.2j php/5.4.45,1
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/5.6.37,1
+nan,nginx-n.wtf/1.27.3,1
+nan,nginx + phusion passenger(r) 6.0.14,1
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips mod_wsgi/3.4 python/2.7.5 php/8.2.20,1
+nan,nginx + phusion passenger,1
+centos,apache/2.4.6 (centos) openssl/1.0.1e-fips php/5.6.33,1
+centos,apache/2.4.58 (centos),1
+windows,apache/2.4.38 (win64) openssl/1.0.2r,1
+centos,apache/2.4.6 (centos) openssl/1.0.2k-fips php/7.2.34 mod_perl/2.0.11 perl/v5.16.3,1
+nan,nginx/1.15.0,1
+nan,neocities,1
+unix,apache/2.4.59 (unix),1
+unix,apache/2.4.59 (unix) openssl/3.0.11,1
+nan,mylo/0.2.0,1
+nan,nginx/1.14.0 + phusion passenger(r) 6.0.18,1
+cpanel,apache/2.4.43 (cpanel),1
+nan,nginx/1.14.0 + phusion passenger 6.0.4,1
+unix,apache/2.4.62 (unix) openssl/3.3.2,1
+nan,nginx/1.13.10,1
+windows,apache/2.4.12 (win32) openssl/1.0.2k php/7.2.5,1
+centos,apache/2.4.7 (centos),1
+unix,apache/2.4.63 (unix) openssl/3.4.0 php/8.2.27,1
+nan,nginx/1.12.1 + phusion passenger 5.1.8,1
+centos,apache/2.2.3 (centos),1
+windows,apache/2.2.19 (win32) php/5.2.17,1
+windows,apache/2.2.4 (win32) php/5.2.2,1
+nan,nginx/1.11.2,1
+ubuntu,squid,1
+ubuntu,smoothwall express/3.0 upnp/1.0 miniupnpd/1.0,1
+ubuntu,intel(r) active management technology,1
+ubuntu,simplehttp/0.6 python/3.4.0,1
+ubuntu,linux/cross_compiled upnp/1.0 miniupnpd/1.0,1
+ubuntu,litespeed/5.2.8 enterprise,1
+nan,loxone miniserver some name upnp/1.0,1
+nan,oracle http server powered by apache/1.3.19 (win32) mod_ssl/2.8.1 openssl/0.9.5a mod_fastcgi/2.2.10 mod_oprocmgr/1.0 mod_perl/1.25,1
+ubuntu,microsoft wince fidelix v11.50.29,1
+ubuntu,microsoft-iis,1
+ubuntu,microsoft-iis/5.0,1
+ubuntu,microsoft-iis/6.0,1
+ubuntu,microsoft-iis/7.5,1
+ubuntu,mini dome ip camera,1
+ubuntu,mini_httpd/1 23jun2000,1
+ubuntu,miniserv/0.01,1
+ubuntu,mod_security/1.71,1
+ubuntu,mongrel 1.1.5,1
+nan,maglr,1
+ubuntu,mycio,1
+ubuntu,mylo/0.2.0,1
+ubuntu,"linux/2.6.32-279.14.1.el6.x86_64, upnp/1.0, portable sdk for upnp devices/1.6.14",1
+ubuntu,"linux/2.6.32-24-generic, upnp/1.0, portable sdk for upnp devices/1.6.6",1
+ubuntu,"linux/2.6.28.1-xxxx-std-ipv4-32, upnp/1.0, portable sdk for upnp devices/1.4.3",1
+ubuntu,jans server,1
+ubuntu,intel(r) standard manageability 9.0.3,1
+nan,lotus-domino/0,1
+ubuntu,ipos/7.0 upnp/1.0 tl-wr741n/1.0/2.0,1
+ubuntu,ipos/7.0 upnp/1.0 tl-wr941n/2.0,1
+ubuntu,ipswitch-imail/5.08,1
+ubuntu,ipswitch-imail/7.07,1
+nan,lotus-domino/release-4.6.7(intl),1
+ubuntu,jetty(6.1.12.rc2),1
+ubuntu,"linux/2.6.28, upnp/1.0, portable sdk for upnp devices/1.6.10",1
+ubuntu,jetty/4.2.x (vxworks/wind version 2.9 ppc java/1.1-rr-std-b12),1
+ubuntu,jrun/3.1,1
+ubuntu,linux upnp/1.0 sonos/31.3-22220 (anvil),1
+ubuntu,linux upnp/1.0 sonos/47.2-59120 (zps3),1
+nan,love you 3000 times!,1
+ubuntu,"linux/2.4.18_mvl30-ixdp425, upnp/1.0, intel sdk for upnp devices/1.3.1",1
+ubuntu,linux/2.4.21 upnp/1.0 miniupnpd/1.0,1
+ubuntu,net-dk/1.0,1
+ubuntu,netcache appliance (netapp/5.6.1d22),1
+ubuntu,netcache appliance (netapp/6.0.4),1
+ubuntu,resin/3.0.23,1
+nan,mini_httpd/1 23jun2000,1
+ubuntu,pi3web/2.0,1
+ubuntu,powerweb,1
+ubuntu,qtss/5.0 (build/452; platform/macosx; release/panther; ),1
+ubuntu,rapid logic/1,1
+ubuntu,reecam ip camera,1
+ubuntu,resin/1,1
+ubuntu,rushhour,1
+ubuntu,php/4.4.2-1build1,1
+ubuntu,sentinelkeysserver/1,1
+ubuntu,sentinelkeysserver/1.0,1
+ubuntu,sentinelprotectionserver/7,1
+ubuntu,sentinelprotectionserver/7.0,1
+ubuntu,sentinelprotectionserver/7.3,1
+ubuntu,servlet/3.0; jbossas-6,1
+ubuntu,simplehttp/0.6 python/2.7.6,1
+ubuntu,php/5.1.2,1
+ubuntu,oracle http server powered by apache/1.3.19 (win32) mod_ssl/2.8.1 openssl/0.9.5a mod_fastcgi/2.2.10 mod_oprocmgr/1.0 mod_perl/1.25,1
+ubuntu,netgear/1.0 upnp/1.0 miniupnpd/1.0,1
+nan,mgx,1
+nan,mastodon,1
+nan,mbedthis-appweb/2,1
+ubuntu,nginx + phusion passenger,1
+ubuntu,nginx/0.8.53 + phusion passenger 3.0.0 (mod_rails/mod_rack),1
+ubuntu,nginx/1.10.1,1
+freebsd,apache/2.4.54 (freebsd) openssl/1.0.2u mod_fcgid/2.3.9,1
+freebsd,apache/2.4.48 (freebsd) openssl/1.0.2u mod_fcgid/2.3.9,1
+nan,microsoft-pws-95/4.0,1
+ubuntu,oracle application server containers for j2ee 10g (9.0.4.0.0),1
+debian,apache/2.4.63 (debian),1
+debian,apache/2.4.54 (debian) openssl/1.1.1n,1
+debian,apache/2.4.53 (debian),1
+nan,nginx/1.21.1.1 whitehorse,1
+ubuntu,opentv/5.40,1
+ubuntu,openvpn-as,1
+ubuntu,openwrt/kamikaze upnp/1.0 miniupnpd/1.5,1
+nan,luna-http/s,1
+nan,apache-ssl-us,1
+nan,apache coyote/1.0,1
+nan,bunnycdn-de1-863,1
+nan,bunnycdn-la1-954,1
+nan,bunnycdn-la1-900,1
+nan,bunnycdn-la1-852,1
+nan,gfe/1.3,1
+nan,bunnycdn-jp1-1172,1
+nan,bunnycdn-jp1-1097,1
+nan,bunnycdn-jp1-1061,1
+nan,rt-g32 upnp/1.0 miniupnpd/1.2,1
+nan,camera,1
+nan,glassfish,1
+nan,boulevard,1
+nan,boomsig. unsucking email signatures.,1
+nan,roxen,1
+nan,boa/0.93.15 (with intersil extensions),1
+nan,gogogadgeto-server,1
+nan,boa,1
+nan,bunnycdn-sil1-915,1
+nan,fw,1
+nan,cisco ios,1
+nan,sambar/5.1,1
+nan,tomato upnp/1.0 miniupnpd/1.4,1
+nan,framer/af804ed,1
+nan,tomcat web server/3.2.2 (jsp 1.1; servlet 2.2; java 1.4.2_13; windows 2003 5.2 x86; java.vendor=sun microsystems inc.),1
+nan,framer/db5cd3c,1
+nan,chimpify,1
+nan,netware,1
+nan,framer/e1f1b96,1
+nan,freenginx/1.25.4,1
+nan,carbase 1.0,1
+nan,cern,1
+nan,centos webpanel: protected by mod security,1
+nan,tornadoserver/4.5,1
+nan,cdn77-turbo,1
+nan,frontend-web,1
+nan,casket,1
+nan,fuho-dvr,1
+nan,golang.server,1
+nan,goserve,1
+nan,blb,1
+nan,redacted,1
+nan,"hp http server; hp officejet 6500 e709n - cb057a; serial number: abc123; rainbow built:sat dec 13, 2008 10:58:21am {abc123, asic id 0x00ffc2105}",1
+nan,ubuntu/oneiric upnp/1.0 miniupnpd/1.4,1
+nan,"hp http server; hp photosmart c309a series - cc335a; serial number: abc123; vader built:wed apr 15, 2009 11:40:58am {abc123, asic id 0x00280004}",1
+nan,ubuntu/quantal upnp/1.0 miniupnpd/1.4,1
+nan,ubuntu/raring upnp/1.0 miniupnpd/1.4,1
+nan,ubuntu/saucy upnp/1.0 miniupnpd/1.4,1
+nan,ubuntu/trusty upnp/1.0 miniupnpd/1.4,1
+nan,hp web jetadmin/2 (win32) mod_auth_sspi/1.0.1 mod_ssl/2.0.50 openssl/0.9.6m,1
+nan,bkhttp/0.3,1
+nan,realvnc/4.0,1
+nan,hp web jetadmin/2.0.50 (win32) mod_auth_sspi/1.0.1 mod_ssl/2.0.50 openssl/0.9.6m,1
+nan,hp-chaisoe/1.0,1
+nan,hp-web-server,1
+nan,appdrag webfront,1
+nan,httpfile,1
+nan,undefined,1
+nan,resin/2.1.13,1
+nan,ubuntu/lucid upnp/1.0 miniupnpd/1.4,1
+nan,ubuntu/jaunty upnp/1.0 miniupnpd/1.4,1
+nan,ubuntu/hardy upnp/1.0 miniupnpd/1.4,1
+nan,bitninja-waf3,1
+nan,big-ip,1
+nan,gruber-frankfurt.de,1
+nan,guayaba,1
+nan,bbc 11.13.007; ovbbccb unknown version,1
+nan,roku upnp/1.0 roku/8.1.6,1
+nan,bart,1
+nan,awhttpd,1
+nan,awex,1
+nan,guten morgen,1
+nan,avenida,1
+nan,haksulproxy,1
+nan,hide,1
+nan,ubuntu/10.10 upnp/1.0 miniupnpd/1.0,1
+nan,hp apache-based web server/1.3.26 (unix),1
+nan,tivo-httpd-1:20.7.4.rc35-d18-6:d18,1
+nan,cisco-cpa,1
+nan,apisix/3.9.0,1
+nan,simplehttp/0.6 python/3.9.18,1
+nan,sonicwall sslvpn web server,1
+nan,fly/d2053282d (2025-03-10),1
+nan,sudun,1
+nan,some thing upnp/1.0 avm fritz!wlan repeater 1750e 134.07.01,1
+nan,snow,1
+nan,fly/ef5cd8bd0 (2024-12-02),1
+nan,simplehttp/0.6 python/3.9.19,1
+nan,sun-one-web-server/6.1,1
+nan,specter,1
+nan,simplehttp/0.6 python/3.8.18,1
+nan,simplehttp/0.6 python/3.8.10,1
+nan,superman/1.0.0,1
+nan,dory,1
+nan,fly/f978bf6ba (2025-03-26),1
+nan,surge,1
+nan,svr/8.8008 (os),1
+nan,spanner,1
+nan,embedded http server,1
+nan,citrix hypervisor,1
+nan,ews/0.1,1
+nan,fly/1ab217aa (2025-02-07),1
+nan,flux/1.21,1
+nan,filebase,1
+nan,fly/2b0af88a0 (2024-06-05),1
+nan,fedora/8 upnp/1.0 miniupnpd/1.0,1
+nan,fbserver/1.1,1
+nan,fly/2f1f47dc7 (2025-04-02),1
+nan,ews/0,1
+nan,fly/bd282bf60 (2024-12-04),1
+nan,staatic,1
+nan,stargate,1
+nan,fly/4763e9f4 (2024-04-02),1
+nan,fly/7328d5b5 (2023-10-27),1
+nan,fly/88eb44535 (2024-07-18),1
+nan,fly/bc77ddfa7 (2024-11-15),1
+nan,empx,1
+nan,dlb,1
+nan,swas-alb,1
+nan,simplehttp/0.6 python/3.12.9,1
+nan,thttpd/2.19-mx jan 24 2006,1
+nan,framer/0d3b645,1
+nan,codebergpages/4.6.2,1
+nan,sentinelprotectionserver/7.0,1
+nan,cms,1
+nan,framer/2514569,1
+nan,securelink,1
+nan,thttpd/2.04 10aug98,1
+nan,framer/3281da1,1
+nan,dg1loadbalancer/0.14.9,1
+nan,framer/32b700c,1
+nan,framer/7b95bc3,1
+nan,cloud elb 1.0.0,1
+nan,cleo vltrader/5.7.0.7 (linux),1
+nan,cleo harmony/5.7.0.8 (linux),1
+nan,clace,1
+nan,cl-http,1
+nan,follow the white rabbit.,1
+nan,server-team business pro webserver v1.1,1
+nan,serverco_st,1
+nan,serverseven,1
+nan,delegate/7.7.0,1
+nan,simplehttp/0.6 python/3.12.4,1
+nan,dcsaas/httpd,1
+nan,synflux,1
+nan,simplehttp/0.6 python/3.10.9,1
+nan,"simple, secure web server 1.1",1
+nan,synology/dsm/stuff,1
+nan,fly/fe78b1aa (2025-03-20),1
+nan,syscode taiwan,1
+nan,flywheel/5.1.0,1
+nan,servlet/3.0; jbossas-6,1
+nan,tbs/r2 upnp/1.0 miniupnpd/1.2,1
+nan,servlet 2.5; jboss-5.0/jbossweb-2.1,1
+nan,servlet 2.4; jboss-4.2.3.ga (build: svntag=jboss_4_2_3_ga date=200807181439)/jbossweb-2.0,1
+nan,servicenow,1
+nan,unit/1.32.1,1
+nan,apisix/3.8.0,1
+nan,apache mod_bwlimited/1.4,1
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.20.409",1
+nan,python/3.10 aiohttp/3.10.4,1
+nan,werkzeug/3.1.3 python/3.9.21,1
+nan,apache/2.2.15,1
+nan,apache/2.2.13 (freebsd) mod_ssl/2.2.13 openssl/0.9.8q dav/2 php/5.2.11 with suhosin-patch,1
+nan,apache/2.0.54 (debian gnu/linux) php/4.3.10-22 mod_ssl/2.0.54 openssl/0.9.7k,1
+nan,iserv,1
+nan,isxiaokun,1
+nan,itoc-web,1
+nan,werkzeug/3.1.3 python/3.10.12,1
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.25.1",1
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.30.1",1
+nan,jaguar server,1
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.51.0",1
+nan,jboss-eap/7,1
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.54.0",1
+nan,"windows_7-x86-6.1, upnp/1.0, pms/1.60.0",1
+nan,werkzeug/3.1.3 python/3.12.3,1
+nan,werkzeug/3.0.4 python/3.8.20,1
+nan,python/3.10 aiohttp/3.11.14,1
+nan,werkzeug/2.0.3 python/3.9.18,1
+nan,ipos/7.0 upnp/1.0 tl-wr940n/1.0,1
+nan,apache/2.2.9 (apmserv) mod_ssl/2.2.9 openssl/0.9.8h php/5.2.6,1
+nan,apache/2.2.25 (unix) mod_ssl/2.2.25 openssl/1.0.0-fips mod_bwlimited/1.4,1
+nan,werkzeug/2.0.2 python/3.10.12,1
+nan,werkzeug/2.0.2 python/3.10.6,1
+nan,werkzeug/2.0.3 python/3.8.10,1
+nan,werkzeug/2.0.3 python/3.8.19,1
+nan,ipswitch-imail/7.11,1
+nan,werkzeug/3.0.4 python/3.12.3,1
+nan,werkzeug/3.0.0 python/3.10.12,1
+nan,werkzeug/3.0.1 python/3.10.2,1
+nan,werkzeug/3.0.1 python/3.12.3,1
+nan,werkzeug/3.0.1 python/3.9.21,1
+nan,werkzeug/3.0.3 python/3.11.9,1
+nan,werkzeug/3.0.3 python/3.8.16,1
+nan,werkzeug/3.0.4 python/3.12.0,1
+nan,jc-httpd/1,1
+nan,powerweb,1
+nan,jetty(1.4.5),1
+nan,wsgiserver/0.2 cpython/3.12.8,1
+nan,wsgiserver/0.2 cpython/3.10.15,1
+nan,payara server  5.2020.4 #badassfish,1
+nan,wsgiserver/0.2 cpython/3.10.9,1
+nan,pages-server,1
+nan,apache tomcat/4.1.27-le-jdk14 (http/1.1 connector),1
+nan,jrun/3.1,1
+nan,keistoer ~ digitale innovatie,1
+nan,oracle_web_listener,1
+nan,"windows_xp-x86-5.1, upnp/1.0, pms/1.20.400",1
+nan,labview/5.1.1,1
+nan,wsgiserver/0.2 cpython/3.8.20,1
+nan,"oracle-application-server-10g/10.1.2.2.0 oracle-http-server (unix) mod_plsql/10.1.2.2.0 mod_ossl/10.1.2.0.0 mod_perl/1.29 oracleas-web-cache-10g/10.1.2.0.2 (n;ecid=89116016562,0)",1
+nan,oracle-application-server-10g/10.1.2.0.2 oracle-http-server,1
+nan,layun.com,1
+nan,oracle xml db/oracle9i enterprise edition release 9 - production,1
+nan,lc-s,1
+nan,wsgiserver/0.2 cpython/3.10.14,1
+nan,jetty/4.0.1 (sunos 5.8 sparc),1
+nan,apache-advancedextranetserver/2.0.44 (mandrake linux/11mdk) mod_perl/1.99_08 perl/v5.8.0 mod_ssl/2.0.44 openssl/0.9.7a php/4.3.1 mod_jk2/2.0.0,1
+nan,apache-advancedextranetserver/2.0.47 (mandrake linux/6.12.92mdk) mod_perl/1.99_09 perl/v5.8.1 mod_ssl/2.0.47 openssl/0.9.7b php/4.3.2,1
+nan,jetty(10.0.17),1
+nan,apache/1.3.9,1
+nan,apache/1.3.28 (solutionip) mod_perl/1.28 mod_ssl/2.8.15 openssl/0.9.7b,1
+nan,jetty(6.1.12.rc2),1
+nan,winho-cdn,1
+nan,apache/1.1.3,1
+nan,apache/1,1
+nan,fly/0b7c1653 (2025-03-18),1
+nan,wmserver/9.1.1.3841,1
+nan,apache-advancedextranetserver/2.0.53 (mandrakelinux/prefork-9mdk) mod_ssl/2.0.53 openssl/0.9.7e php/4.3.10 mod_perl/1.999.21 perl/v5.8.6,1
+nan,wowzastreamingengine/4.7.1,1
+nan,wowzastreamingengine/4.7.8,1
+nan,wowzastreamingengine/4.8.0,1
+nan,payara server  5.2022.1 #badassfish,1
+nan,apache-advancedextranetserver/2.0.47 (mandrake linux/6.3.92mdk) mod_ssl/2.0.47 openssl/0.9.7b php/4.3.2,1
+nan,apache/2.4.18 (freebsd) openssl/1.0.1p-freebsd,1
+nan,python/3.10 aiohttp/3.11.4,1
+nan,unknown/0.0 upnp/1.0 globespanvirata-emweb/r6_1_0,1
+nan,vpshz.com,1
+nan,virata-emweb/r5_3_2,1
+nan,python/3.8 aiohttp/3.10.11,1
+nan,virata-emweb/r6_2_0,1
+nan,apache/2.4.62 (fedora linux),1
+nan,python/3.12 aiohttp/3.9.3,1
+nan,ibm_http_server/1.3.12 apache/1.3.12 (unix),1
+nan,apache/2.4.62 (debian) svn/1.14.2 mpm-itk/2.4.7-04 openssl/3.0.15,1
+nan,apache/2.4.62 (debian) mod_fcgid/2.3.9 php/5.6.40-0+deb8u12 openssl/1.1.1w,1
+nan,apache/2.4.62 (rocky linux) openssl/3.2.2,1
+nan,apache/2.4.62 (centos stream) openssl/3.2.2 phusion_passenger/6.0.23,1
+nan,w_neutron,1
+nan,python/3.12 aiohttp/3.11.4,1
+nan,apache/2.4.62 (centos stream),1
+nan,wayneserver (linux/centos),1
+nan,apache/2.4.62 (amazon linux),1
+nan,apache/2.4.62 (almalinux) openssl/3.2.2 mod_fcgid/2.3.9 mod_perl/2.0.12 perl/v5.32.1,1
+nan,python/3.9 aiohttp/3.10.1,1
+nan,apache/2.4.63 (freebsd) openssl/1.1.1w-freebsd mpm-itk/2.4.7-04 php/7.4.32,1
+nan,apache/2.4.27 (amazon) openssl/1.0.2k-fips php/5.6.25,1
+nan,python/3.9 aiohttp/3.11.13,1
+nan,httpfileserver httpd,1
+nan,qtss/5.0 (build/452; platform/macosx; release/panther; ),1
+nan,huddle,1
+nan,pythonanywhere,1
+nan,"upnp/1.0, dlnadoc/1.50, platinum/0.5.3.0",1
+nan,"upnp/1.0, dlnadoc/1.50, platinum/0.5.4.0",1
+nan,"upnp/1.0, dlnadoc/1.50, platinum/0.6.6.0",1
+nan,python/3.9 aiohttp/3.11.12,1
+nan,python/3.9 aiohttp/3.10.10,1
+nan,apisix/3.11.0,1
+nan,apisix/2.13.3,1
+nan,python/3.9 aiohttp/3.11.10,1
+nan,python/3.9 aiohttp/3.11.0,1
+nan,python/3.9 aiohttp/3.10.11,1
+nan,api-gateway/1.9.3.1,1
+nan,api-gateway,1
+nan,apache/2.4.62 () openssl/1.0.2k-fips,1
+nan,python/3.12 aiohttp/3.10.8,1
+nan,apache/2.4.61 (amazon linux) mod_wsgi/4.9.4 python/3.9 openssl/3.0.8,1
+nan,ipos/7.0 upnp/1.0 tl-wr740n/1.0,1
+nan,webserver/1.21.3,1
+nan,apache/2.4.46 () openssl/1.0.2k-fips,1
+nan,apache/2.4.46 (),1
+nan,python/3.11 aiohttp/3.10.0b1,1
+nan,apache/2.4.41 (freebsd) openssl/1.0.1s-freebsd,1
+nan,python/3.11 aiohttp/3.10.0,1
+nan,apache/2.4.37 (centos) openssl/1.1.1k mod_auth_gssapi/1.6.1 mod_fcgid/2.3.9 svn/1.10.2,1
+nan,python/3.10 aiohttp/3.9.2,1
+nan,python/3.12 aiohttp/3.10.6,1
+nan,apache/2.4.37 (centos),1
+nan,apache/2.4.37 (centos stream) openssl/1.1.1k,1
+nan,ipos/7.0 upnp/1.0 tl-wr741n/1.0/2.0,1
+nan,ipos/7.0 upnp/1.0 tl-wr741n/4.0,1
+nan,python/3.10 aiohttp/3.11.7,1
+nan,apache/2.4.37,1
+nan,python/3.10 aiohttp/3.11.6,1
+nan,apache/2.4.46 (ius) openssl/1.0.2k-fips php/7.4.21,1
+nan,apache/2.4.54 (freebsd) openssl/1.1.1l-freebsd,1
+nan,iis10,1
+nan,apache/2.4.54 (win64) openssl/1.1.1q mod_fcgid/2.3.10-dev,1
+nan,ibm_http_server/2.0.47.1-pk01070 apache/2.0.47 (win32) php/5.0.4,1
+nan,python/3.12 aiohttp/3.10.4,1
+nan,apache/2.4.6 () openssl/1.0.2k-fips mod_fcgid/2.3.9 phusion_passenger/5.3.7,1
+nan,ibm_http_server/6.0.2.19 apache/2.0.47 (unix),1
+nan,web-server-2020,1
+nan,apache/2.4.59 (),1
+nan,python/3.11 aiohttp/3.9.0b0,1
+nan,apache/2.4.58 () openssl/1.0.2k-fips,1
+nan,apache/2.4.58,1
+nan,webkaos,1
+nan,ideawebserver/v0.70,1
+nan,python/3.11 aiohttp/3.11.6,1
+nan,webrock,1
+nan,iis/8.0,1
+nan,apache/2.4.57 (centos stream),1
+nan,ngainx,1

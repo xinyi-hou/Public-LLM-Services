@@ -1,0 +1,3154 @@
+{
+  "2b66eaec-2ed8-4081-9755-8d780ce15943": {
+    "prompt": [
+      0,
+      "2b66eaec-2ed8-4081-9755-8d780ce15943",
+      {
+        "3": {
+          "inputs": {
+            "seed": 723803786488729,
+            "steps": 20,
+            "cfg": 8.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "latent_image": [
+              "5",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "5": {
+          "inputs": {
+            "width": 512,
+            "height": 512,
+            "batch_size": 1
+          },
+          "class_type": "EmptyLatentImage",
+          "_meta": {
+            "title": "Empty Latent Image"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "As a master of the visual arts, I focus on crafting a delightful depiction of a pug. Let's start with the framing: imagine a fluffy, squishy body, with a round, wrinkled face and perky ears. Now, let's expand the object dimensions: feel the softness of the dog's fur under your fingertips, the warmth of its body as it snuggles up to you.\n\nInject some dynamic elements: the pug is playful, with its tail wagging vigorously as it bounds around the room. The scene is set in a cozy living room, with sunlight streaming in through the windows, casting playful shadows on the walls.\n\nFor an artistic elevation, let's blend a whimsical style with a touch of surrealism. The pug's fur is a vibrant mix of colors, with flecks of gold and silver sparkling like stars. The background is a dreamy, swirling pattern, reminiscent of a Monet landscape.\n\nAnd finally, let's add some particle effects: as the pug jumps, little puffs of cotton candy-like clouds float up from its paws, adding to the playful and magical atmosphere. This is a pug like you've never seen before, a work of art that's sure to bring joy to any room.",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "text, watermark",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        }
+      },
+      {
+        "extra_pnginfo": {
+          "workflow": {
+            "last_node_id": 9,
+            "last_link_id": 9,
+            "nodes": [
+              {
+                "id": 7,
+                "type": "CLIPTextEncode",
+                "pos": [
+                  413,
+                  389
+                ],
+                "size": [
+                  425.27801513671875,
+                  180.6060791015625
+                ],
+                "flags": {},
+                "order": 3,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 5
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                      6
+                    ],
+                    "slot_index": 0
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CLIPTextEncode"
+                },
+                "widgets_values": [
+                  "text, watermark"
+                ]
+              },
+              {
+                "id": 5,
+                "type": "EmptyLatentImage",
+                "pos": [
+                  473,
+                  609
+                ],
+                "size": [
+                  315,
+                  106
+                ],
+                "flags": {},
+                "order": 0,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                      2
+                    ],
+                    "slot_index": 0
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "EmptyLatentImage"
+                },
+                "widgets_values": [
+                  512,
+                  512,
+                  1
+                ]
+              },
+              {
+                "id": 3,
+                "type": "KSampler",
+                "pos": [
+                  863,
+                  186
+                ],
+                "size": [
+                  315,
+                  262
+                ],
+                "flags": {},
+                "order": 4,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 1
+                  },
+                  {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 4
+                  },
+                  {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 6
+                  },
+                  {
+                    "name": "latent_image",
+                    "type": "LATENT",
+                    "link": 2
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                      7
+                    ],
+                    "slot_index": 0
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "KSampler"
+                },
+                "widgets_values": [
+                  723803786488729,
+                  "randomize",
+                  20,
+                  8,
+                  "euler",
+                  "normal",
+                  1
+                ]
+              },
+              {
+                "id": 8,
+                "type": "VAEDecode",
+                "pos": [
+                  1209,
+                  188
+                ],
+                "size": [
+                  210,
+                  46
+                ],
+                "flags": {},
+                "order": 5,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": 7
+                  },
+                  {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 8
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                      9
+                    ],
+                    "slot_index": 0
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "VAEDecode"
+                },
+                "widgets_values": []
+              },
+              {
+                "id": 9,
+                "type": "SaveImage",
+                "pos": [
+                  1451,
+                  189
+                ],
+                "size": [
+                  210,
+                  270
+                ],
+                "flags": {},
+                "order": 6,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 9
+                  }
+                ],
+                "outputs": [],
+                "properties": {},
+                "widgets_values": [
+                  "ComfyUI"
+                ]
+              },
+              {
+                "id": 4,
+                "type": "CheckpointLoaderSimple",
+                "pos": [
+                  26,
+                  474
+                ],
+                "size": [
+                  315,
+                  98
+                ],
+                "flags": {},
+                "order": 1,
+                "mode": 0,
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                      1
+                    ],
+                    "slot_index": 0
+                  },
+                  {
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                      3,
+                      5
+                    ],
+                    "slot_index": 1
+                  },
+                  {
+                    "name": "VAE",
+                    "type": "VAE",
+                    "links": [
+                      8
+                    ],
+                    "slot_index": 2
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CheckpointLoaderSimple"
+                },
+                "widgets_values": [
+                  "sd_xl_base_1.0_0.9vae.safetensors"
+                ]
+              },
+              {
+                "id": 6,
+                "type": "CLIPTextEncode",
+                "pos": [
+                  415,
+                  186
+                ],
+                "size": [
+                  422.84503173828125,
+                  164.31304931640625
+                ],
+                "flags": {},
+                "order": 2,
+                "mode": 0,
+                "inputs": [
+                  {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 3
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                      4
+                    ],
+                    "slot_index": 0
+                  }
+                ],
+                "properties": {
+                  "Node name for S&R": "CLIPTextEncode"
+                },
+                "widgets_values": [
+                  "As a master of the visual arts, I focus on crafting a delightful depiction of a pug. Let's start with the framing: imagine a fluffy, squishy body, with a round, wrinkled face and perky ears. Now, let's expand the object dimensions: feel the softness of the dog's fur under your fingertips, the warmth of its body as it snuggles up to you.\n\nInject some dynamic elements: the pug is playful, with its tail wagging vigorously as it bounds around the room. The scene is set in a cozy living room, with sunlight streaming in through the windows, casting playful shadows on the walls.\n\nFor an artistic elevation, let's blend a whimsical style with a touch of surrealism. The pug's fur is a vibrant mix of colors, with flecks of gold and silver sparkling like stars. The background is a dreamy, swirling pattern, reminiscent of a Monet landscape.\n\nAnd finally, let's add some particle effects: as the pug jumps, little puffs of cotton candy-like clouds float up from its paws, adding to the playful and magical atmosphere. This is a pug like you've never seen before, a work of art that's sure to bring joy to any room."
+                ]
+              }
+            ],
+            "links": [
+              [
+                1,
+                4,
+                0,
+                3,
+                0,
+                "MODEL"
+              ],
+              [
+                2,
+                5,
+                0,
+                3,
+                3,
+                "LATENT"
+              ],
+              [
+                3,
+                4,
+                1,
+                6,
+                0,
+                "CLIP"
+              ],
+              [
+                4,
+                6,
+                0,
+                3,
+                1,
+                "CONDITIONING"
+              ],
+              [
+                5,
+                4,
+                1,
+                7,
+                0,
+                "CLIP"
+              ],
+              [
+                6,
+                7,
+                0,
+                3,
+                2,
+                "CONDITIONING"
+              ],
+              [
+                7,
+                3,
+                0,
+                8,
+                0,
+                "LATENT"
+              ],
+              [
+                8,
+                4,
+                2,
+                8,
+                1,
+                "VAE"
+              ],
+              [
+                9,
+                8,
+                0,
+                9,
+                0,
+                "IMAGE"
+              ]
+            ],
+            "groups": [],
+            "config": {},
+            "extra": {
+              "ds": {
+                "scale": 0.9090909090909091,
+                "offset": [
+                  135.6999969482422,
+                  34.5
+                ]
+              }
+            },
+            "version": 0.4
+          }
+        },
+        "client_id": "390689569f4044e4925d501fd59a6ab3"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01375_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "2b66eaec-2ed8-4081-9755-8d780ce15943",
+            "timestamp": 1745491775686
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "2b66eaec-2ed8-4081-9755-8d780ce15943",
+            "timestamp": 1745491775690
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "2b66eaec-2ed8-4081-9755-8d780ce15943",
+            "timestamp": 1745491787496
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "64c9dd22-4a0b-4db1-bd93-d31dc9c09cda": {
+    "prompt": [
+      1,
+      "64c9dd22-4a0b-4db1-bd93-d31dc9c09cda",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Generate a photo of a colorful coral sea",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "The color is monotonous and blurry",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/d19f597f-1852-4a35-b5c1-ed73a401c020.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "h56h2txljc1jj562040832"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01376_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "64c9dd22-4a0b-4db1-bd93-d31dc9c09cda",
+            "timestamp": 1745545875947
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4"
+            ],
+            "prompt_id": "64c9dd22-4a0b-4db1-bd93-d31dc9c09cda",
+            "timestamp": 1745545875961
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "64c9dd22-4a0b-4db1-bd93-d31dc9c09cda",
+            "timestamp": 1745545897197
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "f0461474-5c74-46cc-90ab-729ea9eba830": {
+    "prompt": [
+      2,
+      "f0461474-5c74-46cc-90ab-729ea9eba830",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Taihu stones, Van Gogh, sunflowers, waterfall effect",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "E25DB33B4D0EAFEFD4BD97AB57C775D1"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01377_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "f0461474-5c74-46cc-90ab-729ea9eba830",
+            "timestamp": 1745577079655
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "21"
+            ],
+            "prompt_id": "f0461474-5c74-46cc-90ab-729ea9eba830",
+            "timestamp": 1745577079666
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "f0461474-5c74-46cc-90ab-729ea9eba830",
+            "timestamp": 1745577091764
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "7931353f-5d2d-44b3-8f69-36e6573fcb08": {
+    "prompt": [
+      3,
+      "7931353f-5d2d-44b3-8f69-36e6573fcb08",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Taihu stones, rich in color, welcoming pine trees, waterfalls and holes",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "FCBF15394CFB5CBC1D77E58125B9DE59"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01378_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "7931353f-5d2d-44b3-8f69-36e6573fcb08",
+            "timestamp": 1745577558393
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "21"
+            ],
+            "prompt_id": "7931353f-5d2d-44b3-8f69-36e6573fcb08",
+            "timestamp": 1745577558403
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "7931353f-5d2d-44b3-8f69-36e6573fcb08",
+            "timestamp": 1745577570191
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "0290075f-807a-4223-96d2-6441dd485124": {
+    "prompt": [
+      4,
+      "0290075f-807a-4223-96d2-6441dd485124",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Rich in colors, karst landforms and the landscape of Guilin",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "D0E9B3124197CF54FB13BC9B17403EEA"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01379_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "0290075f-807a-4223-96d2-6441dd485124",
+            "timestamp": 1745577633137
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "19",
+              "20",
+              "21",
+              "25"
+            ],
+            "prompt_id": "0290075f-807a-4223-96d2-6441dd485124",
+            "timestamp": 1745577633148
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "0290075f-807a-4223-96d2-6441dd485124",
+            "timestamp": 1745577644924
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "31fdfc7f-a769-4b57-9d5d-ab80fa3049bf": {
+    "prompt": [
+      5,
+      "31fdfc7f-a769-4b57-9d5d-ab80fa3049bf",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Rich in colors, ancient Stonehenge, and planetary universe effects",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "FB6769944D54FAC3BE5F8CBC8891CEE9"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01380_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "31fdfc7f-a769-4b57-9d5d-ab80fa3049bf",
+            "timestamp": 1745577718671
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "19",
+              "20",
+              "21",
+              "25"
+            ],
+            "prompt_id": "31fdfc7f-a769-4b57-9d5d-ab80fa3049bf",
+            "timestamp": 1745577718681
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "31fdfc7f-a769-4b57-9d5d-ab80fa3049bf",
+            "timestamp": 1745577730459
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "2548c655-e1b8-462c-ada1-add0e67ab42e": {
+    "prompt": [
+      6,
+      "2548c655-e1b8-462c-ada1-add0e67ab42e",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Rich in colors, aquarium, schools of fish shuttling, corals",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "3A99C17E4BCD9A2D074B55A0AF00F5F1"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01381_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "2548c655-e1b8-462c-ada1-add0e67ab42e",
+            "timestamp": 1745577805450
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "19",
+              "20",
+              "21",
+              "25"
+            ],
+            "prompt_id": "2548c655-e1b8-462c-ada1-add0e67ab42e",
+            "timestamp": 1745577805461
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "2548c655-e1b8-462c-ada1-add0e67ab42e",
+            "timestamp": 1745577817273
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "3010476a-95e9-4439-ba3e-72998181b7ae": {
+    "prompt": [
+      7,
+      "3010476a-95e9-4439-ba3e-72998181b7ae",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Rich in colors, the Great Barrier Reef, saturated in color, schools of fish shuttling, corals",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "17C35C8940E5E6DFA3AFC383C2B7869E"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01382_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "3010476a-95e9-4439-ba3e-72998181b7ae",
+            "timestamp": 1745577848439
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "19",
+              "20",
+              "21",
+              "25"
+            ],
+            "prompt_id": "3010476a-95e9-4439-ba3e-72998181b7ae",
+            "timestamp": 1745577848450
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "3010476a-95e9-4439-ba3e-72998181b7ae",
+            "timestamp": 1745577860305
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "02e106c1-be77-436d-8329-47ccfd9cb620": {
+    "prompt": [
+      8,
+      "02e106c1-be77-436d-8329-47ccfd9cb620",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Rich in color, saturated in hue, jellyfish",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "E7C7594548386EFB76E8FDA4D97FC520"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01383_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "02e106c1-be77-436d-8329-47ccfd9cb620",
+            "timestamp": 1745577907875
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "19",
+              "20",
+              "21",
+              "25"
+            ],
+            "prompt_id": "02e106c1-be77-436d-8329-47ccfd9cb620",
+            "timestamp": 1745577907886
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "02e106c1-be77-436d-8329-47ccfd9cb620",
+            "timestamp": 1745577919761
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "22fa0ab8-233f-4ff4-b5ac-becfd3b94c7f": {
+    "prompt": [
+      9,
+      "22fa0ab8-233f-4ff4-b5ac-becfd3b94c7f",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "propped up on one hand (sitting or standing),3/4 shot,baisakhi,christmas,pilates,camping,editorially,capably,volatile,monkfish,striking,upheld,intraoral photography,angiography,mercury,jupiter,neptune,planet,",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "4CC72C454E83BAED370BF2B1282EC283"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01384_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "22fa0ab8-233f-4ff4-b5ac-becfd3b94c7f",
+            "timestamp": 1745577953262
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "19",
+              "20",
+              "21",
+              "25"
+            ],
+            "prompt_id": "22fa0ab8-233f-4ff4-b5ac-becfd3b94c7f",
+            "timestamp": 1745577953272
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "22fa0ab8-233f-4ff4-b5ac-becfd3b94c7f",
+            "timestamp": 1745577965241
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "d7e040c6-caad-427d-a958-a47578219af4": {
+    "prompt": [
+      10,
+      "d7e040c6-caad-427d-a958-a47578219af4",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Venus de Milo with a Broken Arm, Louvre, Paris, Sculpture",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "65EFD80C49E6E7A078BCE8881636306B"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01385_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "d7e040c6-caad-427d-a958-a47578219af4",
+            "timestamp": 1745578005533
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "19",
+              "20",
+              "21",
+              "25"
+            ],
+            "prompt_id": "d7e040c6-caad-427d-a958-a47578219af4",
+            "timestamp": 1745578005543
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "d7e040c6-caad-427d-a958-a47578219af4",
+            "timestamp": 1745578017430
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  },
+  "aa24824c-0b53-4301-b755-f272abe8d80a": {
+    "prompt": [
+      11,
+      "aa24824c-0b53-4301-b755-f272abe8d80a",
+      {
+        "3": {
+          "inputs": {
+            "seed": 898689693474274,
+            "steps": 20,
+            "cfg": 5.0,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "22",
+              0
+            ],
+            "negative": [
+              "22",
+              1
+            ],
+            "latent_image": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "4": {
+          "inputs": {
+            "ckpt_name": "sd_xl_base_1.0_0.9vae.safetensors"
+          },
+          "class_type": "CheckpointLoaderSimple",
+          "_meta": {
+            "title": "Load Checkpoint"
+          }
+        },
+        "6": {
+          "inputs": {
+            "text": "Three-dimensional effect, Dazu Rock carvings of Buddha statues, Dunhuang murals",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+          }
+        },
+        "7": {
+          "inputs": {
+            "text": "water mark, low quality, low resolution",
+            "clip": [
+              "4",
+              1
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+          }
+        },
+        "8": {
+          "inputs": {
+            "samples": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "9": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "19": {
+          "inputs": {
+            "resolution_level": 1.0,
+            "batch_size": 1,
+            "images": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "CreateEmptyLatentByImageNode",
+          "_meta": {
+            "title": "Create Empty Latent By Image"
+          }
+        },
+        "20": {
+          "inputs": {
+            "image": "/home/ww/projects/ComfyUI-Server/input/e9a6bb51-b379-4d2d-964f-7e96af8b03b2.png",
+            "upload": "image"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "21": {
+          "inputs": {
+            "control_net_name": "diffusion_pytorch_model_promax.safetensors"
+          },
+          "class_type": "ControlNetLoader",
+          "_meta": {
+            "title": "Load ControlNet Model"
+          }
+        },
+        "22": {
+          "inputs": {
+            "strength": 1.0,
+            "start_percent": 0.0,
+            "end_percent": 1.0,
+            "positive": [
+              "6",
+              0
+            ],
+            "negative": [
+              "7",
+              0
+            ],
+            "control_net": [
+              "21",
+              0
+            ],
+            "image": [
+              "25",
+              0
+            ],
+            "vae": [
+              "4",
+              2
+            ]
+          },
+          "class_type": "ControlNetApplyAdvanced",
+          "_meta": {
+            "title": "Apply ControlNet"
+          }
+        },
+        "25": {
+          "inputs": {
+            "image": [
+              "20",
+              0
+            ]
+          },
+          "class_type": "ImageInvert",
+          "_meta": {
+            "title": "Invert Image"
+          }
+        }
+      },
+      {
+        "client_id": "122F37C840DEA1BA8A5B2E9CF6902BC1"
+      },
+      [
+        "9"
+      ]
+    ],
+    "outputs": {
+      "9": {
+        "images": [
+          {
+            "filename": "ComfyUI_01386_.png",
+            "subfolder": "",
+            "type": "output"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "aa24824c-0b53-4301-b755-f272abe8d80a",
+            "timestamp": 1745578076844
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "4",
+              "7",
+              "19",
+              "20",
+              "21",
+              "25"
+            ],
+            "prompt_id": "aa24824c-0b53-4301-b755-f272abe8d80a",
+            "timestamp": 1745578076854
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "aa24824c-0b53-4301-b755-f272abe8d80a",
+            "timestamp": 1745578088752
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "9": {
+        "node_id": "9",
+        "display_node": "9",
+        "parent_node": null,
+        "real_node_id": "9"
+      }
+    }
+  }
+}
